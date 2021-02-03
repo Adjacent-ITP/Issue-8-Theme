@@ -23,7 +23,6 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-<h1>TESTESTTEST</h1>
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'issue-8' ); ?></a>
 
 	<header id="masthead" class="site-header">
@@ -32,6 +31,8 @@
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
+				<h1>TESTESTTEST</h1>
+
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
 			else :
