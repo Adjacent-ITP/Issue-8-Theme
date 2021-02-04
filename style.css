@@ -81,6 +81,8 @@ html {
  */
 body {
 	margin: 0;
+  font-size: 16px;
+  background-color: #E3E3E3;
 }
 
 /**
@@ -968,4 +970,23 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+
+/* Custom */
+
+.article {
+  border-right: 4px solid #7F2832;
+}
+
+.content {
+  padding: 2rem 3rem;
+}
+
+.article__nav {
+  height: 6rem;
+  border-bottom: 4px solid #7F2832;
+}
+
+.column {
+  width: 50%;
 }

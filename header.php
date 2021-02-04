@@ -25,6 +25,13 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'issue-8' ); ?></a>
 
+	<header>
+      <div class="column logo">
+        <img src="assets/adjacentlogo.svg" />
+      </div>
+      <div class="column">MENYU</div>
+    </header>
+
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
