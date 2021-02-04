@@ -27,7 +27,7 @@
 
 	<header>
       <div class="column logo">
-        <img src="assets/adjacentlogo.svg" />
+        <!-- <img src="assets/adjacentlogo.svg" /> -->
       </div>
       <div class="column">MENYU</div>
     </header>
