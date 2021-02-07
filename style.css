@@ -97,8 +97,7 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  margin:	0;
 }
 
 /* Grouping content
@@ -971,17 +970,39 @@ textarea {
 
 /* Custom */
 
+/* Fonts */
+@font-face {
+  font-family: 'HalyardDisplayRegular';
+	src: url('./assets/fonts/HalyardDisplayRegular.woff'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'FeeeelsFuzzy';
+	src: url('./assets/fonts/FeeeelsFuzzyTrialRegular.woff'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'RadleyRegular';
+	src: url('./assets/fonts/Radley-Regular.woff'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'RadleyItalic';
+	src: url('./assets/fonts/Radley-Italic.woff'); /* IE9 Compat Modes */
+}
+
 .article {
-  border-right: 4px solid #7f2832;
+  border-right: 4px solid #D2030F;
 }
 
 .content {
-  padding: 2rem 3rem;
+	padding: 2rem 3rem;
+	background-color: #DFDFDF;
 }
 
 .article__nav {
   height: 6rem;
-  border-bottom: 4px solid #7f2832;
+  border-bottom: 4px solid #D2030F;
 }
 
 .column {
@@ -1015,4 +1036,21 @@ div.rowstyle {
 }
 main.site-main {
   height: 100%;
+}
+
+.entry-title {
+	font-family: 'HalyardDisplayRegular';
+	color: #D2030F;
+	font-size: 3.75rem;
+	line-height: 3.75rem;
+}
+
+.entry-meta {
+	margin-top: 3rem;
+}
+
+.author {
+	font-family: 'RadleyRegular';
+	font-size: 1.87500rem;
+	color: #D2030F;
 }
