@@ -1019,6 +1019,12 @@ article {
 	background-color: #DFDFDF;
 }
 
+.interactive {
+	width: 25% !important;
+	border-right: 4px solid #D2030F;
+	background-color: #DFDFDF;
+}
+
 .content {
 	padding: 2rem 3rem;
 	/* background-color: #DFDFDF; */
@@ -1126,8 +1132,24 @@ p:first-child {
 	line-height: 2rem;
 }
 
+.interactivepiece {
+	width: 75%;
+	height: 100vh;
+	position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.iframe {
+	width: 100%;
+	height: 100%;
+}
+
 .illustrations {
 	height: 100vh;
+	position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 .illustrations__one {
@@ -1135,6 +1157,9 @@ p:first-child {
 	height: 100%;
 	background-image: url('./assets/dummy_rmrf/test.jpg');
 	background-size: cover;
+	/* position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0; */
 }
 
 /* Footer */

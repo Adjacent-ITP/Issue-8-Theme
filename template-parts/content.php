@@ -10,7 +10,18 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="column article">
+	<?php 
+		$interactive = get_field( "show_interactive" );
+
+		if( $interactive ) {
+			echo "<div class='column interactive'>";
+		} else {
+			echo "<div class='column article'>";
+		}
+
+	?>
+
+	<!-- <div class="column article"> -->
 
 		<nav class="article__nav">
 		<?php the_post_navigation(
@@ -79,9 +90,23 @@
 
 	</div><!-- .entry-content -->
 
+	<?php 
+		$interactive = get_field( "show_interactive" );
+		$url = get_field( "interactive_content" );
 
-	<div class="column illustrations">
-				<div class="illustrations__one"></div>
+		if( $interactive ) {
+			echo "<div class='column interactivepiece'>";
+			echo	"<iframe class='iframe' frameBorder='0' scrolling='no' src='" . $url . "'></iframe>";
+		} else {
+			echo "<div class='column illustrations'>
+			<div class='illustrations__one'></div>";
+		}
+
+	?>
+
+
+	
+				
 		</div>
 
 	<footer class="entry-footer">
