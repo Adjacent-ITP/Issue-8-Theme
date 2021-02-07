@@ -977,6 +977,16 @@ textarea {
 }
 
 @font-face {
+  font-family: 'RobotoRegular';
+	src: url('./assets/fonts/Roboto-Regular.woff'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'RobotoBold';
+	src: url('./assets/fonts/Roboto-Bold.woff'); /* IE9 Compat Modes */
+}
+
+@font-face {
   font-family: 'FeeeelsFuzzy';
 	src: url('./assets/fonts/FeeeelsFuzzyTrialRegular.woff'); /* IE9 Compat Modes */
 }
@@ -1038,6 +1048,8 @@ main.site-main {
   height: 100%;
 }
 
+/* Article */
+
 .entry-title {
 	font-family: 'HalyardDisplayRegular';
 	color: #D2030F;
@@ -1055,6 +1067,12 @@ main.site-main {
 	color: #D2030F;
 }
 
+p {
+	font-family: 'RobotoRegular';
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
 /* Footer */
 #colophon {
 	margin-top: 6rem;
@@ -1063,6 +1081,7 @@ main.site-main {
 	text-align: center;
 	font-size: 0.875rem;
 	color: #D2030F;
+	font-family: 'RobotoRegular';
 }
 
 .footer__title {
