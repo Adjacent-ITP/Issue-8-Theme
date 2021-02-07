@@ -44,6 +44,10 @@
 						<?php
 						// issue_8_posted_on();
 						issue_8_posted_by();
+
+						$illustrator_tagline  = get_field('illustrator_tagline');
+    				echo "<br/><div class='illustrator__tagline'>" . $illustrator_tagline . "</div>"
+
 						?>
 					</div><!-- .entry-meta -->
 				<?php endif; ?>
