@@ -1001,18 +1001,37 @@ textarea {
 	src: url('./assets/fonts/Radley-Italic.woff'); /* IE9 Compat Modes */
 }
 
+
+/* Single blog post */
+
 .article {
-  border-right: 4px solid #D2030F;
+	border-right: 4px solid #D2030F;
+	background-color: #DFDFDF;
 }
 
 .content {
 	padding: 2rem 3rem;
-	background-color: #DFDFDF;
+	/* background-color: #DFDFDF; */
 }
 
 .article__nav {
-  height: 6rem;
-  border-bottom: 4px solid #D2030F;
+	height: 6rem;
+	line-height: 6rem;
+	border-bottom: 4px solid #D2030F;
+	padding: 0 3rem;
+	font-family: 'RobotoRegular';
+	font-size: 1.5rem;
+	color: #D2030F;
+}
+
+.nav-subtitle a {
+	color: #D2030F;
+	text-decoration: none;;
+}
+
+a, a:visited { 
+	color: #D2030F;
+	text-decoration: none;
 }
 
 .column {
