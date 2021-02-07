@@ -1054,3 +1054,17 @@ main.site-main {
 	font-size: 1.87500rem;
 	color: #D2030F;
 }
+
+/* Footer */
+#colophon {
+	margin-top: 6rem;
+	border-top: 5px solid #D2030F;
+	line-height: 3rem;
+	text-align: center;
+	font-size: 0.875rem;
+	color: #D2030F;
+}
+
+.footer__title {
+	font-family: 'FeeeelsFuzzy'
+}

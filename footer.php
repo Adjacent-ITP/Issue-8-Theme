@@ -13,18 +13,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<h2>Footer test</h2>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'issue-8' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'issue-8' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'issue-8' ), 'issue-8', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
+			<span><span class="footer__title">ADJACENT</span> Issue 8, published by ITP & IMA, Tisch School of the Arts, New York University. Accessibility. Subscribe to the newsletter.</span>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
