@@ -73,9 +73,12 @@
 
 		</div>
 
-		<div class="column">
-		</div>
 	</div><!-- .entry-content -->
+
+
+	<div class="column illustrations">
+				<div class="illustrations__one"></div>
+		</div>
 
 	<footer class="entry-footer">
 		<?php issue_8_entry_footer(); ?>
