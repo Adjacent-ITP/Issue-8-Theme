@@ -97,7 +97,7 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  margin:	0;
+  margin: 0;
 }
 
 /* Grouping content
@@ -205,6 +205,7 @@ img {
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
+
 button,
 input,
 optgroup,
@@ -972,82 +973,82 @@ textarea {
 
 /* Fonts */
 @font-face {
-  font-family: 'HalyardDisplayRegular';
-	src: url('./assets/fonts/HalyardDisplayRegular.woff'); /* IE9 Compat Modes */
+  font-family: "HalyardDisplayRegular";
+  src: url("./assets/fonts/HalyardDisplayRegular.woff"); /* IE9 Compat Modes */
 }
 
 @font-face {
-  font-family: 'RobotoLight';
-	src: url('./assets/fonts/Roboto-Light.woff'); /* IE9 Compat Modes */
+  font-family: "RobotoLight";
+  src: url("./assets/fonts/Roboto-Light.woff"); /* IE9 Compat Modes */
 }
 
 @font-face {
-  font-family: 'RobotoRegular';
-	src: url('./assets/fonts/Roboto-Regular.woff'); /* IE9 Compat Modes */
+  font-family: "RobotoRegular";
+  src: url("./assets/fonts/Roboto-Regular.woff"); /* IE9 Compat Modes */
 }
 
 @font-face {
-  font-family: 'RobotoBold';
-	src: url('./assets/fonts/Roboto-Bold.woff'); /* IE9 Compat Modes */
+  font-family: "RobotoBold";
+  src: url("./assets/fonts/Roboto-Bold.woff"); /* IE9 Compat Modes */
 }
 
 @font-face {
-  font-family: 'FeeeelsFuzzy';
-	src: url('./assets/fonts/FeeeelsFuzzyTrialRegular.woff'); /* IE9 Compat Modes */
+  font-family: "FeeeelsFuzzy";
+  src: url("./assets/fonts/FeeeelsFuzzyTrialRegular.woff"); /* IE9 Compat Modes */
 }
 
 @font-face {
-  font-family: 'RadleyRegular';
-	src: url('./assets/fonts/Radley-Regular.woff'); /* IE9 Compat Modes */
+  font-family: "RadleyRegular";
+  src: url("./assets/fonts/Radley-Regular.woff"); /* IE9 Compat Modes */
 }
 
 @font-face {
-  font-family: 'RadleyItalic';
-	src: url('./assets/fonts/Radley-Italic.woff'); /* IE9 Compat Modes */
+  font-family: "RadleyItalic";
+  src: url("./assets/fonts/Radley-Italic.woff"); /* IE9 Compat Modes */
 }
-
 
 /* Single blog post */
 
 article {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .article {
-	border-right: 4px solid #D2030F;
-	background-color: #DFDFDF;
+  border-right: 4px solid #d2030f;
+  background-color: #dfdfdf;
 }
 
 .interactive {
-	width: 25% !important;
-	border-right: 4px solid #D2030F;
-	background-color: #DFDFDF;
+  width: 25% !important;
+  border-right: 4px solid #d2030f;
+  background-color: #dfdfdf;
 }
 
 .content {
-	padding: 2rem 3rem;
-	/* background-color: #DFDFDF; */
+  padding: 2rem 3rem;
+  /* background-color: #DFDFDF; */
 }
 
 .article__nav {
-	height: 6rem;
-	line-height: 6rem;
-	border-bottom: 4px solid #D2030F;
-	padding: 0 3rem;
-	font-family: 'RobotoRegular';
-	font-size: 1.5rem;
-	color: #D2030F;
+  height: 6rem;
+  line-height: 6rem;
+  border-bottom: 4px solid #d2030f;
+  padding: 0 3rem;
+  font-family: "RobotoRegular";
+  font-size: 1.5rem;
+  color: #d2030f;
 }
 
 .nav-subtitle a {
-	color: #D2030F;
-	text-decoration: none;;
+  color: #d2030f;
+  text-decoration: none;
 }
 
-a, a:visited { 
-	color: #D2030F;
-	text-decoration: none;
+a,
+a:visited {
+  color: #d2030f;
+  text-decoration: none;
 }
 
 .column {
@@ -1056,6 +1057,26 @@ a, a:visited {
 
 html {
   height: 100%;
+}
+button{
+  background: none;
+  border: none;
+}
+button#article-arrow{
+  height:50%;
+}
+img.arrow{
+  max-height: 42px;
+  max-width: 42px;
+}
+div#menu-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  z-index:10;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 div#page {
   height: 100%;
@@ -1071,6 +1092,7 @@ div.background {
   top: 0;
   justify-content: center;
   display: flex;
+  z-index: -10;
 }
 div.rowstyle {
   height: 100%;
@@ -1079,6 +1101,7 @@ div.rowstyle {
   background-size: 100% 100%;
   display: inline-block;
 }
+
 main.site-main {
   height: 100%;
 }
@@ -1086,93 +1109,93 @@ main.site-main {
 /* Article */
 
 .entry-title {
-	font-family: 'HalyardDisplayRegular';
-	color: #D2030F;
-	font-size: 3.75rem;
-	line-height: 3.75rem;
+  font-family: "HalyardDisplayRegular";
+  color: #d2030f;
+  font-size: 3.75rem;
+  line-height: 3.75rem;
 }
 
 .entry-meta {
-	margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .author {
-	font-family: 'RadleyRegular';
-	font-size: 1.87500rem;
-	color: #D2030F;
+  font-family: "RadleyRegular";
+  font-size: 1.875rem;
+  color: #d2030f;
 }
 
 .illustrator__tagline {
-	font-family: 'RobotoBold';
-	font-size: 1rem;
-	margin-top: 6rem;
+  font-family: "RobotoBold";
+  font-size: 1rem;
+  margin-top: 6rem;
 }
 
 h2 {
-	font-family: 'RobotoBold';
-	font-size: 1.5rem;
+  font-family: "RobotoBold";
+  font-size: 1.5rem;
 }
 
 p {
-	font-family: 'RobotoLight';
-	font-size: 1rem;
-	line-height: 1.5rem;
+  font-family: "RobotoLight";
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 p:first-child {
-	font-size: 1.5rem;
-	line-height: 2rem;
-	/* font-family: 'RobotoLight'; */
+  font-size: 1.5rem;
+  line-height: 2rem;
+  /* font-family: 'RobotoLight'; */
 }
 
 .wp-block-quote p {
-	font-family: 'RadleyItalic';
-	margin: 6rem 5.75rem;
-	size: 1.5rem;
-	line-height: 2rem;
+  font-family: "RadleyItalic";
+  margin: 6rem 5.75rem;
+  size: 1.5rem;
+  line-height: 2rem;
 }
 
 .interactivepiece {
-	width: 75%;
-	height: 100vh;
-	position: -webkit-sticky; /* Safari */
+  width: 75%;
+  height: 100vh;
+  position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
 }
 
 .iframe {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .illustrations {
-	height: 100vh;
-	position: -webkit-sticky; /* Safari */
+  height: 100vh;
+  position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
 }
 
 .illustrations__one {
-	width: 100%;
-	height: 100%;
-	background-image: url('./assets/dummy_rmrf/test.jpg');
-	background-size: cover;
-	/* position: -webkit-sticky; /* Safari */
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/dummy_rmrf/test.jpg");
+  background-size: cover;
+  /* position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 0; */
+  top: 0;
 }
 
 /* Footer */
 #colophon {
-	margin-top: 6rem;
-	border-top: 5px solid #D2030F;
-	line-height: 3rem;
-	text-align: center;
-	font-size: 0.875rem;
-	color: #D2030F;
-	font-family: 'RobotoRegular';
+  margin-top: 6rem;
+  border-top: 5px solid #d2030f;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #d2030f;
+  font-family: "RobotoRegular";
 }
 
 .footer__title {
-	font-family: 'FeeeelsFuzzy'
+  font-family: "FeeeelsFuzzy";
 }

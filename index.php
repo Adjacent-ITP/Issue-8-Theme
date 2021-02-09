@@ -14,20 +14,17 @@
 
 get_header();
 ?>
-
 	<main id="primary" class="site-main">
 
     	<div id="image" class="background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/Intersect.svg');"></div>
 		<meta name="data" content="<?php echo get_template_directory_uri(); ?>" />
 		<script src="<?php echo get_template_directory_uri(); ?>/js/landing.js"></script>
 
-
-		<?php
-
-		?> 
-
+		<div id="menu-buttons">
+			<button id="article-arrow"><img class="arrow" src="<?php echo get_template_directory_uri(); ?>/assets/arrow.svg"></button>
+			<button id="menu-arrow"><img class="arrow" src="<?php echo get_template_directory_uri(); ?>/assets/arrow.svg"></button>
+		</div>
 	</main><!-- #main -->
-
 <?php
-get_sidebar();
-get_footer();
+// get_sidebar();
+// get_footer();
