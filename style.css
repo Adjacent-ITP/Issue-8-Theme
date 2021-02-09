@@ -1199,3 +1199,109 @@ p:first-child {
 .footer__title {
   font-family: "FeeeelsFuzzy";
 }
+
+/*Schuyler's Stylez*/
+
+@font-face {
+  font-family: "Feels Fuzzy";
+  src: url("fonts/FeeeelsFuzzyTrialRegular.woff2") format("woff2"),
+       url("fonts/FeeeelsFuzzyTrialRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Radley";
+  src: url("fonts/Radley-Italic.ttf") format("truetype"),
+       url("fonts/Radley-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Halyard";
+  src: url("fonts/HalyardDisplayRegular.ttf") format("truetype"),
+       url("fonts/HalyardDisplayBold.ttf") format("truetype");
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #c4c4c4;
+  display: flex;
+}
+
+.menu-wrapper {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 3px solid #7f2832;
+  background-color: #c4c4c4;
+}
+
+.menu-wrapper .hamburger-list {
+  position: absolute;
+  top: 100vh;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 50%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid #7f2832;
+  border-top: 3px solid #7f2832;
+  border-bottom: 3px solid #7f2832;
+  transition: transform 1s ease-in-out;
+  z-index: 1;
+  overflow-y:scroll;
+}
+
+.hamburger-list {
+  position: absolute;
+  z-index: -1;
+}
+
+.open {
+  transform: translate(0,-100vh);
+}
+
+.hamburger-list .hamburger-item {
+  position: relative;
+  height: 100px;
+  font-weight: 800;
+  font-size: 60px;
+  width: 100%;
+  border-bottom: 3px solid #7f2832;
+  font-family: "Halyard", bold;
+  color: #7f2832;
+  text-align: center;
+  background-color: #c4c4c4;
+
+  cursor: pointer;
+}
+
+.hamburger-list .hamburger-rest {
+  flex: 1;
+  background-color: #c4c4c4;
+}
+
+/**,*::before,*::after {
+  box-sizing: border-box;
+  list-style-type: none;
+}*/
+
+.list-child {
+  font-size: 14px;
+  display: none;
+  position: relative;
+  background-color: #c4c4c4;
+  border-bottom: 3px solid #7f2832;
+  z-index:5;
+}
+
+.displayed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
