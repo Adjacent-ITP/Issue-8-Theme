@@ -9,7 +9,7 @@ window.onload = function () {
 
   function backgroundIterator() {
     clicks++;
-
+    console.log(clicks);
     var element = document.getElementById("image");
     clear(element);
 
@@ -45,9 +45,9 @@ window.onload = function () {
         let imageName = "dis" + i + "-" + j;
         console.log(imageName);
 
-        imgDivs[(i, j)] = document.createElement("div");
-        imgDivs[(i, j)].style.backgroundImage =
-          "url(" + data + "/assets/" + imageName + ".svg)";
+        imgDivs[(i, j)] = document.createElement("img");
+        imgDivs[(i, j)].src =
+          data + "/assets/" + imageName + ".svg";
         imgDivs[(i, j)].className = "rowstyle " + imageName;
         element.appendChild(imgDivs[(i, j)]);
       }

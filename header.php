@@ -29,7 +29,6 @@
       <div class="column logo">
         <!-- <img src="assets/adjacentlogo.svg" /> -->
       </div>
-      <div class="column">MENYU</div>
     </header>
 
 	<header id="masthead" class="site-header">
@@ -38,7 +37,6 @@
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
-				<h1>TESTESTTEST3</h1>
 
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
@@ -50,7 +48,6 @@
 			$issue_8_description = get_bloginfo( 'description', 'display' );
 			if ( $issue_8_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $issue_8_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
