@@ -1204,20 +1204,18 @@ p:first-child {
 
 @font-face {
   font-family: "Feels Fuzzy";
-  src: url("fonts/FeeeelsFuzzyTrialRegular.woff2") format("woff2"),
-       url("fonts/FeeeelsFuzzyTrialRegular.woff") format("woff");
+  src: url("assets/fonts/FeeeelsFuzzyTrialRegular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Radley";
-  src: url("fonts/Radley-Italic.ttf") format("truetype"),
-       url("fonts/Radley-Regular.ttf") format("truetype");
+  src: url("assets/fonts/Radley-Italic.woff") format("woff"),
+       url("assets/fonts/Radley-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Halyard";
-  src: url("fonts/HalyardDisplayRegular.ttf") format("truetype"),
-       url("fonts/HalyardDisplayBold.ttf") format("truetype");
+  src: url("assets/fonts/HalyardDisplayRegular.woff") format("woff"),
 }
 
 .container {
@@ -1267,14 +1265,16 @@ p:first-child {
 
 .hamburger-list .hamburger-item {
   position: relative;
-  height: 100px;
+  min-height: 100px;
   font-weight: 800;
   font-size: 45px;
   border-bottom: 3px solid #7f2832;
   font-family: "Halyard", bold;
   color: #7f2832;
-  text-align: center;
   background-color: #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   cursor: pointer;
 }
@@ -1313,10 +1313,19 @@ p:first-child {
   font-size: 16px;
 }
 
+<<<<<<< Updated upstream
+=======
+.about i {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+>>>>>>> Stashed changes
 .submit {
   height: 90%;
   display: flex;
   align-items: center;
+<<<<<<< Updated upstream
   justify-content: center;
 }
 
@@ -1333,6 +1342,24 @@ p:first-child {
   color: #7f2832;
   font-style: italic;
   font-size: 16px;
+=======
+  justify-content: center;
+}
+
+.prev-issues {
+  width: 100%;
+}
+
+.prev-issues li{
+  border-bottom: 3px solid #7f2832;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7f2832;
+  font-style: italic;
+  font-size: 30px;
+>>>>>>> Stashed changes
 }
 
 .bordered {

@@ -1,25 +1,17 @@
 <?php
 /**
- * The main template file
+ * The template for displaying the menu
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
+ * Contains the closing of the #content div and all content after.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package issue-8
  */
 
-get_header();
 ?>
-	<main id="primary" class="site-main">
 
-<<<<<<< Updated upstream
-	
-            <div class="menu-wrapper">
-                <img class="menu-toggle" onclick="moveMenu()" src="Icon_Menu.png" alt="A hamburger menu icon"></img>
+<div class="menu-wrapper">
                 <ul class="hamburger-list" id="menu">
                     <li class="hamburger-item" onclick="subExpander(event)">About</li>
 					<div class="list-child bordered">
@@ -88,13 +80,13 @@ get_header();
                     <li class="hamburger-item" onclick="subExpander(event)">Previous Issues</li>
                     <div class="list-child">
 						<ul class="prev-issues">
-							<li>Issue 1: Turtles</li>
-							<li>Issue 2: Windows</li>
-							<li>Issue 3: Global Warming</li>
-							<li>Issue 4: Dungeons and Dragons</li>
-							<li>Issue 5: The very bad day</li>
-							<li>Issue 6: Electrochemistry</li>
-							<li>Issue 7: The Intersection of Art and Technology</li>
+							<li>Issue 1</li>
+							<li>Issue 2</li>
+							<li>Issue 3</li>
+							<li>Issue 4: Bodies & Borders</li>
+							<li>Issue 5: Reality?</li>
+							<li>Issue 6: Old/New/Next</li>
+							<li>Issue 7: Feeling</li>
 							<li>Issue 8: Disembodiment</li>
 						</ul>
 					</div>
@@ -110,28 +102,3 @@ get_header();
                     <li class="hamburger-rest"></li>
                 </ul>
             </div>
-
-    	<div id="image" class="background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/Intersect.svg');"></div>
-		<meta name="data" content="<?php echo get_template_directory_uri(); ?>" />
-		<script src="<?php echo get_template_directory_uri(); ?>/js/landing.js"></script>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
-
-=======
-	<?php
-		include('menu.php');
-	?>
-
-    	<div id="image" class="background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/Intersect.svg');"></div>
-		<meta name="data" content="<?php echo get_template_directory_uri(); ?>" />
-		<script src="<?php echo get_template_directory_uri(); ?>/js/landing.js"></script>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
-
->>>>>>> Stashed changes
-		<div id="menu-buttons">
-			<button id="article-arrow"><img class="arrow" src="<?php echo get_template_directory_uri(); ?>/assets/arrow.svg"></button>
-			<button id="menu-arrow" onclick="moveMenu()"><img class="arrow" src="<?php echo get_template_directory_uri(); ?>/assets/arrow.svg"></button>
-		</div>
-	</main><!-- #main -->
-<?php
-// get_sidebar();
-// get_footer();
