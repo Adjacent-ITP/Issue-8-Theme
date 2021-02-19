@@ -14,6 +14,13 @@
 <div class="menu-wrapper">
                 <ul class="hamburger-list" id="menu">
                     <li class="hamburger-item" onclick="subExpander(event)">Index</li>
+                    <div class="list-child">
+                        <ul class="prev-issues">
+                            <li>All</li>
+                            <li>The</li>
+                            <li>Articles</li>
+                        </ul>
+                    </div>
                     <li class="hamburger-item" onclick="subExpander(event)">About</li>
 					<div class="list-child bordered">
 						<div class="about">
