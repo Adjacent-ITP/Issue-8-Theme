@@ -21,7 +21,7 @@ get_header();
                 <img class="menu-toggle" onclick="moveMenu()" src="Icon_Menu.png" alt="A hamburger menu icon"></img>
                 <ul class="hamburger-list" id="menu">
                     <li class="hamburger-item" onclick="subExpander(event)">About</li>
-					<div class="list-child">
+					<div class="list-child bordered">
 						<div class="about">
 							<h3><i>
 								ADJACENT is an online journal of emerging media published by the Interactive Telecommunications Program of NYU. 
@@ -34,12 +34,12 @@ get_header();
 								And so most of these articles have no consciousness of the future that is our present. 
 								We hope that this issue can serve as a source of inspiration.
 							</p>
-							<h4>Editorial Board</h4>
+							<h3>Editorial Board</h3>
 							<ul>
 								<li>Nanchy Hechinger, Editor-in-Chief</li>
 								<li>Alden Rivendale Jones & Carrie Wang, Managing Editors</li>
 							</ul>
-							<h4>Editors</h4>
+							<h3>Editors</h3>
 							<ul>
 								<li>Gabriella M Garcia, Senior Editor</li>
 								<li>Na Chen</li>
@@ -51,23 +51,23 @@ get_header();
 								<li>Matthew Ross</li>
 								<li>Simone Ava Salvo</li>
 							</ul>
-							<h4>Art Direction: Site Design</h4>
+							<h3>Art Direction: Site Design</h3>
 							<ul>
 								<li>Dana Elkis</li>
 								<li>Emily Lin</li>
 								<li>Ilana Bonder</li>
 							</ul>
-							<h4>Art Director: Visuals/Illustration</h4>
+							<h3>Art Director: Visuals/Illustration</h3>
 							<ul>
 								<li>Nick Gregg</li>
 							</ul>
-							<h4>Web Development</h4>
+							<h3>Web Development</h3>
 							<ul>
 								<li>Schuyler deVos</li>
 								<li>Sam Heckle</li>
 								<li>Erik van Zummeren</li>
 							</ul>
-							<h4>Communications and Public Relations</h4>
+							<h3>Communications and Public Relations</h3>
 							<ul>
 								<li>Gabriella M. Garcia, Director</li>
 								<li>Sarah Liriano</li>
@@ -98,7 +98,7 @@ get_header();
 						</ul>
 					</div>
                     <li class="hamburger-item" onclick="subExpander(event)">Submit</li>
-					<div class="list-child">
+					<div class="list-child bordered">
 						<div class="about">
 							<h2>Submit your article proposal here.</h2>
 

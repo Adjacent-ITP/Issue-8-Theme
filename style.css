@@ -1269,8 +1269,7 @@ p:first-child {
   position: relative;
   height: 100px;
   font-weight: 800;
-  font-size: 60px;
-  width: 100%;
+  font-size: 45px;
   border-bottom: 3px solid #7f2832;
   font-family: "Halyard", bold;
   color: #7f2832;
@@ -1290,7 +1289,6 @@ p:first-child {
   display: none;
   position: relative;
   background-color: #c4c4c4;
-  border-bottom: 3px solid #7f2832;
   z-index:5;
 }
 
@@ -1311,6 +1309,10 @@ p:first-child {
   color: #7f2832;
 }
 
+.about ul {
+  font-size: 16px;
+}
+
 .submit {
   height: 90%;
   display: flex;
@@ -1318,6 +1320,21 @@ p:first-child {
   justify-content: center;
 }
 
+.prev-issues {
+  width: 100%;
+}
+
 .prev-issues li{
+  border-bottom: 3px solid #7f2832;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7f2832;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.bordered {
   border-bottom: 3px solid #7f2832;
 }
