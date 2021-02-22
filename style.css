@@ -83,7 +83,7 @@ body {
   margin: 0;
   font-size: 16px;
   background-color: #e3e3e3;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /**
