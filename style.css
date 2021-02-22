@@ -1231,24 +1231,6 @@ p:first-child {
 
 /*Schuyler's Stylez*/
 
-@font-face {
-  font-family: "Feels Fuzzy";
-  src: url("fonts/FeeeelsFuzzyTrialRegular.woff2") format("woff2"),
-       url("fonts/FeeeelsFuzzyTrialRegular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Radley";
-  src: url("fonts/Radley-Italic.ttf") format("truetype"),
-       url("fonts/Radley-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Halyard";
-  src: url("fonts/HalyardDisplayRegular.ttf") format("truetype"),
-       url("fonts/HalyardDisplayBold.ttf") format("truetype");
-}
-
 .container {
   height: 100vh;
   width: 100vw;
