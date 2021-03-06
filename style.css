@@ -112,6 +112,8 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
+  margin-left: -3rem;
+  width: calc(100% + 6rem);
 }
 
 /**
@@ -482,20 +484,23 @@ body {
 }
 
 hr {
-  background-color: #ccc;
+  background-color: black;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em;
+  margin-bottom: 2rem;
 }
 
 ul,
 ol {
-  margin: 0 0 1.5em 3em;
+  /* margin: 0 0 1.5em 3em; */
+  list-style: none;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
 }
 
-ul {
-  list-style: disc;
-}
+li:first-child { padding-top: none; }
+li { padding-top: 1.5rem; }
 
 ol {
   list-style: decimal;
@@ -1163,6 +1168,16 @@ main.site-main {
 h2 {
   font-family: "RobotoBold";
   font-size: 1.5rem;
+}
+
+h3 {
+  font-family: "RadleyItalic";
+  font-size: 30px;
+}
+
+.references {
+  margin: 0;
+  padding: 0;
 }
 
 p {

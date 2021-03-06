@@ -1,0 +1,71 @@
+{
+    "key": "group_6043bda60fb2d",
+    "title": "layout",
+    "fields": [
+        {
+            "key": "field_6043bdaa95fd3",
+            "label": "layout_type",
+            "name": "layout_type",
+            "type": "select",
+            "instructions": "iframe = vimeo",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "vimeo": "vimeo",
+                "iframe": "iframe",
+                "anchorscroll": "anchorscroll",
+                "fluidscroll": "fluidscroll",
+                "fixed": "fixed"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6043bec3f4d75",
+            "label": "iframe_src",
+            "name": "iframe_src",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1615052877
+}
