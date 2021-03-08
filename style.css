@@ -1171,7 +1171,7 @@ h2 {
 }
 
 h3 {
-  font-family: "RadleyItalic";
+  /*font-family: "RadleyItalic";*/
   font-size: 30px;
 }
 
@@ -1281,14 +1281,13 @@ p:first-child {
 
 .menu-wrapper .hamburger-list {
   position: absolute;
-  top: 100vh;
+  top: 0vh;
   right: 0;
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 50%;
   z-index: 2;
-  display: flex;
   flex-direction: column;
   border-left: 3px solid #7f2832;
   border-top: 3px solid #7f2832;
@@ -1296,6 +1295,12 @@ p:first-child {
   transition: transform 1s ease-in-out;
   z-index: 1;
   overflow-y:scroll;
+  display: none;
+}
+
+.about h4 {
+  font-size: 16px;
+  margin-bottom: 0px;
 }
 
 .hamburger-list {
@@ -1304,7 +1309,8 @@ p:first-child {
 }
 
 .open {
-  transform: translate(0,-100vh);
+  /*transform: translate(0,-100vh);*/
+  display: flex !important;
 }
 
 .hamburger-list .hamburger-item {
@@ -1319,6 +1325,7 @@ p:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 
   cursor: pointer;
 }
@@ -1360,6 +1367,7 @@ p:first-child {
 .about i {
   font-size: 30px;
   line-height: 30px;
+  font-family: "RadleyItalic";
 }
 
 .submit {
@@ -1382,6 +1390,12 @@ p:first-child {
   color: #7f2832;
   font-style: italic;
   font-size: 30px;
+  padding: 0;
+}
+
+.about ul li {
+  padding: 0;
+
 }
 
 .bordered {
