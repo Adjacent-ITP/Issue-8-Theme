@@ -80,14 +80,14 @@
                     <li class="hamburger-item" onclick="subExpander(event)">Previous Issues</li>
                     <div class="list-child">
 						<ul class="prev-issues">
-							<li>Issue 1</li>
-							<li>Issue 2</li>
-							<li>Issue 3</li>
-							<li>Issue 4: Bodies & Borders</li>
-							<li>Issue 5: Reality?</li>
-							<li>Issue 6: Old/New/Next</li>
-							<li>Issue 7: Feeling</li>
-							<li>Issue 8: Disembodiment</li>
+							<li class="issues">Issue 1</li>
+							<li class="issues">Issue 2</li>
+							<li class="issues">Issue 3</li>
+							<li class="issues">Issue 4: Bodies & Borders</li>
+							<li class="issues">Issue 5: Reality?</li>
+							<li class="issues">Issue 6: Old/New/Next</li>
+							<li class="issues">Issue 7: Feeling</li>
+							<li class="issues">Issue 8: Disembodiment</li>
 						</ul>
 					</div>
                     <li class="hamburger-item" onclick="subExpander(event)">Submit</li>

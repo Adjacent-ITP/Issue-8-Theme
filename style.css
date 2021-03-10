@@ -1275,7 +1275,7 @@ p:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 3px solid #7f2832;
+  border-left: 3px solid #D2030F;
   background-color: #c4c4c4;
 }
 
@@ -1283,19 +1283,23 @@ p:first-child {
   position: absolute;
   top: 0vh;
   right: 0;
-  margin: 0;
-  padding: 0;
   height: 100vh;
   width: 50%;
   z-index: 2;
   flex-direction: column;
-  border-left: 3px solid #7f2832;
-  border-top: 3px solid #7f2832;
-  border-bottom: 3px solid #7f2832;
-  transition: transform 1s ease-in-out;
+  border-left: 3px solid #D2030F;
+  border-top: 3px solid #D2030F;
+  border-bottom: 3px solid #D2030F;
+  /*transition: transform 1s ease-in-out;*/
   z-index: 1;
   overflow-y:scroll;
-  display: none;
+  visibility: hidden;
+  display: flex;
+}
+
+.hamburger-article {
+  top: 100px !important;
+  height: calc(100vh - 100px) !important;
 }
 
 .about h4 {
@@ -1310,7 +1314,7 @@ p:first-child {
 
 .open {
   /*transform: translate(0,-100vh);*/
-  display: flex !important;
+  visibility: visible !important;
 }
 
 .hamburger-list .hamburger-item {
@@ -1318,9 +1322,9 @@ p:first-child {
   min-height: 100px;
   font-weight: 800;
   font-size: 45px;
-  border-bottom: 3px solid #7f2832;
+  border-bottom: 3px solid #D2030F;
   font-family: "Halyard", bold;
-  color: #7f2832;
+  color: #D2030F;
   background-color: #c4c4c4;
   display: flex;
   justify-content: center;
@@ -1357,7 +1361,7 @@ p:first-child {
 
 .about {
   width: 90%;
-  color: #7f2832;
+  color: #D2030F;
 }
 
 .about ul {
@@ -1382,12 +1386,12 @@ p:first-child {
 }
 
 .prev-issues li{
-  border-bottom: 3px solid #7f2832;
+  border-bottom: 3px solid #D2030F;
   height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #7f2832;
+  color: #D2030F;
   font-style: italic;
   font-size: 30px;
   padding: 0;
@@ -1399,12 +1403,12 @@ p:first-child {
 }
 
 .bordered {
-  border-bottom: 3px solid #7f2832;
+  border-bottom: 3px solid #D2030F;
 }
 
 @media only screen and (max-width: 768px) {
   .menu-wrapper .hamburger-list {
-    border-right: 3px solid #7f2832;
+    border-right: 3px solid #D2030F;
     width: 100%;
     height: auto;
   }
@@ -1416,12 +1420,12 @@ p:first-child {
     font-size: 16px;
     line-height: 1.5;
   }
-  .list-child ul {
+  .issues {
     display: flex;
     flex-wrap: wrap;
   }
   .prev-issues li {
-    border: 3px solid #7f2832;
+    border: 3px solid #D2030F;
     flex: 1 0 50%;
   }
   .about h2 {
@@ -1430,4 +1434,30 @@ p:first-child {
   .hamburger-list .hamburger-rest {
     display: none;
   }
+}
+
+.header {
+  height: 100px;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  border-bottom: 3px solid #D2030F;
+}
+
+.header div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header div img {
+  cursor: pointer;
+}
+
+.header .header-left {
+  border-right: 3px solid #D2030F;
 }

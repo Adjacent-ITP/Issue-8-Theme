@@ -11,8 +11,17 @@
 
 ?>
 
+<div class="header">
+		<div class="header-left">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/AdjacentLogo.svg"	/>	
+		</div>
+		<div class="header-right">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/MenuButtonNonInteractive.svg" onClick="moveMenu(event)"/>
+		</div>
+	</div>
+
 <div class="menu-wrapper">
-                <ul class="hamburger-list" id="menu">
+                <ul class="hamburger-list hamburger-article" id="menu">
                     <li class="hamburger-item" onclick="subExpander(event)">Index</li>
                     <div class="list-child">
                         <ul class="prev-issues">
