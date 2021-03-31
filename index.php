@@ -21,7 +21,6 @@ get_header();
 		include('menu.php');
 	?>
 
-    	<div id="image" class="background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/Intersect.svg');"></div>
 		<meta name="data" content="<?php echo get_template_directory_uri(); ?>" />
 		<script src="<?php echo get_template_directory_uri(); ?>/js/landing.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>

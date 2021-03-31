@@ -1113,6 +1113,10 @@ main.site-main {
   height: 100%;
 }
 
+.article-wrapper {
+  height: 0;
+}
+
 .article-wrapper .article-list {
   height: 100vh;
   width: 50%;
