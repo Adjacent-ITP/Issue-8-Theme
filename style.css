@@ -1082,8 +1082,6 @@ div#menu-buttons {
   align-content: space-evenly;
   z-index:10;
   width: 100%;
-  position: absolute;
-  bottom: 0;
 }
 div#page {
   height: 100%;
@@ -1236,7 +1234,6 @@ p:first-child {
 
 /* Footer */
 #colophon {
-  margin-top: 6rem;
   border-top: 5px solid #d2030f;
   line-height: 3rem;
   text-align: center;
@@ -1290,7 +1287,7 @@ p:first-child {
   right: 0;
   height: 100vh;
   width: 50%;
-  z-index: 2;
+  z-index: -1;
   flex-direction: column;
   border-left: 3px solid #D2030F;
   border-top: 3px solid #D2030F;
@@ -1465,4 +1462,10 @@ p:first-child {
 
 .header .header-left {
   border-right: 3px solid #D2030F;
+}
+
+#footer-landing {
+  bottom:0;
+  width:100%;
+  position: absolute;
 }

@@ -26,11 +26,6 @@ get_header();
 		<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/articleList.js"></script>
 
-		<div id="menu-buttons">
-			<button id="article-arrow" onclick="openArticles()"><img class="arrow" src="<?php echo get_template_directory_uri(); ?>/assets/arrow.svg"></button>
-			<button id="menu-arrow" onclick="moveMenu()"><img class="arrow" src="<?php echo get_template_directory_uri(); ?>/assets/arrow.svg"></button>
-		</div>
-
 			<div class="article-wrapper" >
 				<?php 
 					// the query
@@ -59,4 +54,4 @@ get_header();
 	</main><!-- #main -->
 <?php
  get_sidebar();
- get_footer();
+ get_footer('landing'); ?>
