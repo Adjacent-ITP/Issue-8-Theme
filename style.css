@@ -1116,7 +1116,6 @@ main.site-main {
 .article-wrapper .article-list {
   height: 100vh;
   width: 50%;
-  position: absolute;
   top: 100vh;
   left: 0;
   margin: 0;
@@ -1124,13 +1123,15 @@ main.site-main {
   z-index: 0;
   flex-direction: column;
   border-right: 3px solid #d2030f;
-  transition: transform 1s ease-in-out;
   overflow-y: scroll;
   background-color: #dfdfdf;
   justify-content: space-evenly;
   align-items: center;
   list-style-type: none;
   text-align: center;
+  z-index: 1;
+  overflow-y:scroll;
+  visibility: hidden;
 }
 
 .article-wrapper .article-item{
