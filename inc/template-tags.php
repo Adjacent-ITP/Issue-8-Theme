@@ -44,7 +44,7 @@ if ( ! function_exists( 'issue_8_posted_by' ) ) :
 		$byline = sprintf(
 			/* translators: %s: post author. */
 			esc_html_x( '%s', 'post author', 'issue-8' ),
-			'<span class="author">' . esc_html( get_the_author() ) . '</span>'
+			'<span class="author">' . esc_html( get_field('author') ) . '</span>'
 		);
 
 		echo '<span class="byline"> ' . $byline . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped

@@ -18,7 +18,7 @@ get_header();
 	<main id="primary" class="site-main">
 
 	<?php
-		include('menu.php');
+		include('menu-article.php');
 	?>
 
     	<div id="image" class="background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/Intersect.svg');"></div>
