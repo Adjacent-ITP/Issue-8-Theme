@@ -33,20 +33,14 @@
 	<main id="primary" class="site-main">
 
 	<?php
-		include('menu.php');
+		include('menu-article.php');
 	?>
 
-    	<div id="image" class="background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/Intersect.svg');"></div>
 		<meta name="data" content="<?php echo get_template_directory_uri(); ?>" />
 		<script src="<?php echo get_template_directory_uri(); ?>/js/landing.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/articleList.js"></script>
 
-		<div id="menu-buttons">
-			<button id="article-arrow" onclick="openArticles()"><img class="arrow" src="<?php echo get_template_directory_uri(); ?>/assets/arrow.svg"></button>
-			<button id="menu-arrow" onclick="moveMenu()"><img class="arrow" src="<?php echo get_template_directory_uri(); ?>/assets/arrow.svg"></button>
-		</div>
-
-		<div class="another-article-wrapper">
 			<div class="article-wrapper" >
 				<?php 
 					// the query
@@ -69,11 +63,10 @@
 						<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 					<?php endif; ?>
 			</div>
-		</div>
 
     	<div id="image" class="background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/Intersect.svg');"></div>
 
 	</main><!-- #main -->
 <?php
  get_sidebar();
- get_footer();
+ get_footer('landing'); ?>
