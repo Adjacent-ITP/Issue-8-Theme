@@ -1298,8 +1298,8 @@ p:first-child {
 }
 
 .hamburger-article {
-  top: 100px !important;
-  height: calc(100vh - 100px) !important;
+  top: 92px !important;
+  height: calc(100vh - 92px) !important;
 }
 
 .about h4 {
@@ -1437,9 +1437,9 @@ p:first-child {
 }
 
 .header {
-  height: 100px;
+  height: 92px;
   background: white;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   display: flex;

@@ -54,7 +54,3 @@
 
 	
 	</header><!-- #masthead -->
-
-	<?php
-		include('menu-article.php');
-	?>

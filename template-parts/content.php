@@ -96,7 +96,8 @@
 
 	<?php if(get_field('layout_type') == "fluidscroll" || get_field('layout_type') == "anchorscroll" || get_field('layout_type') == "fixed"): ?>
 		<div class='column illustrations'>
-			<div class='illustrations__one'>
+			<!--<div class='illustrations__one'>-->
+			<img src="<?php the_field('pic_one'); ?>" style="position:absolute;top:0;left:0;width:100%;min-height:100%;" />
 		</div>
 	<?php elseif(get_field('layout_type') == "vimeo"): ?>
 		<div class='column illustrations'>
@@ -104,7 +105,7 @@
 		</div>
 	<?php elseif(get_field('layout_type') == "iframe"): ?>
 		<div class="column interactivepiece">
-			<iframe class='iframe' frameBorder='0' scrolling='no' src="<?php the_field('iframe_src'); ?>"></iframe>
+			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
 		</div>
 	<?php endif; ?>
 
