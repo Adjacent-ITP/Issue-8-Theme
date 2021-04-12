@@ -1379,16 +1379,21 @@ p:first-child {
   width: 100%;
 }
 
-.prev-issues li{
+.prev-issues li {
   border-bottom: 3px solid #D2030F;
-  height: 75px;
-  display: flex;
+  min-height: 75px;
+  text-align: center;
   justify-content: center;
   align-items: center;
   color: #D2030F;
-  font-style: italic;
   font-size: 30px;
-  padding: 0;
+  padding: 10px 32px;
+  font-size: 1rem;
+  font-family: 'RobotoRegular';
+}
+
+.author__light {
+  font-family: 'RobotoLight';
 }
 
 .about ul li {
