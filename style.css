@@ -1276,14 +1276,16 @@ p:first-child {
 }
 
 .menu-wrapper .hamburger-list {
-  position: absolute;
-  /* top: 0vh; */
+  position: fixed;
   right: 0;
   height: 100vh;
   width: calc(50% + 3px);
   z-index: -1;
   flex-direction: column;
   border-left: 3px solid #D2030F;
+  /* border-top: 3px solid #D2030F; */
+  /* border-bottom: 3px solid #D2030F; */
+  /*transition: transform 1s ease-in-out;*/
   z-index: 1;
   overflow-y:scroll;
   visibility: hidden;
