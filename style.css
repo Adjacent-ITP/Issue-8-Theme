@@ -1271,28 +1271,19 @@ p:first-child {
   display: flex;
 }
 
-.menu-wrapper {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-left: 3px solid #D2030F;
-  background-color: #c4c4c4;
+* {
+  box-sizing: border-box;
 }
 
 .menu-wrapper .hamburger-list {
   position: absolute;
-  top: 0vh;
+  /* top: 0vh; */
   right: 0;
   height: 100vh;
-  width: 50%;
+  width: calc(50% + 3px);
   z-index: -1;
   flex-direction: column;
   border-left: 3px solid #D2030F;
-  border-top: 3px solid #D2030F;
-  border-bottom: 3px solid #D2030F;
-  /*transition: transform 1s ease-in-out;*/
   z-index: 1;
   overflow-y:scroll;
   visibility: hidden;
