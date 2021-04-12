@@ -113,7 +113,7 @@
 				
 		</div>
 
-	<footer class="entry-footer">
-		<?php issue_8_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	<!--<footer class="entry-footer"> -->
+		<?#php issue_8_entry_footer(); ?>
+	<!--</footer> .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

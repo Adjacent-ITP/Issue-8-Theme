@@ -80,23 +80,23 @@
                     <li class="hamburger-item" onclick="subExpander(event)">Previous Issues</li>
                     <div class="list-child">
 						<ul class="prev-issues">
-							<li class="issues">Issue 1</li>
-							<li class="issues">Issue 2</li>
-							<li class="issues">Issue 3</li>
-							<li class="issues">Issue 4: Bodies & Borders</li>
-							<li class="issues">Issue 5: Reality?</li>
-							<li class="issues">Issue 6: Old/New/Next</li>
-							<li class="issues">Issue 7: Feeling</li>
-							<li class="issues">Issue 8: Disembodiment</li>
+							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-1">Issue 1</a></li>
+							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-2">Issue 2</a></li>
+							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-3/">Issue 3</a></li>
+							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-4">Issue 4: Bodies & Borders</a></li>
+							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-5/">Issue 5: Reality?</a></li>
+							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-6/">Issue 6: Old/New/Next</a></li>
+							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-7/">Issue 7: Feeling</a></li>
+							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-8/">Issue 8: Disembodiment</a></li>
 						</ul>
 					</div>
                     <li class="hamburger-item" onclick="subExpander(event)">Submit</li>
 					<div class="list-child bordered">
 						<div class="about">
-							<h2>Submit your article proposal here.</h2>
+							<h2>Submit your article proposal <a href="https://forms.gle/YH3T8HjcfbqTVoMy5">here.</a></h2>
 
 							<p>Questions or comments about submissions or any other matter?</p>
-							<p>Email us at adjacent@itp.nyu.edu.<p>
+							<p>Email us at <a href="mailto: adjacent@itp.nyu">adjacent@itp.nyu.edu</a>.<p>
 						</div>
 					</div>
                     <li class="hamburger-rest"></li>
