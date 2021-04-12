@@ -19,6 +19,7 @@
                 "vimeo": "vimeo",
                 "iframe": "iframe",
                 "iframeTong": "iframeTong",
+                "iframeNan": "iframeNan",
                 "anchorscroll": "anchorscroll",
                 "fluidscroll": "fluidscroll",
                 "fixed": "fixed",
@@ -36,6 +37,25 @@
             "key": "field_6043bec3f4d75",
             "label": "iframe_src",
             "name": "iframe_src",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6074a0840779a",
+            "label": "iframe_src_4",
+            "name": "iframe_src_4",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -222,5 +242,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1618255171
+    "modified": 1618256029
 }
