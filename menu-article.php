@@ -25,9 +25,32 @@
                     <li class="hamburger-item" onclick="subExpander(event)">Index</li>
                     <div class="list-child">
                         <ul class="prev-issues">
-                            <li>All</li>
-                            <li>The</li>
-                            <li>Articles</li>
+													<!-- the loop -->
+													<?php 
+
+													$args = array(
+														'post_type'=> 'post',
+														'orderby'    => 'ID',
+														'post_status' => 'publish',
+														'order'    => 'DESC',
+														'posts_per_page' => -1 
+														);
+														$result = new WP_Query( $args );
+
+														if ( $result-> have_posts() ) : ?>
+														<?php while ( $result->have_posts() ) : $result->the_post(); ?>
+														<a href="<?php the_permalink() ?>">
+															<li><?php the_title(); ?>
+																<br/>
+																<span class="author__light"><?php echo get_field('author');?></span>
+															</li>
+														</a>
+														   
+														<?php endwhile; ?>
+														<?php endif; wp_reset_postdata(); ?>
+
+										
+													<!-- end of the loop -->
                         </ul>
                     </div>
                     <li class="hamburger-item" onclick="subExpander(event)">About</li>
