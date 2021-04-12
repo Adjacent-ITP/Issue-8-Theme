@@ -12,8 +12,23 @@
  * @package issue-8
  */
 
-get_header();
+//get_header();
 ?>
+
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
+
+	<?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+<div id="page" class="site">
 
 	<main id="primary" class="site-main">
 
@@ -37,7 +52,7 @@ get_header();
 					
 						<!-- the loop -->
 						<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-							<li class="article-item"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <h3><?php echo get_the_author(); ?></h3></li>
+							<li class="article-item"><a class="title-text-menu" href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <h3 class="author-text-menu"><?php echo get_field('author');?></h3></li>
 						<?php endwhile; ?>
 						<!-- end of the loop -->
 					</ul>

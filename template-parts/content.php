@@ -17,7 +17,7 @@
 	<?php 
 		$interactive = get_field( "layout_type" );
 
-		if( $interactive == "iframe" ) {
+		if( $interactive == "iframe" ||  $interactive == "iframeTong" ) {
 			echo "<div class='column interactive'>";
 		} else {
 			echo "<div class='column article'>";
@@ -96,7 +96,8 @@
 
 	<?php if(get_field('layout_type') == "fluidscroll" || get_field('layout_type') == "anchorscroll" || get_field('layout_type') == "fixed"): ?>
 		<div class='column illustrations'>
-			<div class='illustrations__one'>
+			<!--<div class='illustrations__one'>-->
+			<img src="<?php the_field('pic_one'); ?>" style="position:absolute;top:0;left:0;width:100%;min-height:100%;" />
 		</div>
 	<?php elseif(get_field('layout_type') == "vimeo"): ?>
 		<div class='column illustrations'>
@@ -104,7 +105,13 @@
 		</div>
 	<?php elseif(get_field('layout_type') == "iframe"): ?>
 		<div class="column interactivepiece">
-			<iframe class='iframe' frameBorder='0' scrolling='no' src="<?php the_field('iframe_src'); ?>"></iframe>
+			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
+		</div>
+	<?php elseif(get_field('layout_type') == "iframeTong"): ?>
+		<div class="column interactivepiece">
+			<img src="<?php the_field('pic_one'); ?>" style="top:0;left:0;width:100%;min-height:100%;" />
+			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
+			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
 		</div>
 	<?php endif; ?>
 
