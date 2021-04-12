@@ -20,7 +20,8 @@
                 "iframe": "iframe",
                 "anchorscroll": "anchorscroll",
                 "fluidscroll": "fluidscroll",
-                "fixed": "fixed"
+                "fixed": "fixed",
+                "realanchor": "realanchor"
             },
             "default_value": false,
             "allow_null": 0,
@@ -72,6 +73,92 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_60732eb68e324",
+            "label": "switch_bottom",
+            "name": "switch_bottom",
+            "type": "text",
+            "instructions": "the element which when it comes into view will switch from 1st to 2nd pic",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60732f0c8e325",
+            "label": "switch_top",
+            "name": "switch_top",
+            "type": "text",
+            "instructions": "element which when it comes into view will switch from 2nd pic back to 1st",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60747645a717c",
+            "label": "top_pic",
+            "name": "top_pic",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_60747651a717d",
+            "label": "bot_pic",
+            "name": "bot_pic",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -91,5 +178,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1617214545
+    "modified": 1618245274
 }
