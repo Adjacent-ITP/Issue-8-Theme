@@ -12,15 +12,15 @@
 ?>
 
 <div class="menu-wrapper">
-                <ul class="hamburger-list" id="menu">
-                    <li class="hamburger-item" onclick="subExpander(event)">About</li>
-					<div class="list-child bordered">
-						<div class="about">
-							<h3><i>
-								ADJACENT is an online journal of emerging media published by the Interactive Telecommunications Program of NYU. 
-								Our mission is to share research, reflection, analysis, and opinion from and for the diverse creators that are 
-								exploring the emerging possibilities of the contemporary moment in media and technology.
-							</i></h3>
+	<ul class="hamburger-list" id="menu">
+			<li class="hamburger-item" onclick="subExpander(event)">About</li>
+				<div class="list-child bordered">
+					<div class="about">
+						<h3><i>
+							ADJACENT is an online journal of emerging media published by the Interactive Telecommunications Program of NYU. 
+							Our mission is to share research, reflection, analysis, and opinion from and for the diverse creators that are 
+							exploring the emerging possibilities of the contemporary moment in media and technology.
+						</i></h3>
 							<p>
 								We began working on this issue of Adjacent B.C. 
 								(before Covid-19)––a new marker of time for the world. 

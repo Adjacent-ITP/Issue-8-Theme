@@ -13,7 +13,7 @@
 
 <div class="header">
 		<div class="header-left">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/AdjacentLogo.svg"	/>	
+			<a href="https://itp.nyu.edu/adjacent/issue-8/"><img src="<?php echo get_template_directory_uri(); ?>/assets/AdjacentLogo.svg"	/></a>
 		</div>
 		<div class="header-right">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/MenuButtonNonInteractive.svg" onClick="moveMenu(event)"/>
@@ -90,30 +90,30 @@
 								Allyson Green, and ITP’s Chair and Associate Dean for Emerging Media, Dan O’Sullivan, for their ongoing support.
 							</p>
 							<p>
-								<strong>Contact:</strong> <a href="mailto: adjacent@itp.nyu">adjacent@itp.nyu.edu</a>
+								<strong>Contact:</strong> adjacent@itp.nyu
 							</p>
 						</div>
 					</div>
                     <li class="hamburger-item" onclick="subExpander(event)">Previous Issues</li>
                     <div class="list-child">
 						<ul class="prev-issues">
-						<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-1">Issue 1</a></li>
-							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-2">Issue 2</a></li>
-							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-3/">Issue 3</a></li>
-							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-4">Issue 4: Bodies & Borders</a></li>
-							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-5/">Issue 5: Reality?</a></li>
-							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-6/">Issue 6: Old/New/Next</a></li>
-							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-7/">Issue 7: Feeling</a></li>
-							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-8/">Issue 8: Disembodiment</a></li>
+						<a href="https://itp.nyu.edu/adjacent/issue-1/" target="_blank"><li>Issue 1</li></a>
+							<a href="https://itp.nyu.edu/adjacent/issue-2/" target="_blank"><li>Issue 2</li></a>
+							<a href="https://itp.nyu.edu/adjacent/issue-3/" target="_blank"><li>Issue 3</li></a>
+							<a href="https://itp.nyu.edu/adjacent/issue-4/" target="_blank"><li>Issue 4: Bodies & Borders</li></a>
+							<a href="https://itp.nyu.edu/adjacent/issue-5/" target="_blank"><li>Issue 5: Reality?</li></a>
+							<a href="https://itp.nyu.edu/adjacent/issue-6/" target="_blank"><li>Issue 6: Old/New/Next</li></a>
+							<a href="https://itp.nyu.edu/adjacent/issue-7/" target="_blank"><li>Issue 7: Feeling</li></a>
+							<a href="https://itp.nyu.edu/adjacent/issue-8/" target="_blank"><li>Issue 8: Disembodiment</li></a>
 						</ul>
 					</div>
                     <li class="hamburger-item" onclick="subExpander(event)">Submit</li>
 					<div class="list-child bordered">
 						<div class="about">
-							<h2>Submit your article proposal <a href="https://forms.gle/YH3T8HjcfbqTVoMy5">here.</a></h2>
+							<h2>Submit your article proposal here.</h2>
 
 							<p>Questions or comments about submissions or any other matter?</p>
-							<p>Email us at <a href="mailto: adjacent@itp.nyu">adjacent@itp.nyu.edu</a>.<p>
+							<p>Email us at adjacent@itp.nyu.edu.<p>
 						</div>
 					</div>
                     <li class="hamburger-rest"></li>
