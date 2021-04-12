@@ -1469,3 +1469,7 @@ p:first-child {
   width:100%;
   position: absolute;
 }
+
+.first { 
+  z-index: 3;
+}
