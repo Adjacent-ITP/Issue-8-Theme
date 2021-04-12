@@ -18,7 +18,7 @@ get_header();
 	<main id="primary" class="site-main">
 
 	<?php
-		include('menu-article.php');
+		include('menu.php');
 	?>
 
 		<meta name="data" content="<?php echo get_template_directory_uri(); ?>" />
