@@ -109,10 +109,11 @@
 		</div>
 	<?php elseif(get_field('layout_type') == 'realanchor'): ?>
 		<div class='column illustrations'>
-			<img class="first" src="<?php the_field('top_pic'); ?>" id="switch-top" style="position:absolute;top:0;left:0;width:100%;min-height:100%;" />
-			<img class="" src="<?php the_field('bot_pic'); ?>" id="switch-bot" style="position:absolute;top:0;left:0;width:100%;min-height:100%;" />
+			<img class="first" src="<?php the_field('top_pic'); ?>" id="top-pic" style="position:absolute;top:0;left:0;width:100%;min-height:100%;" />
+			<img class="" src="<?php the_field('bot_pic'); ?>" id="bot-pic" style="position:absolute;top:0;left:0;width:100%;min-height:100%;" />
 		</div>
 		<script>
+			console.log("script is firing");
 			const anchorObserve = (topSwitch,botSwitch,topPic,botPic) => {
 
 			const options = {
@@ -125,10 +126,12 @@
 				entries.forEach(function(entry) {
 					if (entry.isIntersecting) {
 						if (entry.target == topSwitch) {
+							console.log("topswitch");
 							//this needs to be now "switch the class on the pic element"
 							topPic.classList.add("first");
 							botPic.classList.remove("first");
 						} else {
+							console.log("botswitch");
 							topPic.classList.remove("first");
 							botPic.classList.add("first");
 						}
@@ -147,6 +150,8 @@
 
 			const pic1 = document.getElementById("top-pic");
 			const pic2 = document.getElementById("bot-pic");
+
+			console.log(pic1);
 
 			anchorObserve(switchTop,switchBot,pic1,pic2);
 		</script>

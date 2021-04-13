@@ -19,7 +19,7 @@
 	</div>
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<span><span class="footer__title">ADJACENT</span> Issue 8, published by ITP & IMA, Tisch School of the Arts, New York University. Accessibility. Subscribe to the newsletter.</span>
+			<span><span class="footer__title">ADJACENT</span> Issue 8, published by ITP & IMA, Tisch School of the Arts, New York University. <a href="https://www.nyu.edu/footer/accessibility.html" target="_blank">Accessibility</a>. <a href="https://gmail.us20.list-manage.com/subscribe?u=3bf5cb27bc2d1fac602917e9b&id=83eea1073c" target="_blank">Subscribe to the newsletter.</a></span>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

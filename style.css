@@ -1304,7 +1304,7 @@ p:first-child {
   right: 0;
   height: 100vh;
   width: calc(50% + 3px);
-  z-index: -1;
+  z-index: 1;
   flex-direction: column;
   border-left: 3px solid #D2030F;
   /* border-top: 3px solid #D2030F; */
@@ -1403,16 +1403,21 @@ p:first-child {
   width: 100%;
 }
 
-.prev-issues li{
+.prev-issues li {
   border-bottom: 3px solid #D2030F;
-  height: 75px;
-  display: flex;
+  min-height: 75px;
+  text-align: center;
   justify-content: center;
   align-items: center;
   color: #D2030F;
-  font-style: italic;
   font-size: 30px;
-  padding: 0;
+  padding: 10px 32px;
+  font-size: 1rem;
+  font-family: 'RobotoRegular';
+}
+
+.author__light {
+  font-family: 'RobotoLight';
 }
 
 .about ul li {
@@ -1483,6 +1488,7 @@ p:first-child {
 #footer-landing {
   bottom:0;
   width:100%;
+  z-index: 10;
   position: absolute;
 }
 
