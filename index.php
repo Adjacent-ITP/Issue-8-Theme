@@ -55,7 +55,7 @@
 							<li class="article-item">
 								<a class="title-text-menu" href="<?php the_permalink(); ?>"><?php the_title(); ?></a> 
 								<h3 class="author-text-menu"><?php echo get_field('author');?></h3>
-								<p><?php the_content('More ...', true);?></p>
+								<!-- <p><?php the_content('More ...', true);?></p> -->
 							</li>
 						<?php endwhile; ?>
 						<!-- end of the loop -->

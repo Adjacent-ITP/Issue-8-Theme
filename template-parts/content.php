@@ -42,6 +42,14 @@
 				);
 			?>
 		</nav>
+		<script>console.log(document.getElementById('html')[0].getBoundingClientRect(););</script>
+		<?php 
+		$interactive = get_field( "layout_type" );
+
+			if( $interactive == "iframeTong") {
+				echo "<div class='interactive-tong-content'></div>";
+			} 
+		?>
 
 		<div class="content">
 
@@ -151,25 +159,18 @@
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
 		</div>
 	<?php elseif(get_field('layout_type') == "iframeTong"): ?>
-		<div class="column interactivepiece">
+		<div class="column interactiveTong">
 			<img src="<?php the_field('pic_one'); ?>" style="top:0;left:0;width:100%;min-height:100%;" />
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
-			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
+			<iframe class='iframeTong2' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
 		</div>
 	<?php elseif(get_field('layout_type') == "iframeNan"): ?>
+		<div class="content" style="height: 100%"></div>
 		<div class="column interactivepiece">
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_4'); ?>"></iframe>
 		</div>
 	<?php endif; ?>
-
-
-	
-				
 		</div>
-
-	<!--<footer class="entry-footer"> -->
-		<?#php issue_8_entry_footer(); ?>
-	<!--</footer> .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
