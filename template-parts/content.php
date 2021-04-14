@@ -165,6 +165,7 @@
 		</div>
 	<?php elseif(get_field('layout_type') == "iframeTong"): ?>
 		<div class="column interactiveTong">
+			<div class="column interactiveTong2"></div>
 			<img src="<?php the_field('pic_one'); ?>" style="top:0;left:0;width:100%;min-height:100%;" />
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
 			<iframe class='iframeTong2' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>

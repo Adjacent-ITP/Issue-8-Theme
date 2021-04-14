@@ -1229,6 +1229,16 @@ p:first-child {
   height: 100vh;
 }
 
+.interactiveTong2{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 75%;
+  background-color: #FFB633;
+  z-index: -1;
+}
+
 .iframeTong2{
   min-height:90%;
   width: 100%;
