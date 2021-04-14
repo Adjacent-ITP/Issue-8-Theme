@@ -46,7 +46,7 @@
 		<?php 
 		$interactive = get_field( "layout_type" );
 
-			if( $interactive == "iframeTong") {
+			if( $interactive == "iframeTong" || $interactive == "iframeNan") {
 				echo "<div class='interactive-tong-content'></div>";
 			} 
 		?>
@@ -170,8 +170,7 @@
 			<iframe class='iframeTong2' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
 		</div>
 	<?php elseif(get_field('layout_type') == "iframeNan"): ?>
-		<div class="content" style="height: 100%"></div>
-		<div class="column interactivepiece">
+		<div class="column interactiveNun">
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_4'); ?>"></iframe>
