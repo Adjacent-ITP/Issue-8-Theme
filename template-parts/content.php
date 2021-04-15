@@ -102,11 +102,24 @@
 
 	</div><!-- .entry-content -->
 
-	<?php if(get_field('layout_type') == "fluidscroll" || get_field('layout_type') == "anchorscroll" || get_field('layout_type') == "fixed"): ?>
+	<?php if(get_field('layout_type') == "anchorscroll" || get_field('layout_type') == "fixed"): ?>
 		<div class='column illustrations'>
 			<!--<div class='illustrations__one'>-->
 			<img src="<?php the_field('pic_one'); ?>" style="position:absolute;top:0;left:0;width:100%;min-height:100%;" />
 		</div>
+	<?php elseif(get_field('layout_type') == 'fluidscroll'): ?>
+		<div class='column illustrations-fluid'>
+			<img src="<?php the_field('pic_one'); ?>" id="fluid_pic" style="position:sticky;top:0;width:100%;" />
+		</div>
+		<script>
+			console.log("UH THERE'S A SCRIPT HERE");
+			const thePic = document.getElementById("fluid_pic");
+			const theHeight = thePic.clientHeight;
+			const windowHeight = window.innerHeight;
+			const newHeight = theHeight - windowHeight;
+			console.log(newHeight);
+			thePic.style.top = `-${newHeight}px`;
+		</script>
 	<?php elseif(get_field('layout_type') == 'realanchor'): ?>
 		<div class='column illustrations'>
 			<img class="first" src="<?php the_field('top_pic'); ?>" id="top-pic" style="position:absolute;top:0;left:0;width:100%;min-height:100%;" />
