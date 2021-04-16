@@ -112,12 +112,10 @@
 			<img src="<?php the_field('pic_one'); ?>" id="fluid_pic" style="position:sticky;top:0;width:100%;" />
 		</div>
 		<script>
-			console.log("UH THERE'S A SCRIPT HERE");
 			const thePic = document.getElementById("fluid_pic");
 			const theHeight = thePic.clientHeight;
 			const windowHeight = window.innerHeight;
 			const newHeight = theHeight - windowHeight;
-			console.log(newHeight);
 			thePic.style.top = `-${newHeight}px`;
 		</script>
 	<?php elseif(get_field('layout_type') == 'realanchor'): ?>
