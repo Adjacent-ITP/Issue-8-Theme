@@ -501,6 +501,9 @@ ol {
   margin: 0;
   margin-bottom: 2rem;
   padding: 0;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 li:first-child { padding-top: none; }
@@ -772,7 +775,7 @@ textarea {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
+  margin: 6em 0 0;
 }
 
 .page-links {
@@ -1196,6 +1199,10 @@ h3 {
   font-size: 30px;
 }
 
+h3 i{
+  font-weight: normal;
+}
+
 .references {
   margin: 0;
   padding: 0;
@@ -1414,6 +1421,8 @@ p:first-child {
 .about {
   width: 90%;
   color: #D2030F;
+  text-align: center;
+  margin: 4em;
 }
 
 .about ul {
@@ -1424,6 +1433,10 @@ p:first-child {
   font-size: 30px;
   line-height: 30px;
   font-family: "RadleyItalic";
+}
+
+.about p {
+  margin: .5em;
 }
 
 .submit {
@@ -1445,7 +1458,6 @@ p:first-child {
   align-items: center;
   color: #D2030F;
   font-size: 30px;
-  padding: 10px 32px;
   font-size: 1rem;
   font-family: 'RobotoRegular';
 }
@@ -1540,4 +1552,18 @@ p:first-child {
   color: #D2030F;
   font-family: 'HalyardDisplayRegular';
   font-size: 1.3em;
+}
+
+.quotes{
+  padding: 2em 4em 2em 4em;
+  font-family: Radley;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+blockquote{
+  padding: 2em 4em 2em 4em;
+  font-family: Radley;
+  font-size: 24px;
+  line-height: 32px;
 }

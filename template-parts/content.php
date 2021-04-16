@@ -64,11 +64,11 @@
 						<?php
 						// issue_8_posted_on();
 						issue_8_posted_by();
-
+						
 						$illustrator_tagline  = get_field('illustrator_tagline');
 						$illustrator_url  = get_field('illustrator_url');
-    					echo "<br/><div class='illustrator__tagline'><a href=" . $illustrator_url . ">" . $illustrator_tagline . "</div>"
-
+						if($illustrator_tagline != null && $illustrator_url != null)
+    						echo "<br/><div class='illustrator__tagline'><a href=" . $illustrator_url . ">" . $illustrator_tagline . "</a></div>"
 						?>
 					</div><!-- .entry-meta -->
 				<?php endif; ?>
@@ -190,3 +190,6 @@
 	<?php endif; ?>
 		</div>
 </article><!-- #post-<?php the_ID(); ?> -->
+
+<?php
+ get_footer(); ?>
