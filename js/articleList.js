@@ -1,6 +1,6 @@
 const openArticles = () => {
-    console.log("working")
+    //console.log("working")
     let element = document.getElementById("articles");
-    console.log(element)
+    //console.log(element)
     element.classList.toggle("open");
 }
