@@ -48,7 +48,7 @@
 		</nav>
 		<script>console.log(document.getElementById('html')[0].getBoundingClientRect(););</script>
 
-		<div class="content">
+		<div class="content" id="dacontent">
 
 			<header class="entry-header">
 				<?php
@@ -179,12 +179,38 @@
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
 			<iframe class='iframeTong2' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
 		</div>
+		<script>
+			const textColumn = document.getElementById("dacontent");
+			const theTextHeight = textColumn.clientHeight;
+			const windowHeight = window.innerHeight;
+			const newHeight = theTextHeight - windowHeight;
+
+			const textParent = document.getElementsByClassName("interactive");
+			const textParentReal = textParent[0];
+
+			textParentReal.style.height = "300vh";
+			textColumn.style.top = `-${newHeight}px`;
+			textColumn.style.position = "sticky";
+		</script>
 	<?php elseif(get_field('layout_type') == "iframeNan"): ?>
 		<div class="column interactiveNun">
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_4'); ?>"></iframe>
 		</div>
+		<script>
+			const textColumn = document.getElementById("dacontent");
+			const theTextHeight = textColumn.clientHeight;
+			const windowHeight = window.innerHeight;
+			const newHeight = theTextHeight - windowHeight;
+
+			const textParent = document.getElementsByClassName("interactive");
+			const textParentReal = textParent[0];
+
+			textParentReal.style.height = "300vh";
+			textColumn.style.top = `-${newHeight}px`;
+			textColumn.style.position = "sticky";
+		</script>
 	<?php endif; ?>
 		</div>
 </article><!-- #post-<?php the_ID(); ?> -->
