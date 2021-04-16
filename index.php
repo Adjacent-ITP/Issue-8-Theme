@@ -42,37 +42,37 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/js/articleList.js"></script>
 
 			<div class="article-wrapper" >
-				<?php 
+				<?php
 					// the query
 					$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
-					
+
 					<?php if ( $wpb_all_query->have_posts() ) : ?>
-					
+
 					<ul class="article-list" id="articles">
-					
+
 						<!-- the loop -->
 						<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
 							<li class="article-item">
-								<a class="title-text-menu" href="<?php the_permalink(); ?>"><?php the_title(); ?></a> 
+								<a class="title-text-menu" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								<h3 class="author-text-menu"><?php echo get_field('author');?></h3>
 								<p><?php the_content('More ...', true);?></p>
 							</li>
 						<?php endwhile; ?>
 						<!-- end of the loop -->
 					</ul>
-					
+
 						<?php wp_reset_postdata(); ?>
-					
+
 					<?php else : ?>
 						<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 					<?php endif; ?>
 			</div>
+		<img id="adjLogo" src="<?php echo get_template_directory_uri(); ?>/assets/Adjacent_LOGO.png"/>
 
-			<div class="index-pic-holder">
-				<?php //put all the pics in here
-				?>
-			</div>
-
+		<div id="menu-buttons">
+			<button id="article-arrow" onclick="openArticles()">articles</button>
+			<button id="menu-arrow" onclick="moveMenu()">menu</button>
+		</div>
     	<div id="image" class="background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/Intersect.svg');"></div>
 
 	</main><!-- #main -->
@@ -82,7 +82,7 @@
 			console.log("articles",articles);
 
 			let container = document.getElementById("articles");
-			
+
 			console.log("container",container);
 
 			console.log("script is firing");
@@ -107,7 +107,7 @@
 								pictures[i].classList.remove("first");
 							}*/
 
-							//can just access the pic index of the same thing 
+							//can just access the pic index of the same thing
 							/*if (entry.target == topSwitch) {
 								console.log("topswitch");
 								//this needs to be now "switch the class on the pic element"

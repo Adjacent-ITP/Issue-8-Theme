@@ -17,6 +17,10 @@
 	<?php 
 		$interactive = get_field( "layout_type" );
 
+		if( $interactive == "iframeTong" || $interactive == "iframeNan") {
+			echo "<div class='interactive-tong-content'></div>";
+		} 
+
 		if( $interactive == "iframe" ||  $interactive == "iframeTong" || $interactive == "iframeNan" ) {
 			echo "<div class='column interactive'>";
 		} else {
@@ -43,13 +47,6 @@
 			?>
 		</nav>
 		<script>console.log(document.getElementById('html')[0].getBoundingClientRect(););</script>
-		<?php 
-		$interactive = get_field( "layout_type" );
-
-			if( $interactive == "iframeTong" || $interactive == "iframeNan") {
-				echo "<div class='interactive-tong-content'></div>";
-			} 
-		?>
 
 		<div class="content">
 
@@ -69,7 +66,8 @@
 						issue_8_posted_by();
 
 						$illustrator_tagline  = get_field('illustrator_tagline');
-    				echo "<br/><div class='illustrator__tagline'>" . $illustrator_tagline . "</div>"
+						$illustrator_url  = get_field('illustrator_url');
+    					echo "<br/><div class='illustrator__tagline'><a href=" . $illustrator_url . ">" . $illustrator_tagline . "</div>"
 
 						?>
 					</div><!-- .entry-meta -->

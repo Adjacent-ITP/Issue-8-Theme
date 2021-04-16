@@ -13,10 +13,7 @@
 <div id="footer-landing">
 	<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/articleList.js"></script>
-	<div id="menu-buttons">
-		<button id="article-arrow" onclick="openArticles()"><img class="arrow" src="<?php echo get_template_directory_uri(); ?>/assets/arrow.svg"></button>
-		<button id="menu-arrow" onclick="moveMenu()"><img class="arrow" src="<?php echo get_template_directory_uri(); ?>/assets/arrow.svg"></button>
-	</div>
+
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			<span><span class="footer__title">ADJACENT</span> Issue 8, published by ITP & IMA, Tisch School of the Arts, New York University. <a href="https://www.nyu.edu/footer/accessibility.html" target="_blank">Accessibility</a>. <a href="https://gmail.us20.list-manage.com/subscribe?u=3bf5cb27bc2d1fac602917e9b&id=83eea1073c" target="_blank">Subscribe to the newsletter.</a></span>

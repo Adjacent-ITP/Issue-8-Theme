@@ -578,7 +578,7 @@ input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
+  border-radius: 4px;
   background: #e6e6e6;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
@@ -1083,6 +1083,7 @@ button{
 }
 button#article-arrow{
   height:50%;
+  color: #d2030f;
 }
 img.arrow{
   max-height: 42px;
@@ -1090,11 +1091,15 @@ img.arrow{
   z-index: 2;
 }
 div#menu-buttons {
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-evenly;
   z-index:10;
   width: 100%;
+  position:absolute;
+  top:50%;
+}
+
+#menu-arrow{
+  float:right;
+  color: #d2030f;
 }
 div#page {
   height: 100%;
@@ -1137,7 +1142,7 @@ main.site-main {
   padding: 0;
   z-index: 0;
   flex-direction: column;
-  border-right: 3px solid #d2030f;
+  border-right: 4px solid #d2030f;
   overflow-y: scroll;
   background-color: #dfdfdf;
   justify-content: space-evenly;
@@ -1278,12 +1283,13 @@ p:first-child {
 
 /* Footer */
 #colophon {
-  border-top: 5px solid #d2030f;
+  border-top: 4px solid #d2030f;
   line-height: 3rem;
   text-align: center;
   font-size: 0.875rem;
   color: #d2030f;
   font-family: "RobotoRegular";
+  background-color: white;
 }
 
 .footer__title {
@@ -1311,7 +1317,7 @@ p:first-child {
 .container {
   height: 100vh;
   width: 100vw;
-  background-color: #c4c4c4;
+  background-color: #dfdfdf;
   display: flex;
 }
 
@@ -1326,7 +1332,7 @@ p:first-child {
   width: calc(50% + 3px);
   z-index: 1;
   flex-direction: column;
-  border-left: 3px solid #D2030F;
+  border-left: 4px solid #D2030F;
   /* border-top: 3px solid #D2030F; */
   /* border-bottom: 3px solid #D2030F; */
   /*transition: transform 1s ease-in-out;*/
@@ -1360,10 +1366,10 @@ p:first-child {
   min-height: 100px;
   font-weight: 800;
   font-size: 45px;
-  border-bottom: 3px solid #D2030F;
+  border-bottom: 4px solid #D2030F;
   font-family: "HalyardDisplayRegular", bold;
   color: #D2030F;
-  background-color: #c4c4c4;
+  background-color: #dfdfdf;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1374,15 +1380,23 @@ p:first-child {
 
 .hamburger-list .hamburger-rest {
   flex: 1;
-  background-color: #c4c4c4;
+  background-color: #dfdfdf;
 }
 
 .list-child {
   font-size: 14px;
   display: none;
   position: relative;
-  background-color: #c4c4c4;
+  background-color: #dfdfdf;
   z-index:5;
+}
+
+#adjLogo{
+  position: absolute;
+  top: 40%;
+  left:45%;
+  max-width: 20%;
+  height: auto;
 }
 
 .list-child ul{
@@ -1424,7 +1438,7 @@ p:first-child {
 }
 
 .prev-issues li {
-  border-bottom: 3px solid #D2030F;
+  border-bottom: 4px solid #D2030F;
   min-height: 75px;
   text-align: center;
   justify-content: center;
@@ -1446,12 +1460,12 @@ p:first-child {
 }
 
 .bordered {
-  border-bottom: 3px solid #D2030F;
+  border-bottom: 4px solid #D2030F;
 }
 
 @media only screen and (max-width: 768px) {
   .menu-wrapper .hamburger-list {
-    border-right: 3px solid #D2030F;
+    border-right: 4px solid #D2030F;
     width: 100%;
     height: auto;
   }
@@ -1468,7 +1482,7 @@ p:first-child {
     flex-wrap: wrap;
   }
   .prev-issues li {
-    border: 3px solid #D2030F;
+    border: 4px solid #D2030F;
     flex: 1 0 50%;
   }
   .about h2 {
@@ -1486,7 +1500,7 @@ p:first-child {
   top: 0;
   width: 100%;
   display: flex;
-  border-bottom: 3px solid #D2030F;
+  border-bottom: 4px solid #D2030F;
 }
 
 .header div {
@@ -1502,7 +1516,7 @@ p:first-child {
 }
 
 .header .header-left {
-  border-right: 3px solid #D2030F;
+  border-right: 4px solid #D2030F;
 }
 
 #footer-landing {
