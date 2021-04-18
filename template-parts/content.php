@@ -34,8 +34,8 @@
 		<nav class="article__nav">
 		<?php the_post_navigation(
 				array(
-					'prev_text' => '<span class="nav__arrowleft"></span><span class="nav-subtitle">' . esc_html__( 'Previous', 'issue-8' ) . '</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next', 'issue-8' ) . '</span>',
+					'prev_text' => '<img class="nav-arrows" src="'. get_template_directory_uri() . '/assets/arrow-left.png"><span class="nav__arrowleft"></span><span class="nav-subtitle">' . esc_html__( '', 'issue-8' ) . '</span>',
+					'next_text' => '<img class="nav-arrows" src="'. get_template_directory_uri() . '/assets/arrow-right.png"><span class="nav-subtitle">' . esc_html__( '', 'issue-8' ) . '</span>',
 				)
 			); ?>
 			<?php wp_link_pages(

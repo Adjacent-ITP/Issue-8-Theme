@@ -1048,7 +1048,7 @@ article {
 }
 
 .content {
-  padding: 2rem 3rem;
+  padding: 7rem 3rem;
   /* background-color: #DFDFDF; */
 }
 
@@ -1060,6 +1060,10 @@ article {
   font-family: "RobotoRegular";
   font-size: 1.5rem;
   color: #d2030f;
+  position: fixed;
+  width: 50%;
+  background-color: #dfdfdf;
+  border-right: 4px solid #d2030f;
 }
 
 .nav-subtitle a {
@@ -1272,6 +1276,7 @@ p:first-child {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index: -1;
 }
 
 .illustrations-fluid {
@@ -1508,7 +1513,7 @@ p:first-child {
 .header {
   height: 92px;
   background: white;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
