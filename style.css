@@ -1066,6 +1066,10 @@ article {
   border-right: 4px solid #d2030f;
 }
 
+.nav-arrows{
+  padding-top: 27px;
+}
+
 .nav-subtitle a {
   color: #d2030f;
   text-decoration: none;
@@ -1351,6 +1355,7 @@ p:first-child {
   overflow-y:scroll;
   visibility: hidden;
   display: flex;
+  padding-left: 0;
 }
 
 .hamburger-article {
@@ -1401,6 +1406,12 @@ p:first-child {
   position: relative;
   background-color: #dfdfdf;
   z-index:5;
+}
+
+.close-x{
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 #adjLogo{

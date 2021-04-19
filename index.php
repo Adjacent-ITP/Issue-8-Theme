@@ -73,7 +73,7 @@
 			<button id="article-arrow" onclick="openArticles()">articles</button>
 			<button id="menu-arrow" onclick="moveMenu()">menu</button>
 		</div>
-    	<div id="image" class="background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/Intersect.svg');"></div>
+    	<div id="image" class="background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/15.png');"></div>
 
 	</main><!-- #main -->
 

@@ -13,6 +13,9 @@
     console.log(<?= json_encode(get_field("illustration_one")) ?>)
 </script>
 
+
+<meta name="data" content="<?php echo get_template_directory_uri(); ?>" />
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php 
 		$interactive = get_field( "layout_type" );
