@@ -16,6 +16,15 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+function console_log($output, $with_script_tags = true) {
+    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
+');';
+    if ($with_script_tags) {
+        $js_code = '<script>' . $js_code . '</script>';
+    }
+    echo $js_code;
+}
+
 if ( ! function_exists( 'issue_8_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -107,6 +116,28 @@ if ( ! function_exists( 'issue_8_setup' ) ) :
 	}
 endif;
 add_action( 'after_setup_theme', 'issue_8_setup' );
+
+// place this in functions.php
+if (!function_exists('get_all_attached_images')) {
+    function get_all_attached_images($size = "full") {
+        
+        // get images using the get_posts() function
+    	$images = get_posts(array(
+    		'numberposts'    => -1, // get all images
+    		'post_mime_type' => 'image', // so we can get images
+    		'post_parent'    => get_the_ID(), // get images attached to the current post
+    		'post_type'      => 'attachment',
+            'order'          => 'ASC',
+            'orderby'        => 'menu_order' // pull them out in the order you set them as
+    	));
+    	
+    	// loop through images and display them
+    	// you can add HTML into this section to display them how you wish
+		foreach($images as $image) {
+			echo wp_get_attachment_image($image->ID, $size); // returns an image HTML tag if there is one
+		}
+	}
+}
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.

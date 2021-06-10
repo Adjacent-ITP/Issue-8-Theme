@@ -1567,3 +1567,14 @@ blockquote{
   font-size: 24px;
   line-height: 32px;
 }
+
+.pic-child {
+  width:50%; 
+  height: 50%; 
+  background-color: green;
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
