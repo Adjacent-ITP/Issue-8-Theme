@@ -55,7 +55,7 @@
 							<li class="article-item">
 								<a class="title-text-menu" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								<h3 class="author-text-menu"><?php echo get_field('author');?></h3>
-								<p><?php the_content('More ...', true);?></p>
+								<p><?php the_content('', true);?></p>
 							</li>
 						<?php endwhile; ?>
 						<!-- end of the loop -->
@@ -73,7 +73,7 @@
 			<button id="article-arrow" onclick="openArticles()">articles</button>
 			<button id="menu-arrow" onclick="moveMenu()">menu</button>
 		</div>
-    	<div id="image" class="background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/Intersect.svg');"></div>
+    	<div id="image" class="background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/15.png');"></div>
 
 		<div id="pic-wrapper" style="
 			height: 100vh;

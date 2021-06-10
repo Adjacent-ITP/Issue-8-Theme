@@ -1,4 +1,9 @@
 let bool = false;
+let data;
+
+window.onload = function () {
+    data = document.getElementsByName("data")[0].content;
+}
 
 const moveMenu = () => {
     let element = document.getElementById("menu");
@@ -7,14 +12,32 @@ const moveMenu = () => {
 
 const subExpander = (e) => {
     let div = e.target;
-    console.log(div);
     bool = !bool;
-    if(bool){
-        div.style.padding = '3em';
-    } else {
-        div.style.padding = '0';
+    let x = document.createElement("img"); 
+    x.src = data + '/assets/x.png';
+    x.className = "close-x";
+    if(div.parentElement.nodeName != "LI"){
+        if(bool){
+            div.style.padding = '3em';
+            div.appendChild(x)
+        } else {
+            div.style.padding = '0';
+            div.removeChild(div.childNodes[1])
+        }
+        let sibling = div.nextElementSibling;
+        sibling.classList.toggle("displayed");
+    } else{
+        if(bool){
+            div.parentElement.style.padding = '3em';
+            div.parentElement.appendChild(x)
+        } else {
+            div.parentElement.style.padding = '0';
+        }
+        let sibling = div.parentElement.nextElementSibling;
+        sibling.classList.toggle("displayed");
+
+        if(!bool){
+            div.parentElement.removeChild(div.parentElement.childNodes[1])
+        }
     }
-    let sibling = div.nextElementSibling;
-    console.log(sibling);
-    sibling.classList.toggle("displayed");
 }
