@@ -49,7 +49,6 @@
 				);
 			?>
 		</nav>
-		<script>console.log(document.getElementById('html')[0].getBoundingClientRect(););</script>
 
 		<div class="content" id="dacontent">
 
