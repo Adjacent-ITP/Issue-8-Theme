@@ -75,7 +75,7 @@
 		</div>
     	<div id="image" class="background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/15.png');"></div>
 
-		<div id="pic-wrapper" style="
+		<div class="hidden2" id="pic-wrapper" style="
 			height: 100vh;
 			z-index: 5;
 			width: 50vw;
@@ -86,81 +86,82 @@
 			justify-content: center;
 			align-items: center;"
 		> 
-			<div class="pic-child" id="pic1" style="width:50%; 
+			<img src="<?php bloginfo('template_directory'); ?> /assets/img/Tong_Tong.jpg" class="pic-child" id="pic1" style="width:50%; 
   										height: 50%; 
   										background-color: green;
   										position: absolute;"
-			></div>
-			<div class="pic-child" id="pic2" style="width:50%; 
+			></img>
+			<img src="<?php bloginfo('template_directory'); ?> /assets/img/Dominic.jpg" class="pic-child" id="pic2" style="width:50%; 
   										height: 50%; 
   										background-color: red;
   										position: absolute;"
-			></div>
-			<div class="pic-child" id="pic3" style="width:50%; 
+			></img>
+			<img src="<?php bloginfo('template_directory'); ?> /assets/img/Nun_Nun.jpg" class="pic-child" id="pic3" style="width:50%; 
   										height: 50%; 
   										background-color: yellow;
   										position: absolute;"
-			></div>
-			<div class="pic-child" id="pic4" style="width:50%; 
+			></img>
+			<img src="<?php bloginfo('template_directory'); ?> /assets/img/Owen.jpg" class="pic-child" id="pic4" style="width:50%; 
   										height: 50%; 
   										background-color: blue;
   										position: absolute;"
-			></div>
-			<div class="pic-child" style="width:50%; 
+			></img>
+			<img src="<?php bloginfo('template_directory'); ?> /assets/img/CyX_CyX.jpg" class="pic-child" style="width:50%; 
   										height: 50%; 
   										background-color: orange;
   										position: absolute;"
-			></div>
-			<div class="pic-child" style="width:50%; 
+			></img>
+			<img src="<?php bloginfo('template_directory'); ?> /assets/img/Ziv.jpg" class="pic-child" style="width:50%; 
   										height: 50%; 
   										background-color: purple;
   										position: absolute;"
-			></div>
-			<div class="pic-child" style="width:50%; 
+			></img>
+			<img src="<?php bloginfo('template_directory'); ?> /assets/img/Becca.png" class="pic-child" style="width:50%; 
   										height: 50%; 
   										background-color: white;
   										position: absolute;"
-			></div>
-			<div class="pic-child" style="width:50%; 
+			></img>
+			<img src="<?php bloginfo('template_directory'); ?> /assets/img/Cara.png" class="pic-child" style="width:50%; 
   										height: 50%; 
   										background-color: black;
   										position: absolute;"
-			></div>
-			<div class="pic-child" style="width:50%; 
+			></img>
+			<img src="<?php bloginfo('template_directory'); ?> /assets/img/Brent.jpg" class="pic-child" style="width:50%; 
   										height: 50%; 
   										background-color: grey;
   										position: absolute;"
-			></div>
-			<div class="pic-child" style="width:50%; 
+			></img>
+			<img src="<?php bloginfo('template_directory'); ?> /assets/img/Katherine.png" class="pic-child" style="width:50%; 
   										height: 50%; 
   										background-color: brown;
   										position: absolute;"
-			></div>
-			<div class="pic-child" style="width:50%; 
+			></img>
+			<img src="<?php bloginfo('template_directory'); ?> /assets/img/Erin.png" class="pic-child" style="width:50%; 
   										height: 50%; 
   										background-color: red;
   										position: absolute;"
-			></div>
-			<div class="pic-child" style="width:50%; 
+			></img>
+			<img src="<?php bloginfo('template_directory'); ?> /assets/img/Livia.jpg" class="pic-child" style="width:50%; 
   										height: 50%; 
   										background-color: blue;
   										position: absolute;"
-			></div>
-			<div class="pic-child" style="width:50%; 
+			></img>
+			<img src="<?php bloginfo('template_directory'); ?> /assets/img/YG_YG.png" class="pic-child" style="width:50%; 
   										height: 50%; 
   										background-color: green;
   										position: absolute;"
-			></div>
-			<div class="pic-child" style="width:50%; 
+			></img>
+			<img src="<?php bloginfo('template_directory'); ?> /assets/img/Mina_Mina.jpg" class="pic-child" style="width:50%; 
   										height: 50%; 
   										background-color: yellow;
   										position: absolute;"
-			></div>
+			></img>
 		</div>
 
 	</main><!-- #main -->
 
 	<script>
+	//THIS IS THE SCROLLING STUFF THAT CHANGES THE PICTURES 
 			let articles = document.getElementsByClassName("article-item");
 			console.log("articles",articles);
 
@@ -237,7 +238,6 @@
 			}
 
 			anchorObserve(articles,item);
-
 
 			/*const switchTop = document.getElementById("switch-top");
 			const switchBot = document.getElementById("switch-bot");
