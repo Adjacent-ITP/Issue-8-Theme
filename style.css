@@ -1305,6 +1305,23 @@ p:first-child {
     padding: 0;
   }
 
+  .article-list {
+    width: 100%;
+  }
+
+  .hamburger-list {
+    width: 100%;
+  }
+
+  .pic-wrapper {
+    display: hidden !important;
+  }
+
+  .interactive {
+    width: 100% !important;
+    background-color: #dfdfdf;
+  }
+
   ol {
     color: #D2030F;
   }

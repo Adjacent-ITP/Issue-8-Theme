@@ -75,7 +75,7 @@
 		</div>
     	<div id="image" class="background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/15.png');"></div>
 
-		<div class="hidden2" id="pic-wrapper" style="
+		<div class="hidden2 pic-wrapper" id="pic-wrapper" style="
 			height: 100vh;
 			z-index: 5;
 			width: 50vw;
