@@ -1307,6 +1307,7 @@ p:first-child {
 
   .article-list {
     width: 100%;
+    border-right: 0px;
   }
 
   .hamburger-list {
