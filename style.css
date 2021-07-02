@@ -1179,6 +1179,7 @@ main.site-main {
   color: #d2030f;
   font-size: 3.75rem;
   line-height: 3.75rem;
+  word-break: break-all;
 }
 
 .entry-meta {
@@ -1335,6 +1336,10 @@ p:first-child {
     display: block;
   }
 
+  .article-item {
+    height: 80% !important;
+  }
+
   .article {
     border-right: 0px;
   }
@@ -1486,6 +1491,10 @@ p:first-child {
   color: #d2030f;
   font-family: "RobotoRegular";
   background-color: white;
+  position: fixed;
+  z-index: 1000000;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer__title {
@@ -1749,6 +1758,7 @@ p:first-child {
   color: #D2030F;
   font-family: 'HalyardDisplayRegular';
   font-size: 1.3em;
+  line-height: 20px;
 }
 
 .quotes{
