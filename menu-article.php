@@ -67,46 +67,41 @@
 								And so most of these articles have no consciousness of the future that is our present. 
 								We hope that this issue can serve as a source of inspiration.
 							</p>
-							<h3>Editorial Board</h3>
+							<h4>Editorial Board</h4>
 							<ul>
 								<li>Nanchy Hechinger, Editor-in-Chief</li>
-								<li>Alden Rivendale Jones & Carrie Wang, Managing Editors</li>
+								<li>Gabriella M. Garcia, Managing Editor</li>
 							</ul>
-							<h3>Editors</h3>
+							<h4>Editors</h4>
 							<ul>
-								<li>Gabriella M Garcia, Senior Editor</li>
+					
 								<li>Na Chen</li>
 								<li>Daniel Fries</li>
-								<li>Karina Hyland</li>
-								<li>Marcela Mancino</li>
+								<li>Divya Mehra</li>
+								<li>Elizabeth Perez</li>
 								<li>Melissa Margaret Powers</li>
-								<li>Lillian Ritchie</li>
-								<li>Matthew Ross</li>
-								<li>Simone Ava Salvo</li>
+								<li>Lucas Wozniak</li>
 							</ul>
-							<h3>Art Direction: Site Design</h3>
+							<h4>Web Design</h4>
 							<ul>
-								<li>Dana Elkis</li>
-								<li>Emily Lin</li>
-								<li>Ilana Bonder</li>
+								<li>Anh Lê</li>
+								<li>Danqi Qian</li>
 							</ul>
-							<h3>Art Director: Visuals/Illustration</h3>
+							<h4>Art Director: Visuals/Illustration</h4>
 							<ul>
-								<li>Nick Gregg</li>
+								<li>Lizzy Chiappini</li>
 							</ul>
-							<h3>Web Development</h3>
+							<h4>Web Development</h4>
 							<ul>
 								<li>Schuyler deVos</li>
 								<li>Sam Heckle</li>
 								<li>Erik van Zummeren</li>
 							</ul>
-							<h3>Communications and Public Relations</h3>
+							<h4>Communications and Public Relations</h4>
 							<ul>
-								<li>Gabriella M. Garcia, Director</li>
-								<li>Sarah Liriano</li>
-								<li>Yiting Liu</li>
-								<li>Marcela Mancino</li>
-								<li>Kat Vlasova</li>
+								<li>Simone Salvo, Director</li>
+								<li>Natalie Fajardo</li>
+								<li>Zack Krampf</li>
 							</ul>
 							<p>
 								ADJACENT was made possible by a Tisch Faculty Grant. Special thanks to Tisch School of the Arts Dean, 
