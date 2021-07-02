@@ -61,12 +61,6 @@
 								Our mission is to share research, reflection, analysis, and opinion from and for the diverse creators that are 
 								exploring the emerging possibilities of the contemporary moment in media and technology.
 							</i></h3>
-							<p>
-								We began working on this issue of Adjacent B.C. 
-								(before Covid-19)––a new marker of time for the world. 
-								And so most of these articles have no consciousness of the future that is our present. 
-								We hope that this issue can serve as a source of inspiration.
-							</p>
 							<h4>Editorial Board</h4>
 							<ul>
 								<li>Nanchy Hechinger, Editor-in-Chief</li>
