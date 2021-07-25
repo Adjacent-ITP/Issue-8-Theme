@@ -1064,6 +1064,8 @@ article {
   width: inherit;
   background-color: #dfdfdf;
   border-right: 4px solid #d2030f;
+  z-index: 10;
+
 }
 
 .nav-arrows{
