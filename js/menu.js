@@ -1,19 +1,18 @@
 let bool = false;
 let data;
 
-window.onload = function () {
-    data = document.getElementsByName("data")[0].content;
-}
-
 const moveMenu = () => {
     let element = document.getElementById("menu");
     element.classList.toggle("open");
 }
 
 const subExpander = (e) => {
+
+    data = document.getElementsByName("data")[0].content;
     let div = e.target;
     bool = !bool;
     let x = document.createElement("img"); 
+    console.log(data)
     x.src = data + '/assets/x.png';
     x.className = "close-x";
     if(div.parentElement.nodeName != "LI"){
