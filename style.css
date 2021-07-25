@@ -1609,7 +1609,7 @@ p:first-child {
   left:45%;
   max-width: 20%;
   height: auto;
-  z-index: -10;
+  z-index: 10;
 }
 
 .list-child ul{
