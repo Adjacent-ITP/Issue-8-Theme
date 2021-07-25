@@ -1,6 +1,5 @@
 window.onload = function () {
   var data = document.getElementsByName("data")[0].content;
-  console.log(data);
   let clicks = 0;
 
   document
@@ -9,7 +8,6 @@ window.onload = function () {
 
   function backgroundIterator() {
     clicks++;
-    console.log(clicks);
     var element = document.getElementById("image");
     clear(element);
 
@@ -26,7 +24,6 @@ window.onload = function () {
       element.style.backgroundImage =
         "url(" + data + "/assets/Intersect.svg" + ")";
     }
-    console.log(clicks);
   }
 
   function clear(div) {
@@ -34,7 +31,6 @@ window.onload = function () {
     while (div.firstChild) {
       div.removeChild(div.firstChild);
     }
-    console.log("cleared");
   }
 
   function create(element, iteration, max) {
@@ -43,7 +39,6 @@ window.onload = function () {
     for (let i = iteration; i <= iteration; i++) {
       for (let j = 1; j <= max; j++) {
         let imageName = "dis" + i + "-" + j;
-        console.log(imageName);
 
         imgDivs[(i, j)] = document.createElement("img");
         imgDivs[(i, j)].src =

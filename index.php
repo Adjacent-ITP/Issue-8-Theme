@@ -149,7 +149,6 @@
 	<script>
 	//THIS IS THE SCROLLING STUFF THAT CHANGES THE PICTURES 
 			let articles = document.getElementsByClassName("article-item");
-			console.log("articles",articles);
 
 			let articles2 = document.querySelectorAll(".article-item");
 
@@ -160,10 +159,8 @@
 			let container = document.getElementById("articles");
 
 			let item = document.getElementsByClassName("pic-child");
-			console.log("pics,",item)
 
 			const anchorObserve = (switches,item/*,pictures*/) => {
-				console.log("OK THE ANCHOR THING HERE");
 
 				for (let i=0; i<item.length; i++) {
 					item[i].classList.add("hidden");
@@ -180,38 +177,17 @@
 				const callback = (entries) => {
 					entries.forEach(function(entry) {
 						let index = entry.target.elems_index;
-						console.log(index,entry.target);
 						if (entry.isIntersecting) {
-						//if (entries[i].isIntersecting) {
 							if (container.classList.contains("open")) {
-								//console.log("and now its open, mf");
 								for (let i=0; i<item.length; i++) {
-									//console.log(item[j])
 									let pic = item[i];
-									//console.log(i);
 									if (i == index) {
 										pic.style.display = "block";
-										//console.log(pic);
 									} else {
 										pic.style.display = "none";
 									}
 								}
 							}
-							/*for (let i=0; i<pictures.length; i++) {
-								pictures[i].classList.remove("first");
-							}*/
-
-							//can just access the pic index of the same thing
-							/*if (entry.target == topSwitch) {
-								console.log("topswitch");
-								//this needs to be now "switch the class on the pic element"
-								topPic.classList.add("first");
-								botPic.classList.remove("first");
-							} else {
-								console.log("botswitch");
-								topPic.classList.remove("first");
-								botPic.classList.add("first");
-							}*/
 						}
 					})
 				}
@@ -224,16 +200,6 @@
 			}
 
 			anchorObserve(articles,item);
-
-			/*const switchTop = document.getElementById("switch-top");
-			const switchBot = document.getElementById("switch-bot");
-
-			const pic1 = document.getElementById("top-pic");
-			const pic2 = document.getElementById("bot-pic");
-
-			console.log(pic1);*/
-
-			//anchorObserve(switchTop,switchBot,pic1,pic2);
 	</script>
 <?php
  get_sidebar();
