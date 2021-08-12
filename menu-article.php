@@ -16,14 +16,17 @@
 			<a href="https://itp.nyu.edu/adjacent/issue-8/"><img src="<?php echo get_template_directory_uri(); ?>/assets/AdjacentLogo.svg"	/></a>
 		</div>
 		<div class="header-right">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/MenuButtonNonInteractive.svg" onClick="moveMenu(event)"/>
+			<div id="menu-button" onClick="moveMenu(event)"></div>
 		</div>
 	</div>
 
 <div class="menu-wrapper">
                 <ul class="hamburger-list hamburger-article" id="menu">
-                    <li class="hamburger-item" onclick="subExpander(event)">Index</li>
-                    <div class="list-child">
+                    <li id="index-item" data-id="index" class="hamburger-item">
+						<div class="hamburger-text" data-id="index" onclick="expandMenu(event)">Index</div>	
+						<div id="index-close" class="hamburger-close" data-id="index" onclick="expandMenu(event)"></div>
+					</li>
+                    <div id="index-child" class="list-child">
                         <ul class="prev-issues">
 													<!-- the loop -->
 													<?php 
@@ -53,8 +56,11 @@
 													<!-- end of the loop -->
                         </ul>
                     </div>
-                    <li class="hamburger-item" onclick="subExpander(event)">About</li>
-					<div class="list-child bordered">
+                    <li id="about-item" data-id="about" class="hamburger-item">
+						<div class="hamburger-text" data-id="about" onclick="expandMenu(event)">About</div>	
+						<div id="about-close" class="hamburger-close" data-id="about" onclick="expandMenu(event)"></div>
+					</li>
+					<div id="about-child" class="list-child bordered">
 						<div class="about">
 							<h3><i>
 								ADJACENT is an online journal of emerging media published by the Interactive Telecommunications Program of NYU. 
@@ -106,8 +112,11 @@
 							</p>
 						</div>
 					</div>
-                    <li class="hamburger-item" onclick="subExpander(event)">Previous Issues</li>
-                    <div class="list-child">
+                    <li id="previous-item" class="hamburger-item">
+						<div class="hamburger-text" data-id="previous" onclick="expandMenu(event)">Previous Issues</div>	
+						<div id="previous-close" class="hamburger-close" data-id="previous" onclick="expandMenu(event)"></div>
+					</li>
+                    <div id="previous-child" class="list-child">
 						<ul class="prev-issues">
 						<a href="https://itp.nyu.edu/adjacent/issue-1/" target="_blank"><li>Issue 1</li></a>
 							<a href="https://itp.nyu.edu/adjacent/issue-2/" target="_blank"><li>Issue 2</li></a>
@@ -119,8 +128,11 @@
 							<a href="https://itp.nyu.edu/adjacent/issue-8/" target="_blank"><li>Issue 8: Disembodiment</li></a>
 						</ul>
 					</div>
-                    <li class="hamburger-item" onclick="subExpander(event)">Submit</li>
-					<div class="list-child bordered">
+                    <li id="submit-item" class="hamburger-item">
+						<div class="hamburger-text" data-id="submit" onclick="expandMenu(event)">Submit</div>	
+						<div id="submit-close" class="hamburger-close" data-id="submit" onclick="expandMenu(event)"></div>
+					</li>
+					<div id="submit-child" class="list-child bordered">
 						<div class="about">
 							<h2>Submit your article proposal here.</h2>
 

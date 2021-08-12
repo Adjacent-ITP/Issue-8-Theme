@@ -13,9 +13,12 @@
 
 <div class="menu-wrapper">
 	<ul class="hamburger-list" id="menu">
-			<li class="hamburger-item" onclick="subExpander(event)">About</li>
-				<div class="list-child bordered">
-					<div class="about">
+		<li id="about-item" data-id="about" class="hamburger-item">
+						<div class="hamburger-text" data-id="about" onclick="expandMenu(event)">About</div>	
+						<div id="about-close" class="hamburger-close" data-id="about" onclick="expandMenu(event)"></div>
+					</li>
+					<div id="about-child" class="list-child bordered">
+						<div class="about">
 						<h3><i>
 							ADJACENT is an online journal of emerging media published by the Interactive Telecommunications Program of NYU. 
 							Our mission is to share research, reflection, analysis, and opinion from and for the diverse creators that are 
@@ -66,8 +69,11 @@
 							</p>
 						</div>
 					</div>
-                    <li class="hamburger-item" onclick="subExpander(event)">Previous Issues</li>
-                    <div class="list-child">
+                    <li id="previous-item" class="hamburger-item">
+						<div class="hamburger-text" data-id="previous" onclick="expandMenu(event)">Previous Issues</div>	
+						<div id="previous-close" class="hamburger-close" data-id="previous" onclick="expandMenu(event)"></div>
+					</li>
+                    <div id="previous-child" class="list-child">
 						<ul class="prev-issues">
 							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-1">Issue 1</a></li>
 							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-2">Issue 2</a></li>
@@ -79,8 +85,11 @@
 							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-8/">Issue 8: Disembodiment</a></li>
 						</ul>
 					</div>
-                    <li class="hamburger-item" onclick="subExpander(event)">Submit</li>
-					<div class="list-child bordered">
+                    <li id="submit-item" class="hamburger-item">
+						<div class="hamburger-text" data-id="submit" onclick="expandMenu(event)">Submit</div>	
+						<div id="submit-close" class="hamburger-close" data-id="submit" onclick="expandMenu(event)"></div>
+					</li>
+					<div id="submit-child" class="list-child bordered">
 						<div class="about">
 							<h2>Submit your article proposal <a href="https://forms.gle/YH3T8HjcfbqTVoMy5">here.</a></h2>
 
