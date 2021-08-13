@@ -162,12 +162,13 @@
 		})
 
 		function changeArticle(newIdx) {
-			if (currentArticle !== null && newIdx !== undefined) {
+			if (currentArticle !== null && newIdx !== currentArticle && newIdx) {
 				articleThumbnailsArr[currentArticle].classList.add('hidden')
 			}
-			currentArticle = newIdx === undefined ? null : newIdx
-			if (currentArticle === null) return
-			articleThumbnailsArr[currentArticle].classList.remove('hidden')
+			if (currentArticle !== newIdx && newIdx != undefined) {
+				articleThumbnailsArr[newIdx].classList.remove('hidden')
+			}
+			currentArticle = newIdx === undefined ? currentArticle : newIdx
 		}
 
 		function onArticleMouseOver(ev) {
