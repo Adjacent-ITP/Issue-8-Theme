@@ -1363,7 +1363,7 @@ p:first-child {
 
 .interactivepiece {
   width: 75%;
-  height: calc(100vh - 95px);
+  height: calc(100vh - 95px - 45px);
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 95px;
@@ -1402,10 +1402,10 @@ p:first-child {
 }
 
 .illustrations {
-  height: 100vh;
-  position: -webkit-sticky; /* Safari */
+  height: calc(100vh - 95px - 45px);
+  position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 95px;
   z-index: -1;
 }
 
@@ -1541,7 +1541,7 @@ p:first-child {
   
   .interactivepiece {
     width: 75%;
-    height: 100vh;
+    height: calc(100vh - 95px - 45px);
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
@@ -1606,9 +1606,8 @@ p:first-child {
 /* Footer */
 #colophon {
   border-top: 4px solid #d2030f;
-  line-height: 3rem;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 14px;
   color: #d2030f;
   font-family: "RobotoRegular";
   background-color: white;
@@ -1616,10 +1615,17 @@ p:first-child {
   z-index: 1000000;
   bottom: 0;
   width: 100%;
+  line-height: 45px;
 }
 
 .footer__title {
   font-family: "FeeeelsFuzzy";
+}
+
+@media screen and (max-width: 850px) {
+  .footer_text {
+    display: none;
+  }
 }
 
 /*Schuyler's Stylez*/
