@@ -86,6 +86,10 @@
 			justify-content: center;
 			align-items: center;"
 		> 
+			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Melanie.png" class="pic-child hidden" id="pic0" style="width:50%; 
+  										height: 50%; 
+  										position: absolute;"
+			></img>
 			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Tong_Tong.jpg" class="pic-child hidden" id="pic1" style="width:50%; 
   										height: 50%; 
   										position: absolute;"
