@@ -1983,6 +1983,10 @@ blockquote{
   line-height: 32px;
 }
 
+#pic-wrapper.hidden {
+  display: none !important;
+}
+
 .pic-child {
   width:50%; 
   height: auto; 

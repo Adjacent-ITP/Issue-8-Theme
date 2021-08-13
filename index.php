@@ -75,7 +75,7 @@
 		</div>
     	<div id="image" class="background"></div>
 
-		<div class="hidden2 pic-wrapper" id="pic-wrapper" style="
+		<div class="hidden pic-wrapper" id="pic-wrapper" style="
 			height: 100vh;
 			z-index: 5;
 			width: 50vw;

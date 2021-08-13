@@ -1,7 +1,7 @@
 let bool = false;
 let data;
 
-const moveMenu = () => {
+const moveMenu = () => { // Menu button
     let element = document.getElementById("menu");
     element.classList.toggle("open");
 
@@ -13,7 +13,7 @@ const moveMenu = () => {
     let imageThumbnailsArr = Array.from(document.getElementsByClassName('pic-child'))
     imageThumbnailsArr.forEach(thumbnail => {
         if (!thumbnail.classList.contains('hidden')) {
-            thumbnail.classList.add('hidden')
+            thumbnail.classList.toggle('hidden')
         }
     })
 
@@ -25,6 +25,11 @@ const moveMenu = () => {
     let adjacentLogo = document.getElementById('adjLogo')
     if (adjacentLogo) {
         adjacentLogo.classList.add('hidden')
+    }
+
+    let imagePreviewEl = document.getElementById('pic-wrapper')
+    if (imagePreviewEl) {
+        imagePreviewEl.classList.add('hidden')
     }
 }
 
