@@ -12,7 +12,6 @@
 ?>
 <div id="footer-landing">
 	<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/articleList.js"></script>
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">

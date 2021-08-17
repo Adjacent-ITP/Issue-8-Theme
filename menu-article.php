@@ -56,8 +56,8 @@
 													<!-- end of the loop -->
                         </ul>
                     </div>
-                    <li id="about-item" data-id="about" class="hamburger-item">
-						<div class="hamburger-text" data-id="about" onclick="expandMenu(event)">About</div>	
+                    <li id="about-item" data-id="about" class="hamburger-item" onclick="expandMenu(event)">
+						<div class="hamburger-text" data-id="about">About</div>	
 						<div id="about-close" class="hamburger-close" data-id="about" onclick="expandMenu(event)"></div>
 					</li>
 					<div id="about-child" class="list-child bordered">
@@ -112,8 +112,8 @@
 							</p>
 						</div>
 					</div>
-                    <li id="previous-item" class="hamburger-item">
-						<div class="hamburger-text" data-id="previous" onclick="expandMenu(event)">Previous Issues</div>	
+                    <li id="previous-item" class="hamburger-item"  data-id="previous" onclick="expandMenu(event)"> 
+						<div class="hamburger-text" data-id="previous">Previous Issues</div>	
 						<div id="previous-close" class="hamburger-close" data-id="previous" onclick="expandMenu(event)"></div>
 					</li>
                     <div id="previous-child" class="list-child">
@@ -128,8 +128,8 @@
 							<a href="https://itp.nyu.edu/adjacent/issue-8/" target="_blank"><li>Issue 8: Disembodiment</li></a>
 						</ul>
 					</div>
-                    <li id="submit-item" class="hamburger-item">
-						<div class="hamburger-text" data-id="submit" onclick="expandMenu(event)">Submit</div>	
+                    <li id="submit-item" class="hamburger-item"  data-id="submit" onclick="expandMenu(event)">
+						<div class="hamburger-text" data-id="submit">Submit</div>	
 						<div id="submit-close" class="hamburger-close" data-id="submit" onclick="expandMenu(event)"></div>
 					</li>
 					<div id="submit-child" class="list-child bordered">
@@ -140,6 +140,5 @@
 							<p>Email us at adjacent@itp.nyu.edu.<p>
 						</div>
 					</div>
-                    <li class="hamburger-rest"></li>
                 </ul>
             </div>

@@ -21,6 +21,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/landing.css">
 	<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
 
 	<?php wp_head(); ?>
@@ -73,7 +74,16 @@
 			<button id="article-arrow" onclick="openArticles()">articles</button>
 			<button id="menu-arrow" onclick="moveMenu()">menu</button>
 		</div>
-    	<div id="image" class="background"></div>
+		<div class="landing-background">
+			<div id="landing_1" class="l-background hidden"></div>
+			<div id="landing_2" class="l-background hidden"></div>
+			<div id="landing_3" class="l-background hidden"></div>
+			<div id="landing_4" class="l-background hidden"></div>
+			<div id="landing_5" class="l-background hidden"></div>
+			<div id="landing_6" class="l-background hidden"></div>
+			<div id="landing_7" class="l-background hidden"></div>
+			<div id="landing_8" class="l-background hidden"></div>
+		</div>
 
 		<div class="hidden pic-wrapper" id="pic-wrapper" style="
 			height: 100vh;
@@ -177,58 +187,6 @@
 				changeArticle(newIdx)
 			}
 		}
-
-
-			// let articles2 = document.querySelectorAll(".article-item");
-
-			// articles2.forEach((elem,index) => {
-			// 	elem.elems_index = index;
-			// });
-
-			// let container = document.getElementById("articles");
-
-			// let item = document.getElementsByClassName("pic-child");
-
-			// const anchorObserve = (switches,item/*,pictures*/) => {
-
-			// 	for (let i=0; i<item.length; i++) {
-			// 		item[i].classList.add("hidden");
-			// 		let entry = item[i];
-			// 		entry.style.display = "none";
-			// 	}
-
-			// 	const options = {
-			// 		root: null,
-			// 		rootMargin: '0px',
-			// 		threshold: .9
-			// 	};
-
-			// 	const callback = (entries) => {
-			// 		entries.forEach(function(entry) {
-			// 			let index = entry.target.elems_index;
-			// 			if (entry.isIntersecting) {
-			// 				if (container.classList.contains("open")) {
-			// 					for (let i=0; i<item.length; i++) {
-			// 						let pic = item[i];
-			// 						if (i == index) {
-			// 							pic.style.display = "block";
-			// 						} else {
-			// 							pic.style.display = "none";
-			// 						}
-			// 					}
-			// 				}
-			// 			}
-			// 		})
-			// 	}
-
-			// 	const observer = new IntersectionObserver(callback,options);
-
-			// 	for (let i=0; i<switches.length; i++) {
-			// 		observer.observe(switches[i]);
-			// 	}
-			// }
-
-			// anchorObserve(articles,item);
 	</script>
 <?php
  get_sidebar();

@@ -97,6 +97,26 @@ main {
   display: block;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #dfdfdf;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #d2030f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
+}
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -1067,6 +1087,7 @@ article {
 .article {
   border-right: 4px solid #d2030f;
   background-color: #dfdfdf;
+  min-height: 100vh;
 }
 
 .interactive {
@@ -1162,15 +1183,16 @@ button{
   font-family: 'HalyardDisplayRegular';
   font-weight: 400;
   font-size: 2em;
-  border: 1px solid #D2030F;
   border-radius: 100px;
-  background-color: white;
   height: 50%;
-  color: #D2030F;
   padding: 0.4em 1em 0.4em;
   cursor: pointer;
-  transition: 0.2s ease-in-out all;
+  transition: 0.2s ease-in-out background-color, 0.2s ease-in-out color;
   display: block;
+  line-height: none !important;
+  background-color: #D2030F;
+  color: white;
+  border: 4px solid white;
 }
 
 #article-arrow{
@@ -1181,17 +1203,15 @@ button{
   margin-right: 1vw;
 }
 
-#menu-arrow.hidden {
-  display: none;
-}
-
 #article-arrow:hover, #menu-arrow:hover {
-  background-color: #D2030F;
-  color: white;
+  background-color: white;
+  color: #D2030F;
+  border: 4px solid #D2030F;
 }
 
 #article-arrow.hidden, #menu-arrow.hidden {
-  display: none;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 img.arrow{
@@ -1204,11 +1224,12 @@ div#menu-buttons {
   width: 100%;
   position:absolute;
   top:50%;
+  display: flex;
+  justify-content: space-between;
 }
 
 #menu-arrow{
   float:right;
-  color: #d2030f;
 }
 div#page {
   height: 100%;
@@ -1258,6 +1279,10 @@ main.site-main {
 
 .article-wrapper {
   height: 0;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .article-list {
@@ -1276,7 +1301,6 @@ main.site-main {
   align-items: center;
   list-style-type: none;
   text-align: center;
-  z-index: 1;
   overflow-y:scroll;
   visibility: hidden;
 }
@@ -1291,7 +1315,7 @@ main.site-main {
 
 .article-item {
   height: auto !important;
-  padding: 20px 25% !important;
+  padding: 20px 20% !important;
 }
 
 .article-wrapper li:last-child{
@@ -1660,7 +1684,7 @@ p:first-child {
 .menu-wrapper .hamburger-list {
   position: fixed;
   right: 0;
-  height: 100vh;
+  height: calc(100% - 45px);
   width: calc(50% + 3px);
   z-index: 1;
   flex-direction: column;
@@ -1686,7 +1710,7 @@ p:first-child {
 
 .hamburger-article {
   top: 92px !important;
-  height: calc(100vh - 92px) !important;
+  height: calc(100vh - 92px - 45px) !important;
 }
 
 .about h4 {
@@ -1725,6 +1749,7 @@ p:first-child {
 .hamburger-item {
   line-height: 100%;
   text-align: center;
+  flex: 1;
 }
 
 .hamburger-item.open {
@@ -1766,6 +1791,7 @@ p:first-child {
 
 .list-child.open {
   display: block;
+  overflow-y: scroll;
 }
 
 .close-x{
@@ -1914,7 +1940,7 @@ p:first-child {
 
 .header {
   height: 95px;
-  background: white;
+  background-color: #dfdfdf;
   top: 0;
   width: 100%;
   display: flex;
@@ -1957,22 +1983,19 @@ p:first-child {
   position: absolute;
 }
 
-.first { 
-  z-index: 3;
-}
 
 .title-text-menu{
   color: #D2030F;
   font-family: 'HalyardDisplayRegular';
-  font-size: 2.5em;
-  line-height: 1.5em;
+  font-size: 60px;
+  line-height: 60px;
 }
 
 .author-text-menu{
   color: #D2030F;
-  font-family: 'HalyardDisplayRegular';
-  font-size: 1.3em;
-  line-height: 20px;
+  font-family: 'RadleyRegular', serif;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .quotes{
@@ -2014,4 +2037,17 @@ blockquote{
 
 .flex { 
   display: flex !important;
+}
+
+#top-pic, #bot-pic {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.5s ease-in-out opacity;
+}
+
+.first {
+  opacity: 1 !important;
 }

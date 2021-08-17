@@ -130,11 +130,10 @@
 		</script>
 	<?php elseif(get_field('layout_type') == 'realanchor'): ?>
 		<div class='column illustrations'>
-			<img class="first" src="<?php the_field('top_pic'); ?>" id="top-pic" style="position:absolute;top:0;left:0;width:100%;min-height:100%;" />
-			<img class="" src="<?php the_field('bot_pic'); ?>" id="bot-pic" style="position:absolute;top:0;left:0;width:100%;min-height:100%;" />
+			<img class="first" src="<?php the_field('top_pic'); ?>" id="top-pic" />
+			<img class="" src="<?php the_field('bot_pic'); ?>" id="bot-pic" />
 		</div>
 		<script>
-			
 			let topPicEl = document.getElementById("top-pic")
 			let botPicEl = document.getElementById('bot-pic')
 			
@@ -152,43 +151,6 @@
 
 			window.addEventListener('mousewheel', onAnchorScroll)
 
-
-			// const anchorObserve = (topSwitch,botSwitch,topPic,botPic) => {
-
-			// const options = {
-			// 	root: null,
-			// 	rootMargin: '0px',
-			// 	threshold: 0.5
-			// };
-
-			// const callback = (entries) => {
-			// 	entries.forEach(function(entry) {
-			// 		if (entry.isIntersecting) {
-			// 			if (entry.target == topSwitch) {
-			// 				//this needs to be now "switch the class on the pic element"
-			// 				topPic.classList.add("first");
-			// 				botPic.classList.remove("first");
-			// 			} else {
-			// 				topPic.classList.remove("first");
-			// 				botPic.classList.add("first");
-			// 			}
-			// 		}
-			// 	})
-			// }
-
-			// const observer = new IntersectionObserver(callback,options);
-
-			// observer.observe(topSwitch);
-			// observer.observe(botSwitch);
-			// }
-
-			// const switchTop = document.getElementById("switch-top");
-			// const switchBot = document.getElementById("switch-bot");
-
-			// const pic1 = document.getElementById("top-pic");
-			// const pic2 = document.getElementById("bot-pic");
-
-			// anchorObserve(switchTop,switchBot,pic1,pic2);
 		</script>
 	<?php elseif(get_field('layout_type') == "vimeo"): ?>
 		<div class='column illustrations'>

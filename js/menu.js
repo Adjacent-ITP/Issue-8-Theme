@@ -1,9 +1,17 @@
-let bool = false;
-let data;
-
 const moveMenu = () => { // Menu button
-    let element = document.getElementById("menu");
-    element.classList.toggle("open");
+    let menuEl = document.getElementById("menu")
+    let isOpen = menuEl.classList.contains('open')
+    menuEl.classList.toggle("open")
+
+    if (isOpen) {
+        let listEl = document.querySelector('.hamburger-item.open')
+        if (listEl) {
+            let openId = listEl.dataset.id
+            document.getElementById(`${openId}-item`).classList.remove('open')
+            document.getElementById(`${openId}-close`).classList.remove('open')
+            document.getElementById(`${openId}-child`).classList.remove('open')
+        }
+    }
 
     let menuButtonEl = document.getElementById('menu-button')
     if (menuButtonEl) {
@@ -34,51 +42,25 @@ const moveMenu = () => { // Menu button
 }
 
 const expandMenu = ev => {
+    let listEls = Array.from(document.getElementsByClassName('hamburger-item'))
+    let prevIdx = null
     let which = ev.target.dataset.id
+
+    for (let idx = 0; idx < listEls.length; idx++) {
+        if (listEls[idx].classList.contains('open')) {
+            prevIdx = listEls[idx].dataset.id
+        }
+    }
+    if (prevIdx && prevIdx !== which) {
+        document.getElementById(`${prevIdx}-item`).classList.remove('open')
+        document.getElementById(`${prevIdx}-close`).classList.remove('open')
+        document.getElementById(`${prevIdx}-child`).classList.remove('open')
+    }
+
     let closeButtonEl = document.getElementById(`${which}-close`)
     closeButtonEl.classList.toggle('open')
     let hamburgerEl = document.getElementById(`${which}-child`)
     hamburgerEl.classList.toggle('open')
     let hamburgerItemEl = document.getElementById(`${which}-item`)
     hamburgerItemEl.classList.toggle('open')
-}
-
-const subExpander = (e) => {
-
-    data = document.getElementsByName("data")[0].content;
-    console.log(data)
-    let div = e.target
-    let isClosed = e.target.dataset.isClosed
-    let x = document.createElement("img"); 
-    x.src = data + '/assets/x.png';
-    x.className = "close-x";
-    console.log(isClosed, div)
-
-    if(div.parentElement.nodeName != "LI"){
-        if(!isClosed){
-            div.style.padding = '3em';
-            div.appendChild(x)
-        } else {
-            div.style.padding = '0';
-        }
-        let sibling = div.nextElementSibling;
-        sibling.classList.toggle("displayed");
-        let id = e.target.innerText.toLowerCase()
-        id.replace(/\s/g, '');
-        sibling.classList.add(id)
-    } else{
-        if(!isClosed){
-            div.parentElement.style.padding = '3em';
-            div.parentElement.appendChild(x)
-        } else {
-            div.parentElement.style.padding = '0';
-        }
-        let sibling = div.parentElement.nextElementSibling;
-        sibling.classList.toggle("displayed");
-
-        if(isClosed){
-            div.parentElement.removeChild(div.parentElement.childNodes[1])
-        }
-    }
-    e.target.dataset.isClosed = !isClosed
 }

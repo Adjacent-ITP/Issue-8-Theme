@@ -13,7 +13,41 @@
 
 <div class="menu-wrapper">
 	<ul class="hamburger-list" id="menu">
-		<li id="about-item" data-id="about" class="hamburger-item">
+	<li id="index-item" data-id="index" class="hamburger-item">
+						<div class="hamburger-text" data-id="index" onclick="expandMenu(event)">Index</div>	
+						<div id="index-close" class="hamburger-close" data-id="index" onclick="expandMenu(event)"></div>
+					</li>
+                    <div id="index-child" class="list-child">
+                        <ul class="prev-issues">
+													<!-- the loop -->
+													<?php 
+
+													$args = array(
+														'post_type'=> 'post',
+														'orderby'    => 'ID',
+														'post_status' => 'publish',
+														'order'    => 'DESC',
+														'posts_per_page' => -1 
+														);
+														$result = new WP_Query( $args );
+
+														if ( $result-> have_posts() ) : ?>
+														<?php while ( $result->have_posts() ) : $result->the_post(); ?>
+														<a href="<?php the_permalink() ?>">
+															<li><?php the_title(); ?>
+																<br/>
+																<span class="author__light"><?php echo get_field('author');?></span>
+															</li>
+														</a>
+														   
+														<?php endwhile; ?>
+														<?php endif; wp_reset_postdata(); ?>
+
+										
+													<!-- end of the loop -->
+                        </ul>
+                    </div>
+			<li id="about-item" data-id="about" class="hamburger-item">
 						<div class="hamburger-text" data-id="about" onclick="expandMenu(event)">About</div>	
 						<div id="about-close" class="hamburger-close" data-id="about" onclick="expandMenu(event)"></div>
 					</li>
@@ -69,7 +103,7 @@
 							</p>
 						</div>
 					</div>
-                    <li id="previous-item" class="hamburger-item">
+                    <li id="previous-item" class="hamburger-item"  data-id="previous">
 						<div class="hamburger-text" data-id="previous" onclick="expandMenu(event)">Previous Issues</div>	
 						<div id="previous-close" class="hamburger-close" data-id="previous" onclick="expandMenu(event)"></div>
 					</li>
@@ -85,7 +119,7 @@
 							<li class="issues"><a href="https://itp.nyu.edu/adjacent/issue-8/">Issue 8: Disembodiment</a></li>
 						</ul>
 					</div>
-                    <li id="submit-item" class="hamburger-item">
+                    <li id="submit-item" class="hamburger-item"  data-id="submit">
 						<div class="hamburger-text" data-id="submit" onclick="expandMenu(event)">Submit</div>	
 						<div id="submit-close" class="hamburger-close" data-id="submit" onclick="expandMenu(event)"></div>
 					</li>
@@ -97,6 +131,5 @@
 							<p>Email us at <a href="mailto: adjacent@itp.nyu">adjacent@itp.nyu.edu</a>.<p>
 						</div>
 					</div>
-                    <li class="hamburger-rest"></li>
                 </ul>
             </div>
