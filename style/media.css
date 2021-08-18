@@ -25,31 +25,38 @@
     #adjLogo {
         display: none;
     }
+
     #menu-buttons {
         display: none !important;
     }
+
     .mobile-menu {
         display: flex;
     }
+
     .pic-wrapper {
         width: 100vw;
     }
+
     .article-list {
         height: 100vh;
         width: 100vw;
         padding-top: 75px;
         background-color: #8080804f;
     }
+
     .title-text-menu {
         color: black !important;
         font-size: 35px;
         line-height: 35px;
     }
+
     .author-text-menu {
         font-size: 20px;
         line-height: 20px;
         color: black;
     }
+
     .pic-wrapper {
         width: 100vw !important;
         z-index: 0 !important;
@@ -57,6 +64,7 @@
     .pic-child {
         width: 25%;
     }
+
     .header {
         display: none !important;
     }
@@ -146,5 +154,20 @@
         border: 0;
         height: 4px;
         margin-bottom: 2rem;
+    }
+
+    /* Article menu */
+    .menu-wrapper .hamburger-list {
+        overflow-y: auto !important;
+    }
+
+    .hamburger-list .hamburger-item {
+        font-size: 20px !important;
+    }
+
+    .prev-issues li {
+        border: none;
+        border-bottom: 2px solid #d2030f;
+        background-color: white;
     }
 }

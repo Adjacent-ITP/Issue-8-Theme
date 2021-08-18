@@ -12,18 +12,19 @@
 ?>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/mobile-menu.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/media.css">
+<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
 
 <div class="header">
 	<div class="header-left">
 			<a href="https://itp.nyu.edu/adjacent/issue-8/"><img src="<?php echo get_template_directory_uri(); ?>/assets/AdjacentLogo.svg"	/></a>
 		</div>
 		<div class="header-right">
-			<div id="menu-button" onClick="moveMenu(event)"></div>
+			<div id="menu-button"></div>
 		</div>
 	</div>
 	<div class="article-mobile-menu">
 		<div class="disembodiment-logo"></div>
-		<div class="menu-button"></div>
+		<div class="menu-button" onclick="moveMenu(event)"></div>
 	</div>
 
 <div class="menu-wrapper">
