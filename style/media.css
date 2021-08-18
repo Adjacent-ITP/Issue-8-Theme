@@ -1,0 +1,150 @@
+@media screen and (max-width: 850px) {
+    #article-arrow, #menu-arrow {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #adjLogo {
+        top: 10%;
+        left: 25%;
+        width: 50%;
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 551px) {
+    #menu-buttons {
+        display: flex;
+    }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 550px) {
+    #adjLogo {
+        display: none;
+    }
+    #menu-buttons {
+        display: none !important;
+    }
+    .mobile-menu {
+        display: flex;
+    }
+    .pic-wrapper {
+        width: 100vw;
+    }
+    .article-list {
+        height: 100vh;
+        width: 100vw;
+        padding-top: 75px;
+        background-color: #8080804f;
+    }
+    .title-text-menu {
+        color: black !important;
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .author-text-menu {
+        font-size: 20px;
+        line-height: 20px;
+        color: black;
+    }
+    .pic-wrapper {
+        width: 100vw !important;
+        z-index: 0 !important;
+    }
+    .pic-child {
+        width: 25%;
+    }
+    .header {
+        display: none !important;
+    }
+
+    /* Article view */
+    .article-mobile-menu {
+        display: flex;
+    }
+
+    .article__nav {
+        display: none;
+    }
+
+    .column {
+        width: 100%;
+        border-right: none;
+        height: auto !important;
+    }
+
+    article {
+        display: block;
+    }
+
+    .entry-meta {
+        text-align: center;
+    }
+
+    .author {
+        font-size: 20px;
+    }
+
+    .entry-title {
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .entry-header {
+        margin-bottom: 4em;
+    }
+
+    .content {
+        margin-top: calc(95px + 40px);
+        padding: 20px;
+    }
+
+    .artwork {
+        position: relative !important;
+        top: 0 !important;
+        z-index: 0 !important;
+        height: auto !important;
+        width: 100%;
+    }
+
+    #top-pic, #bot-pic {
+        position: relative !important;
+        opacity: 1 !important;
+        top: none !important;
+        left: none !important;
+        width: 100%;
+    }
+
+    .article-nav-mobile {
+        display: block;
+    }
+
+    .interactive {
+        width: 100% !important;
+    }
+
+    .interactive-tong-content, .interactiveTong2 {
+        position: relative;
+        top: 0;
+        width: 100%;
+        border-right: none;
+        z-index: 0;
+    }
+
+    iframe {
+        height: 100%;
+        width: 100%;
+        min-height: 500px !important;
+    }
+
+    hr {
+        background-color: #d2030f;
+        border: 0;
+        height: 4px;
+        margin-bottom: 2rem;
+    }
+}

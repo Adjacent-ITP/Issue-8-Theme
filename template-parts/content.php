@@ -15,7 +15,7 @@
 
 
 <meta name="data" content="<?php echo get_template_directory_uri(); ?>" />
-
+<div id="top"></div>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php 
 		$interactive = get_field( "layout_type" );
@@ -62,7 +62,7 @@
 
 		<div class="content" id="dacontent">
 
-			<header class="entry-header">
+			<header id="article-title-header" class="entry-header">
 				<?php
 				if ( is_singular() ) :
 					the_title( '<h1 class="entry-title">', '</h1>' );
@@ -113,12 +113,12 @@
 	</div><!-- .entry-content -->
 
 	<?php if(get_field('layout_type') == "anchorscroll" || get_field('layout_type') == "fixed"): ?>
-		<div class='column illustrations'>
+		<div class='column artwork illustrations'>
 			<!--<div class='illustrations__one'>-->
 			<img src="<?php the_field('pic_one'); ?>" style="position:absolute;top:0;left:0;width:100%;min-height:100%;" />
 		</div>
 	<?php elseif(get_field('layout_type') == 'fluidscroll'): ?>
-		<div class='column illustrations-fluid'>
+		<div class='column artwork illustrations-fluid'>
 			<img src="<?php the_field('pic_one'); ?>" id="fluid_pic" style="position:sticky;top:0;width:100%;" />
 		</div>
 		<script>
@@ -129,7 +129,7 @@
 			thePic.style.top = `-${newHeight}px`;
 		</script>
 	<?php elseif(get_field('layout_type') == 'realanchor'): ?>
-		<div class='column illustrations'>
+		<div class='column artwork illustrations'>
 			<img class="first" src="<?php the_field('top_pic'); ?>" id="top-pic" />
 			<img class="" src="<?php the_field('bot_pic'); ?>" id="bot-pic" />
 		</div>
@@ -153,15 +153,15 @@
 
 		</script>
 	<?php elseif(get_field('layout_type') == "vimeo"): ?>
-		<div class='column illustrations'>
+		<div class='column artwork illustrations'>
 			<div style="padding:100% 0 0 0;position:relative;"><iframe src="<?php the_field('iframe_src'); ?>" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 		</div>
 	<?php elseif(get_field('layout_type') == "iframe"): ?>
-		<div class="column interactivepiece">
+		<div class="column artwork interactivepiece">
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
 		</div>
 	<?php elseif(get_field('layout_type') == "iframeTong"): ?>
-		<div class="column interactiveTong">
+		<div class="column artwork interactiveTong">
 			<div class="column interactiveTong2"></div>
 			<img src="<?php the_field('pic_one'); ?>" style="top:0;left:0;width:100%;min-height:100%;" />
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
@@ -181,7 +181,7 @@
 			textColumn.style.position = "sticky";
 		</script>
 	<?php elseif(get_field('layout_type') == "iframeNan"): ?>
-		<div class="column interactiveNun">
+		<div class="column artwork interactiveNun">
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_4'); ?>"></iframe>
@@ -200,8 +200,27 @@
 			textColumn.style.position = "sticky";
 		</script>
 	<?php endif; ?>
+		<div class="article-nav-mobile">
+			<div class="article-nav" onclick="scrollToTop()">
+				<div class="up-arrow"></div>
+				<div class="article-nav-text">Back to Top</div>
+			</div>
+			<?php $prev = get_previous_posts_link(); ?>
+			<a href="<?php echo get_permalink( get_adjacent_post(false,'',false)->ID );?>">
+				<div class="article-nav">
+					<div class="left-arrow"></div>
+					<div class="article-nav-text">Previous Article</div>
+				</div>
+			</a>
+			<a href="<?php echo get_permalink( get_adjacent_post(false,'',true)->ID );?>">
+				<div class="article-nav">
+					<div class="article-nav-text">Next Article</div>
+					<div class="right-arrow"></div>
+				</div>
+		</a>
+		</div>
 		</div>
 </article><!-- #post-<?php the_ID(); ?> -->
-
+<script src="<?php echo get_template_directory_uri(); ?>/js/article_mobile.js"></script>
 <?php
  get_footer(); ?>

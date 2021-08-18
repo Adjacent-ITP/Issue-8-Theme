@@ -1,0 +1,12 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="14.4" y="14.3999" width="4.8" height="4.8" transform="rotate(-180 14.4 14.3999)" fill="#D2030F"/>
+<rect x="9.59998" y="19.2" width="4.8" height="4.8" transform="rotate(-180 9.59998 19.2)" fill="#D2030F"/>
+<rect x="9.59998" y="9.6001" width="4.8" height="4.8" transform="rotate(-180 9.59998 9.6001)" fill="#D2030F"/>
+<rect x="4.80005" y="4.80005" width="4.8" height="4.8" transform="rotate(-180 4.80005 4.80005)" fill="#D2030F"/>
+<rect x="4.80005" y="24" width="4.8" height="4.8" transform="rotate(-180 4.80005 24)" fill="#D2030F"/>
+<rect width="4.8" height="4.8" transform="matrix(1 2.91409e-07 1.04907e-07 -1 9.59998 14.3999)" fill="#D2030F"/>
+<rect width="4.8" height="4.8" transform="matrix(1 2.91409e-07 1.04907e-07 -1 14.4 19.2)" fill="#D2030F"/>
+<rect width="4.8" height="4.8" transform="matrix(1 2.91409e-07 1.04907e-07 -1 14.4 9.6001)" fill="#D2030F"/>
+<rect width="4.8" height="4.8" transform="matrix(1 2.91409e-07 1.04907e-07 -1 19.2 4.80005)" fill="#D2030F"/>
+<rect width="4.8" height="4.8" transform="matrix(1 2.91409e-07 1.04907e-07 -1 19.2 24)" fill="#D2030F"/>
+</svg>

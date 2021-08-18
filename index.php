@@ -22,6 +22,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/landing.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/mobile-menu.css">
 	<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
 
 	<?php wp_head(); ?>
@@ -39,7 +40,6 @@
 
 		<meta name="data" content="<?php echo get_template_directory_uri(); ?>" />
 		<script src="<?php echo get_template_directory_uri(); ?>/js/landing.js"></script>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/articleList.js"></script>
 
 			<div class="article-wrapper" >
@@ -75,7 +75,7 @@
 			<button id="menu-arrow" onclick="moveMenu()">menu</button>
 		</div>
 		<div class="landing-background">
-			<div id="landing_1" class="l-background hidden"></div>
+			<div id="landing_1" class="l-background"></div>
 			<div id="landing_2" class="l-background hidden"></div>
 			<div id="landing_3" class="l-background hidden"></div>
 			<div id="landing_4" class="l-background hidden"></div>
@@ -84,7 +84,11 @@
 			<div id="landing_7" class="l-background hidden"></div>
 			<div id="landing_8" class="l-background hidden"></div>
 		</div>
-
+		<div class="mobile-menu">
+			<div class="adjacent-logo mobile-button"></div>
+			<div class="disembodiment-logo mobile-button" onclick="openArticlesMobile()"></div>
+			<div class="menu-button mobile-button"></div>
+		</div>
 		<div class="hidden pic-wrapper" id="pic-wrapper" style="
 			height: 100vh;
 			z-index: 5;
@@ -143,6 +147,7 @@
 			}
 		}
 	</script>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/media.css">
 <?php
  get_sidebar();
  get_footer('landing'); ?>

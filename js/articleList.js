@@ -18,3 +18,14 @@ const openArticles = () => { // Articles button
     let adjLogoEl = document.getElementById('adjLogo')
     adjLogoEl.classList.toggle('hidden')
 }
+
+function openArticlesMobile() {
+    let element = document.getElementById("articles")
+    element.classList.toggle("open")
+    let disembodimentLogoEl = document.getElementsByClassName('disembodiment-logo')[0]
+    disembodimentLogoEl.classList.toggle('open')
+    let previewEl = document.getElementById('pic-wrapper')
+    if (previewEl) {
+        previewEl.classList.toggle('hidden')
+    }
+}

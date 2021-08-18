@@ -11,8 +11,6 @@
 
 ?>
 <div id="footer-landing">
-	<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
-
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			<span><span class="footer__title">ADJACENT</span>

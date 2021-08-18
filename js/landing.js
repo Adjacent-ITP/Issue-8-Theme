@@ -1,7 +1,10 @@
-let currentBackgroundIdx = 0
+let currentBackgroundIdx = 1
 let hasChanged = false
 let articleEl = null
 let menuEl = null
+
+let isMobile = true
+const MOBILE_WIDTH = 550 // For phone
 
 function resetInterval() {
   hasChanged = false
@@ -35,7 +38,19 @@ function changeBackground() {
 }
 
 function startBackground() {
-  document.addEventListener('mousemove', changeBackground)
+  if (document.body.clientWidth > MOBILE_WIDTH) {
+    document.removeEventListener('click', changeBackground)
+    document.addEventListener('mousemove', changeBackground)
+    isMobile = false
+  } else {
+    if (!isMobile) {
+      document.removeEventListener('mousemove', changeBackground)
+    }
+    isMobile = true
+    document.addEventListener('click', changeBackground)
+  }
 }
 
 document.body.onload = startBackground
+
+window.addEventListener('resize', startBackground)
