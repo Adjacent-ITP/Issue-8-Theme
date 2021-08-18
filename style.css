@@ -1908,38 +1908,6 @@ p:first-child {
   border-bottom: 4px solid #D2030F;
 }
 
-@media only screen and (max-width: 768px) {
-  .arrow-text {
-    display: none;
-  }
-  .menu-wrapper .hamburger-list {
-    border-right: 4px solid #D2030F;
-    width: 100%;
-    height: auto;
-  }
-  .hamburger-list .hamburger-item {
-    font-size: 16px;
-    min-height: 50px;
-  }
-  .about i {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  .issues {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .prev-issues li {
-    border: 4px solid #D2030F;
-    flex: 1 0 50%;
-  }
-  .about h2 {
-    font-size: 16px;
-  }
-  .hamburger-list .hamburger-rest {
-    display: none;
-  }
-}
 
 .site-title {
   display: none;

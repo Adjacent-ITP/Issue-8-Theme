@@ -19,7 +19,7 @@
 			<a href="https://itp.nyu.edu/adjacent/issue-8/"><img src="<?php echo get_template_directory_uri(); ?>/assets/AdjacentLogo.svg"	/></a>
 		</div>
 		<div class="header-right">
-			<div id="menu-button"></div>
+			<div id="menu-button" onclick="moveMenu(event)"></div>
 		</div>
 	</div>
 	<div class="article-mobile-menu">
