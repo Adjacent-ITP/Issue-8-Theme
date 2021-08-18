@@ -97,6 +97,10 @@ main {
   display: block;
 }
 
+a {
+  outline: none;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
@@ -1303,6 +1307,7 @@ main.site-main {
   text-align: center;
   overflow-y:scroll;
   visibility: hidden;
+  padding-bottom: 45px;
 }
 
 .article-wrapper .article-item{
@@ -1989,6 +1994,12 @@ p:first-child {
   font-family: 'HalyardDisplayRegular';
   font-size: 60px;
   line-height: 60px;
+  transition: 0.3s ease-in-out color;
+  -webkit-transition: 0.3s ease-in-out color;
+}
+
+.title-text-menu:hover {
+  color: black;
 }
 
 .author-text-menu{
@@ -2017,10 +2028,7 @@ blockquote{
 }
 
 .pic-child {
-  width:50%; 
-  height: auto; 
-  background-color: green;
-  position: absolute;
+  width: 50%;
 }
 
 .pic-child.hidden {
