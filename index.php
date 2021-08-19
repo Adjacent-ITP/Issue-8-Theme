@@ -91,7 +91,6 @@
 		</div>
 		<div class="hidden pic-wrapper" id="pic-wrapper" style="
 			height: 100vh;
-			z-index: 5;
 			width: 50vw;
 			position: absolute;
 			top: 0;

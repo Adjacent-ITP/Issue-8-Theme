@@ -9,6 +9,8 @@
 
 ?>
 
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/anchor.css">
+
 <script>
     console.log(<?= json_encode(get_field("illustration_one")) ?>)
 </script>
@@ -119,7 +121,7 @@
 		</div>
 	<?php elseif(get_field('layout_type') == 'fluidscroll'): ?>
 		<div class='column artwork illustrations-fluid'>
-			<img src="<?php the_field('pic_one'); ?>" id="fluid_pic" style="position:sticky;top:0;width:100%;" />
+			<img src="<?php the_field('pic_one'); ?>" id="fluid_pic" />
 		</div>
 		<script>
 			const thePic = document.getElementById("fluid_pic");
@@ -130,23 +132,45 @@
 		</script>
 	<?php elseif(get_field('layout_type') == 'realanchor'): ?>
 		<div class='column artwork illustrations'>
-			<img class="first" src="<?php the_field('top_pic'); ?>" id="top-pic" />
-			<img class="" src="<?php the_field('bot_pic'); ?>" id="bot-pic" />
+			<div id="anchor" class="anchor-container">
+				<img src="<?php the_field('pic1'); ?>" class="anchor-pic hidden" />
+				<img src="<?php the_field('pic2'); ?>" class="anchor-pic hidden" />
+				<img src="<?php the_field('pic3'); ?>" class="anchor-pic hidden" />
+				<img src="<?php the_field('pic4'); ?>" class="anchor-pic hidden" />
+				<img src="<?php the_field('pic5'); ?>" class="anchor-pic hidden" />
+			</div>
 		</div>
 		<script>
-			let topPicEl = document.getElementById("top-pic")
-			let botPicEl = document.getElementById('bot-pic')
-			
+			let anchorImageEls = Array.from(document.getElementsByClassName('anchor-pic')).slice()
+			for (let idx = 0; idx < anchorImageEls.length; idx++) {
+				let src = anchorImageEls[idx].getAttribute('src')
+				if (src === '') {
+					anchorImageEls[idx].remove()
+				}
+			}
+
+			var cIdx = 1
+			anchorImageEls = Array.from(document.getElementsByClassName('anchor-pic'))
+			let anchorEl = document.getElementById('anchor')
+			anchorEl.style.backgroundImage = `url(${anchorImageEls[cIdx - 1].src})`
+
 			function onAnchorScroll(ev) {
+				let anchorImageEls = Array.from(document.getElementsByClassName('anchor-pic'))
+				let anchorEl = document.getElementById('anchor')
 				let scrollY = ev.pageY
 				let totalY = document.documentElement.scrollHeight
-				let topEl = scrollY / totalY >= .5 ? botPicEl : topPicEl
-				let botEl = scrollY / totalY >= .5 ? topPicEl : botPicEl
-				if (topEl.classList.contains('first')) return
-				if (botEl.classList.contains('first')) {
-					botEl.classList.remove('first')
+				let intSpace = totalY / anchorImageEls.length
+				let nIdx = 1
+				for (let idx = 1; idx <= anchorImageEls.length; idx++) {
+					if (scrollY < intSpace * idx && scrollY > intSpace * (idx - 1)) {
+						nIdx = idx
+						break
+					}
 				}
-				topEl.classList.add('first')
+				if (cIdx !== nIdx) {
+					anchorEl.style.backgroundImage = `url(${anchorImageEls[nIdx - 1].src})`
+					cIdx = nIdx
+				}
 			}
 
 			window.addEventListener('mousewheel', onAnchorScroll)
@@ -163,7 +187,7 @@
 	<?php elseif(get_field('layout_type') == "iframeTong"): ?>
 		<div class="column artwork interactiveTong">
 			<div class="column interactiveTong2"></div>
-			<img src="<?php the_field('pic_one'); ?>" style="top:0;left:0;width:100%;min-height:100%;" />
+			<img src="<?php the_field('pic_one'); ?>" style="top:0;left:0;width:100%;" />
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
 			<iframe class='iframeTong2' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
 		</div>

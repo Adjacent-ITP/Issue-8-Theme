@@ -82,6 +82,7 @@
         width: 100%;
         border-right: none;
         height: auto !important;
+        display: block !important;
     }
 
     article {
@@ -116,7 +117,7 @@
         top: 0 !important;
         z-index: 0 !important;
         height: auto !important;
-        width: 100%;
+        width: 100% !important;
     }
 
     #top-pic, #bot-pic {
@@ -173,5 +174,14 @@
     .menu-wrapper .hamburger-list {
         width: 100%;
         border-right: 4px solid #D2030F;
+    }
+
+    #anchor {
+        background-image: none !important;
+        display: block;
+    }
+
+    .anchor-pic {
+        display: block !important;
     }
 }

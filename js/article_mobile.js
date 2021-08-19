@@ -1,5 +1,6 @@
 const MOBILE_WIDTH = 550 // For phone
-let isMobile = document.body.clientWidth <= MOBILE_WIDTH
+var isMobile = document.body.clientWidth <= MOBILE_WIDTH
+let hasSwitched = false
 let scrollAnimation
 
 function repositionArtwork() {
@@ -9,18 +10,29 @@ function repositionArtwork() {
         artworkEl = artworkEl[0]
     }
     if (!artworkEl) return
-    if (isCurrentlyMobile) {
+
+    if (!hasSwitched) {
+        isMobile = !isCurrentlyMobile
+        hasSwitched = true
+    }
+
+    if (isCurrentlyMobile !== isMobile && isCurrentlyMobile) {
+        isMobile = isCurrentlyMobile
+        console.log('small')
         let titleEl = document.getElementById('article-title-header')
         titleEl.insertAdjacentElement('afterend', artworkEl)
     } else {
-        let articleEl = document.getElementsByClassName('article')[0]
-        articleEl.insertAdjacentElement('afterend', artworkEl)
+        if (!isCurrentlyMobile && isMobile) {
+            isMobile = isCurrentlyMobile
+            console.log()
+            let articleEl = document.getElementsByClassName('column')[1]
+            articleEl.insertAdjacentElement('afterend', artworkEl)
+        }
+
     }
-    isMobile = isCurrentlyMobile
 }
 
 function moveIllustration() {
-    isMobile = document.body.clientWidth <= MOBILE_WIDTH
     repositionArtwork()
 }
 
