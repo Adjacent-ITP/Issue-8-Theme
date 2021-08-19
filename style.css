@@ -1441,7 +1441,7 @@ p:first-child {
   width: 75%;
 }
 
-.interactiveNun > iframe > body {
+.interactiveNun > iframe > #document > html > body {
   display: flex;
   justify-content: center;
 }
