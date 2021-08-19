@@ -1401,6 +1401,7 @@ p:first-child {
   top: 95px;
 }
 
+
 .interactiveTong{
   top: 0;
   width: 75% !important;
@@ -1431,9 +1432,18 @@ p:first-child {
 }
 
 .interactiveNun{
-  top: 0;
+  height: auto !important;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  top: 80px;
+  position: relative;
   width: 75%;
-  height: 100vh;
+}
+
+.interactiveNun > iframe > body {
+  display: flex;
+  justify-content: center;
 }
 
 .iframe {
