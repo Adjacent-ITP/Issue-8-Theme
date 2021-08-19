@@ -1438,7 +1438,7 @@ p:first-child {
   flex-flow: column;
   top: 80px;
   position: relative;
-  width: 75%;
+  width: 75% !important;
 }
 
 .interactiveNun > iframe > #document > html > body {
