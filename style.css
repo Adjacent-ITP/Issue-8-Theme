@@ -2072,7 +2072,8 @@ blockquote{
 
 .artwork {
   width: 50%;
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .artwork > img {
