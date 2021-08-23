@@ -10,6 +10,7 @@
 ?>
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/anchor.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 
 <script>
     console.log(<?= json_encode(get_field("illustration_one")) ?>)

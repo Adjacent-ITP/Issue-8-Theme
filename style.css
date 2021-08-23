@@ -223,6 +223,12 @@ sup {
   top: -0.5em;
 }
 
+p > strong > em {
+  font-style: italic;
+  font-family: Roboto;
+  font-weight: 100;
+}
+
 /* Embedded content
 	 ========================================================================== */
 
@@ -522,17 +528,6 @@ hr {
   margin-bottom: 2rem;
 }
 
-ul,
-ol {
-  /* margin: 0 0 1.5em 3em; */
-  list-style: none;
-  margin: 0;
-  margin-bottom: 2rem;
-  padding: 0;
-  padding-left: 20px;
-  font-size: 14px;
-  line-height: 14px;
-}
 
 li:first-child { padding-top: none; }
 li { padding-top: 1.5rem; }
@@ -840,7 +835,7 @@ textarea {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 6em 0 0;
+  margin: 14em 0 0;
 }
 
 .page-links {
@@ -1139,7 +1134,7 @@ article {
 
 .nav-arrow {
   font-family: 'RobotoRegular', sans-serif;
-  font-size: 17px;
+  font-size: 1.875rem;
   font-weight: 800;
   display: flex;
   align-items: center;
@@ -1151,7 +1146,7 @@ article {
   background: url(./assets/arrow_left.svg) no-repeat;
   background-size: contain;
   background-position: center;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .nav-arrow > .arrow-right {
@@ -1160,7 +1155,7 @@ article {
   background: url(./assets/arrow_right.svg) no-repeat;
   background-size: contain;
   background-position: center;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 
@@ -1193,14 +1188,15 @@ button{
   font-size: 45px;
   border-radius: 100px;
   height: 50%;
-  padding: 0.4em 1em 0.4em;
+  padding: 25px 50px;
+  padding-bottom: 31px;
   cursor: pointer;
   transition: 0.2s ease-in-out background-color, 0.2s ease-in-out color;
   display: block;
   line-height: none !important;
   background-color: #D2030F;
   color: white;
-  border: 4px solid white;
+  border: 4px solid #D2030F;
   transition: all 0.5s ease-in-out;
 }
 
@@ -1213,7 +1209,7 @@ button{
 }
 
 #article-arrow:hover, #menu-arrow:hover {
-  background-color: white;
+  background-color: #e5e5e5;
   color: #D2030F;
   border: 4px solid #D2030F;
 }
@@ -1326,7 +1322,11 @@ main.site-main {
 
 .article-item {
   height: auto !important;
-  padding: 20px 20% !important;
+  padding: 60px 20% !important;
+}
+
+.article-item > p {
+  color: #d20310;
 }
 
 .article-wrapper li:last-child{
@@ -1336,7 +1336,7 @@ main.site-main {
 /* Article */
 
 .entry-title {
-  font-family: "HalyardDisplayRegular";
+  font-family: "RadleyRegular";
   color: #d2030f;
   font-size: 4vw;
   line-height: 4vw;
@@ -1347,15 +1347,16 @@ main.site-main {
 }
 
 .author {
-  font-family: "RadleyRegular";
+  font-family: "RobotoRegular";
   font-size: 1.875rem;
   color: #d2030f;
+  font-weight: 400;
 }
 
 .illustrator__tagline {
   font-family: "RobotoBold";
   font-size: 1rem;
-  margin-top: 6rem;
+  margin-top: 1rem;
 }
 
 h2 {
@@ -1366,6 +1367,7 @@ h2 {
 h3 {
   /*font-family: "RadleyItalic";*/
   font-size: 30px;
+  line-height: 38px;
 }
 
 h3 i{
@@ -1379,8 +1381,8 @@ h3 i{
 
 p {
   font-family: "RobotoLight";
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 16px;
+  line-height: 23px;
 }
 /* 
 p:first-child {
@@ -1679,7 +1681,7 @@ p:first-child {
   font-size: 14px;
   color: #d2030f;
   font-family: "RobotoRegular";
-  background-color: white;
+  background-color: #dfdfdf;
   position: fixed;
   z-index: 1000000;
   bottom: 0;
@@ -1742,6 +1744,7 @@ p:first-child {
   display: flex;
   transition: 0.2s ease-in-out all;
   padding-left: 0;
+  margin-top: 0px !important;
 }
 
 .hamburger-list {
@@ -1762,6 +1765,8 @@ p:first-child {
   font-size: 16px;
   margin-top: 20px;
   margin-bottom: 2px;
+  font-family: 'RobotoRegular';
+  font-weight: bold;
 }
 
 .hamburger-list {
@@ -1798,7 +1803,6 @@ p:first-child {
 }
 
 .hamburger-item.open {
-  padding: 3em;
 }
 
 .hamburger-item:hover {
@@ -1815,6 +1819,7 @@ p:first-child {
   width: 100px;
   right: 0;
   display: none;
+  background-position: center;
 }
 
 .hamburger-close.open {
@@ -1845,15 +1850,24 @@ p:first-child {
   top: 0;
 }
 
+.header-left > a > img {
+  width: 60%;
+  left: 20%;
+  position: relative;
+}
+
 #adjLogo{
   position: absolute;
-  top: 40%;
-  left:45%;
-  max-width: 20%;
+  top: 50%;
+  left: 20%;
   height: auto;
   z-index: 1;
   opacity: 1;
   transition: 0.5s ease-in-out all;
+  width: 60%;
+  transform: rotate(
+15deg
+);
 }
 
 #adjLogo.hidden {
@@ -1935,6 +1949,7 @@ p:first-child {
 
 .author__light {
   font-family: 'RobotoLight';
+  font-size: 16px;
 }
 
 .about ul li {
@@ -1997,7 +2012,7 @@ p:first-child {
 
 .title-text-menu{
   color: #D2030F;
-  font-family: 'HalyardDisplayRegular';
+  font-family: 'RadleyRegular', serif;
   font-size: 60px;
   line-height: 60px;
   transition: 0.3s ease-in-out color;
@@ -2010,9 +2025,10 @@ p:first-child {
 
 .author-text-menu{
   color: #D2030F;
-  font-family: 'RadleyRegular', serif;
-  font-size: 30px;
-  line-height: 30px;
+  font-family: 'RobotRegular', sans-serif;
+  font-size: 25px;
+  line-height: 31px;
+  font-weight: 500;
 }
 
 .quotes{
@@ -2090,3 +2106,21 @@ blockquote{
   display: flex !important;
   justify-content: center !important;
 } */
+
+.wp-block-image {
+  margin-top: 3em;
+}
+
+h6 {
+  margin-bottom: 3em;
+}
+
+ul,
+ol {
+  font-family: 'RobotLight';
+  font-size: 16px;
+}
+
+li {
+  font-family: 'RobotoLight';
+}

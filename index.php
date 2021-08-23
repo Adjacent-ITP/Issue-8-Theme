@@ -68,7 +68,7 @@
 						<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 					<?php endif; ?>
 			</div>
-		<img id="adjLogo" src="<?php echo get_template_directory_uri(); ?>/assets/Adjacent_LOGO.png"/>
+		<img id="adjLogo" src="<?php echo get_template_directory_uri(); ?>/assets/logo_with_displacement.svg"/>
 
 		<div id="menu-buttons">
 			<button id="article-arrow" onclick="openArticles()">articles</button>

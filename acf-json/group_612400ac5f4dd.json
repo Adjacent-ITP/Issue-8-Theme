@@ -1,9 +1,9 @@
 {
-    "key": "group_61129e1ea7252",
-    "title": "Illustrator",
+    "key": "group_612400ac5f4dd",
+    "title": "illustrator",
     "fields": [
         {
-            "key": "field_61129e2a579a9",
+            "key": "field_612400bcac5f8",
             "label": "Illustrator tagline",
             "name": "illustrator_tagline",
             "type": "text",
@@ -22,7 +22,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_61129e3f579aa",
+            "key": "field_612400caac5f9",
             "label": "author",
             "name": "author",
             "type": "text",
@@ -41,7 +41,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_61129e4b579ab",
+            "key": "field_612400d4ac5fa",
             "label": "illustrator_url",
             "name": "illustrator_url",
             "type": "text",
@@ -77,5 +77,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1628611286
+    "modified": 1629749477
 }
