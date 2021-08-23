@@ -73,6 +73,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+
 /* Sections
 	 ========================================================================== */
 
@@ -85,6 +86,8 @@ body {
   background-color: #e3e3e3;
   /* overflow: hidden; */
   overflow-x: hidden !important;
+  transition: 0.5s ease-in-out all;
+
 }
 
 .post-template-default{
@@ -2082,3 +2085,8 @@ blockquote{
   height: 100%;
   width: auto;
 }
+
+/* .artwork body {
+  display: flex !important;
+  justify-content: center !important;
+} */
