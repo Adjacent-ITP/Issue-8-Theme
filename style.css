@@ -1310,6 +1310,17 @@ main.site-main {
   overflow-y:scroll;
   visibility: hidden;
   padding-bottom: 45px;
+  transition: 0.2s ease-in-out all;
+}
+
+.article-list {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.article-list.open {
+  transform: translateX(0%);
+  opacity: 1;
 }
 
 .article-wrapper .article-item{
@@ -1749,11 +1760,14 @@ p:first-child {
 
 .hamburger-list {
   opacity: 0;
+  transform: translateX(100%);
 }
 
 .hamburger-list.open {
   opacity: 1;
   visibility: visible;
+  transform: translateX(0%);
+
 }
 
 .hamburger-article {
@@ -1837,6 +1851,7 @@ p:first-child {
   position: relative;
   background-color: #dfdfdf;
   z-index:5;
+  transition: 0.2s ease-in-out all;
 }
 
 .list-child.open {
@@ -2123,4 +2138,23 @@ ol {
 
 li {
   font-family: 'RobotoLight';
+}
+
+.p5Canvas {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#index-child.open + li {
+  border-top: 4px solid #D2030F;
+
+}
+
+#previous-child.open + li {
+  border-top: 4px solid #D2030F;
+
+}
+
+.prev-issues > a:last-child > li {
+  border-bottom: none;
 }

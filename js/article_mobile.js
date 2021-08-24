@@ -18,17 +18,14 @@ function repositionArtwork() {
 
     if (isCurrentlyMobile !== isMobile && isCurrentlyMobile) {
         isMobile = isCurrentlyMobile
-        console.log('small')
         let titleEl = document.getElementById('article-title-header')
         titleEl.insertAdjacentElement('afterend', artworkEl)
     } else {
         if (!isCurrentlyMobile && isMobile) {
             isMobile = isCurrentlyMobile
-            console.log()
             let articleEl = document.getElementsByClassName('column')[1]
             articleEl.insertAdjacentElement('afterend', artworkEl)
         }
-
     }
 }
 
@@ -46,4 +43,4 @@ function scrollToTop() {
 }
 
 window.addEventListener('resize', moveIllustration)
-document.body.onload = moveIllustration
+window.onload = moveIllustration

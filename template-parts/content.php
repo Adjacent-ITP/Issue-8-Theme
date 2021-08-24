@@ -10,7 +10,6 @@
 ?>
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/anchor.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 
 <script>
     console.log(<?= json_encode(get_field("illustration_one")) ?>)
@@ -118,7 +117,7 @@
 	<?php if(get_field('layout_type') == "anchorscroll" || get_field('layout_type') == "fixed"): ?>
 		<div class='column artwork illustrations'>
 			<!--<div class='illustrations__one'>-->
-			<img src="<?php the_field('pic_one'); ?>" />
+			<img src="<?php the_field('pic_one'); ?>" style="position:absolute;top:0;left:0;width:100%;min-height:100%;" />
 		</div>
 	<?php elseif(get_field('layout_type') == 'fluidscroll'): ?>
 		<div class='column artwork illustrations-fluid'>
@@ -179,7 +178,7 @@
 		</script>
 	<?php elseif(get_field('layout_type') == "vimeo"): ?>
 		<div class='column artwork illustrations'>
-			<div style="padding:100% 0 0 0;position:relative;"><iframe src="<?php the_field('iframe_src'); ?>" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+			<div><iframe src="<?php the_field('iframe_src'); ?>" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 		</div>
 	<?php elseif(get_field('layout_type') == "iframe"): ?>
 		<div class="column artwork interactivepiece">
