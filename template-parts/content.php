@@ -117,7 +117,7 @@
 	<?php if(get_field('layout_type') == "anchorscroll" || get_field('layout_type') == "fixed"): ?>
 		<div class='column artwork illustrations'>
 			<!--<div class='illustrations__one'>-->
-			<img src="<?php the_field('pic_one'); ?>" style="position:absolute;top:0;left:0;width:100%;min-height:100%;" />
+			<img src="<?php the_field('pic_one'); ?>" />
 		</div>
 	<?php elseif(get_field('layout_type') == 'fluidscroll'): ?>
 		<div class='column artwork illustrations-fluid'>

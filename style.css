@@ -1411,7 +1411,7 @@ p:first-child {
 
 .interactivepiece {
   width: 75% !important;
-  height: calc(100vh - 95px - 45px);
+  /* height: calc(100vh - 95px - 45px); */
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 95px;
@@ -1852,11 +1852,15 @@ p:first-child {
   background-color: #dfdfdf;
   z-index:5;
   transition: 0.2s ease-in-out all;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .list-child.open {
   display: block;
+  opacity: 1;
   overflow-y: scroll;
+  visibility: visible;
 }
 
 .close-x{
@@ -2047,7 +2051,8 @@ p:first-child {
 }
 
 .quotes{
-  padding: 2em 4em 2em 4em;
+  display: block;
+  padding: 35px;
   font-family: Radley;
   font-size: 24px;
   line-height: 32px;
@@ -2157,4 +2162,28 @@ li {
 
 .prev-issues > a:last-child > li {
   border-bottom: none;
+}
+
+/* .iframe {
+  width: 100%;
+  height: 100%;
+  width: auto;
+} */
+
+.interactivepiece {
+  position: relative;
+  top: 63px;
+  /* overflow: hidden; */
+  border-left: 4px solid #d2030f;
+  left: -4px;
+}
+
+.interactivepiece:prev-sibling {
+  border-right: none !important;
+}
+
+
+.interactivepiece > .iframe {
+  width: 100%;
+  height: 100%;
 }
