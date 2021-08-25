@@ -119,8 +119,8 @@
 							</p>
 						</div>
 					</div>
-                    <li id="previous-item" class="hamburger-item"  data-id="previous" onclick="expandMenu(event)"> 
-						<div class="hamburger-text" data-id="previous">Previous Issues</div>	
+                    <li id="previous-item" class="hamburger-item"  data-id="previous"> 
+						<div class="hamburger-text" data-id="previous" onclick="expandMenu(event)">Previous Issues</div>	
 						<div id="previous-close" class="hamburger-close" data-id="previous" onclick="expandMenu(event)"></div>
 					</li>
                     <div id="previous-child" class="list-child">

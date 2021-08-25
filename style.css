@@ -1744,7 +1744,7 @@ p:first-child {
   right: 0;
   height: calc(100% - 45px);
   width: calc(50% + 3px);
-  z-index: 1;
+  z-index: 2;
   flex-direction: column;
   border-left: 4px solid #D2030F;
   /* border-top: 3px solid #D2030F; */
@@ -2176,6 +2176,13 @@ li {
   /* overflow: hidden; */
   border-left: 4px solid #d2030f;
   left: -4px;
+  min-height: calc(75vw);
+}
+
+.content > .interactivepiece {
+  border-left: none;
+  left: 0px;
+  min-height: 0px;
 }
 
 .interactivepiece:prev-sibling {
