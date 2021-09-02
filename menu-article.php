@@ -23,8 +23,8 @@
 		</div>
 	</div>
 	<div class="mobile-menu">
-			<div class="adjacent-logo mobile-button"></div>
-			<div class="disembodiment-logo mobile-button" onclick="openArticlesMobile()"></div>
+	<a href="<?php echo home_url(); ?>"><div class="adjacent-logo mobile-button"></div></a>
+			<a href="<?php echo home_url(); ?>"><div class="disembodiment-logo mobile-button"></div></a>
 			<div class="menu-button mobile-button" onclick="moveMenu()"></div>
 		</div>
 

@@ -1,6 +1,7 @@
 const moveMenu = () => { // Menu button
     let menuEl = document.getElementById("menu")
     let isOpen = menuEl.classList.contains('open')
+    let articlesEl = document.getElementById('articles')
     menuEl.classList.toggle("open")
 
     if (isOpen) {
@@ -10,6 +11,12 @@ const moveMenu = () => { // Menu button
             document.getElementById(`${openId}-item`).classList.remove('open')
             document.getElementById(`${openId}-close`).classList.remove('open')
             document.getElementById(`${openId}-child`).classList.remove('open')
+        }
+    }
+
+    if (articlesEl) {
+        if (articlesEl.classList.contains('mobile')) {
+            articlesEl.classList.toggle('hidden')
         }
     }
 

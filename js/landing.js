@@ -2,7 +2,6 @@ let currentBackgroundIdx = 1
 let hasChanged = false
 let articleEl = null
 let menuEl = null
-
 let isMobile = true
 const MOBILE_WIDTH = 550 // For phone
 
@@ -39,18 +38,42 @@ function changeBackground() {
 
 function startBackground() {
   if (document.body.clientWidth > MOBILE_WIDTH) {
-    document.removeEventListener('click', changeBackground)
+    // document.removeEventListener('click', changeBackground)
     document.addEventListener('mousemove', changeBackground)
     isMobile = false
   } else {
     if (!isMobile) {
       document.removeEventListener('mousemove', changeBackground)
     }
+    startMobileBump()
     isMobile = true
-    document.addEventListener('click', changeBackground)
+    // document.addEventListener('click', changeBackground)
   }
 }
 
-document.body.onload = startBackground
+function checkMobile() {
+  if (isMobile) {
+      startMobileBump()
+  }
+}
 
-window.addEventListener('resize', startBackground)
+function startMobileBump() { // Function to bump articles until begin scrolling
+  let articlesEl = document.getElementById('articles')
+  if (articlesEl) {
+    articlesEl.classList.add('bump')
+    articlesEl.classList.add('mobile')
+  }
+  document.addEventListener('scroll', onMobileScroll, true)
+}
+
+function onMobileScroll(ev) {
+  let articlesEl = document.getElementById('articles')
+  if (articlesEl.classList.contains('bump')) {
+      articlesEl.classList.remove('bump')
+  }
+  document.removeEventListener('scroll', onMobileScroll, true)
+}
+
+document.body.addEventListener('load', startBackground, true)
+
+window.addEventListener('resize', startBackground, true)

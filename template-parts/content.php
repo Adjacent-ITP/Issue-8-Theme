@@ -10,10 +10,7 @@
 ?>
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/anchor.css">
-
-<script>
-    console.log(<?= json_encode(get_field("illustration_one")) ?>)
-</script>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/articles-mobile.css">
 
 
 <meta name="data" content="<?php echo get_template_directory_uri(); ?>" />
@@ -181,7 +178,7 @@
 			<div><iframe src="<?php the_field('iframe_src'); ?>" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 		</div>
 	<?php elseif(get_field('layout_type') == "iframe"): ?>
-		<div class="column artwork interactivepiece">
+		<div class="column artwork interactivepiece mobile-overlay">
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
 		</div>
 	<?php elseif(get_field('layout_type') == "iframeTong"): ?>
@@ -189,7 +186,10 @@
 			<div class="column interactiveTong2"></div>
 			<img src="<?php the_field('pic_one'); ?>" style="top:0;left:0;width:100%;" />
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
-			<iframe class='iframeTong2' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
+			<div class="mobile-overlay">
+				<iframe class='iframeTong2' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>">
+				</iframe>
+			</div>
 		</div>
 		<script>
 			const textColumn = document.getElementById("dacontent");
@@ -206,9 +206,15 @@
 		</script>
 	<?php elseif(get_field('layout_type') == "iframeNan"): ?>
 		<div class="column artwork interactiveNun">
-			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
-			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
-			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_4'); ?>"></iframe>
+			<div class="mobile-overlay">
+				<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
+			</div>
+			<div class="mobile-overlay">
+				<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
+			</div>
+			<div class="mobile-overlay">
+				<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_4'); ?>"></iframe>
+			</div>
 		</div>
 		<script>
 			const textColumn = document.getElementById("dacontent");
@@ -230,18 +236,24 @@
 				<div class="article-nav-text">Back to Top</div>
 			</div>
 			<?php $prev = get_previous_posts_link(); ?>
-			<a href="<?php echo get_permalink( get_adjacent_post(false,'',false)->ID );?>">
-				<div class="article-nav">
-					<div class="left-arrow"></div>
-					<div class="article-nav-text">Previous Article</div>
-				</div>
-			</a>
-			<a href="<?php echo get_permalink( get_adjacent_post(false,'',true)->ID );?>">
-				<div class="article-nav">
-					<div class="article-nav-text">Next Article</div>
-					<div class="right-arrow"></div>
-				</div>
-		</a>
+			<?php if (get_adjacent_post(false,'',false)->ID ) { ?>
+				<a href="<?php echo get_permalink( get_adjacent_post(false,'',false)->ID );?>">
+					<div class="article-nav">
+						<div class="left-arrow"></div>
+						<div class="article-nav-text">Previous Article</div>
+					</div>
+				</a>			
+			<?php } ?>
+
+			<?php if (get_adjacent_post(false,'',true)->ID ) { ?>
+				<a href="<?php echo get_permalink( get_adjacent_post(false,'',true)->ID );?>">
+					<div class="article-nav">
+						<div class="article-nav-text">Next Article</div>
+						<div class="right-arrow"></div>
+					</div>
+				</a>			
+			<?php } ?>
+
 		</div>
 		</div>
 </article><!-- #post-<?php the_ID(); ?> -->

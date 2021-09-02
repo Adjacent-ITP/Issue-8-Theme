@@ -1228,9 +1228,10 @@ div#menu-buttons {
   z-index: 2;
   width: 100%;
   position:absolute;
-  top:50%;
+  top: calc(50% - 55px);
   display: flex;
   justify-content: space-between;
+  
 }
 
 #menu-arrow{

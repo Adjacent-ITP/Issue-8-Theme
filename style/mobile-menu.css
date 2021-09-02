@@ -13,6 +13,10 @@
     background-color: #dfdfdf;
 }
 
+.mobile-menu > a {
+    height: 100%;
+}
+
 .mobile-menu.open {
     background: linear-gradient(to bottom, #8080804f, #9e9e9e0f);
 }
@@ -21,16 +25,16 @@
     cursor: pointer;
 }
   
-.mobile-menu > .adjacent-logo {
+.adjacent-logo {
     background-image: url('../assets/mobile/adjacent_red.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     width: 20vw;
-    height: auto;
+    height: 100%;
 }
 
-.mobile-menu > .disembodiment-logo {
+.disembodiment-logo {
     background-image: url('../assets/mobile/disembodiment.svg');
     background-size: contain;
     background-position: center;
@@ -40,7 +44,7 @@
     max-height: 100%;
 }
 
-.mobile-menu > .disembodiment-logo.open {
+.disembodiment-logo.open {
     background-image: url('../assets/mobile/disembodiment.svg');
     background-size: contain;
     background-position: center;
