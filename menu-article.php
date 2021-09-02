@@ -22,10 +22,11 @@
 			<div id="menu-button" onclick="moveMenu(event)"></div>
 		</div>
 	</div>
-	<div class="article-mobile-menu">
-		<div class="disembodiment-logo"></div>
-		<div class="menu-button" onclick="moveMenu(event)"></div>
-	</div>
+	<div class="mobile-menu">
+			<div class="adjacent-logo mobile-button"></div>
+			<div class="disembodiment-logo mobile-button" onclick="openArticlesMobile()"></div>
+			<div class="menu-button mobile-button" onclick="moveMenu()"></div>
+		</div>
 
 <div class="menu-wrapper">
                 <ul class="hamburger-list hamburger-article" id="menu">

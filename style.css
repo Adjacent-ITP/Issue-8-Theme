@@ -559,7 +559,6 @@ object {
 
 img {
   height: auto;
-  max-width: 100%;
 }
 
 figure {
@@ -1824,7 +1823,7 @@ p:first-child {
 }
 
 .hamburger-close {
-  background: url(./assets/x.png);
+  background: url(./assets/x_desktop.svg);
   height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2055,7 +2054,7 @@ p:first-child {
   padding: 35px;
   font-family: Radley;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 28px;
 }
 
 blockquote{

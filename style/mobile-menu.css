@@ -7,7 +7,10 @@
     height: 75px;
     padding: 10px;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 3;
+    color: #D2030F;
+    border-bottom: 4px solid #D2030F;
+    background-color: #dfdfdf;
 }
 
 .mobile-menu.open {
@@ -34,10 +37,11 @@
     background-repeat: no-repeat;
     width: 35vw;
     height: inherit;
+    max-height: 100%;
 }
 
 .mobile-menu > .disembodiment-logo.open {
-    background-image: url('../assets/mobile/disembodiment_white.svg');
+    background-image: url('../assets/mobile/disembodiment.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,7 +62,7 @@
 
 .article-mobile-menu {
     height: 95px;
-    background-color: #ffffff;
+    background-color: #dfdfdf;
     top: 0;
     width: 100%;
     border-bottom: 4px solid #D2030F;
@@ -69,7 +73,7 @@
 }
 
 .article-mobile-menu > .disembodiment-logo {
-    background-image: url('../assets/mobile/disembodiment_straight.svg');
+    background-image: url('../assets/mobile/disembodiment.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -141,4 +145,8 @@
     width: 22px;
     height: auto;
     margin: 0 10px;
+}
+
+.pic-wrapper {
+    display: none;
 }

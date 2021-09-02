@@ -87,7 +87,7 @@
 		<div class="mobile-menu">
 			<div class="adjacent-logo mobile-button"></div>
 			<div class="disembodiment-logo mobile-button" onclick="openArticlesMobile()"></div>
-			<div class="menu-button mobile-button"></div>
+			<div class="menu-button mobile-button" onclick="moveMenu()"></div>
 		</div>
 		<div class="hidden pic-wrapper" id="pic-wrapper" style="
 			height: 100vh;
