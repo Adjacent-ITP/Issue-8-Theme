@@ -207,7 +207,7 @@
 
     .hamburger-article {
         top: 75px !important;
-        height: calc(100vh - 75px - 45px) !important
+        height: calc(100% - 75px - 45px) !important
     }
 
     .hamburger-close {
@@ -255,5 +255,18 @@
 
     .article-list.hidden {
         display: none;
+    }
+
+    .page {
+        margin-bottom: 0px;
+    }
+
+    .gallery {
+        display: block;
+    }
+
+    img {
+        max-width: 100% !important;
+        height: auto;
     }
 }
