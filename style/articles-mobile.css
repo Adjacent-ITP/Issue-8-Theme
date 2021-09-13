@@ -12,7 +12,7 @@
 .mobile-overlay {
     width: 100%;
     min-height: calc(100vh - 95px - 45px);
-    top: 95px;
+    height: 100%;
 }
 
 .mobile-overlay.mobile {
