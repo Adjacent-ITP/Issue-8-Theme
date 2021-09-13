@@ -90,6 +90,10 @@ body {
 
 }
 
+img {
+  max-width: 100% !important;
+}
+
 .post-template-default{
   background-color:#dfdfdf;
 }
@@ -808,9 +812,9 @@ textarea {
   flex: 1 0 50%;
 }
 
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
   text-align: end;
   flex: 1 0 50%;
 }

@@ -9,6 +9,12 @@
     filter: brightness(1.1) opacity(0.4) blur(1px) opacity(0.6);
 }
 
+.mobile-overlay {
+    width: 100%;
+    min-height: calc(100vh - 95px - 45px);
+    top: 95px;
+}
+
 .mobile-overlay.mobile {
     display: flex;
     justify-content: center;
