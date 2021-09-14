@@ -99,6 +99,11 @@
 							<ul>
 								<li>Lizzy Chiappini</li>
 							</ul>
+							<h4>Tech and Design Consultants</h4>
+							<ul>
+								<li>Dana Elkis</li>
+								<li>Sue Roh</li>
+							</ul>
 							<h4>Web Development</h4>
 							<ul>
 								<li>Schuyler deVos</li>
