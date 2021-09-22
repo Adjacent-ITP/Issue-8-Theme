@@ -5,6 +5,9 @@ const openArticles = () => { // Articles button
     let articleButtonEl = document.getElementById('article-arrow')
     articleButtonEl.classList.toggle('hidden')
 
+    let closeButtonEl = document.getElementById('article-close')
+    closeButtonEl.classList.toggle('open')
+
     let menuEl = document.getElementById('menu')
     if (menuEl) {
         if (menuEl.classList.contains('open')) return
