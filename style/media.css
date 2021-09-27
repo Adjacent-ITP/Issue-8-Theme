@@ -216,7 +216,7 @@
 
     .hamburger-list .hamburger-item {
         font-size: 30px !important;
-        min-height: 50px;
+        min-height: 75px;
     }
 
     .prev-issues li {
@@ -324,5 +324,14 @@
 
     .artwork {
         display: block;
+    }
+
+    .hamburger-article {
+        top: 75px !important;
+        height: calc(100% - 75px - 45px) !important;
+    }
+
+    .article__nav.hidden {
+        display: none;
     }
 }
