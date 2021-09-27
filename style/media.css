@@ -135,6 +135,7 @@
 
     .entry-meta {
         text-align: center;
+        display: block;
     }
 
     .author {
