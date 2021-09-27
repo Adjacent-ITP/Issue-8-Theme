@@ -334,4 +334,12 @@
     .article__nav.hidden {
         display: none;
     }
+
+    .hamburger-list {
+        z-index: 8 !important;
+    }
+
+    .article-wrapper {
+        z-index: 3;
+    }
 }
