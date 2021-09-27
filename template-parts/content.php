@@ -207,7 +207,7 @@
 	<?php elseif(get_field('layout_type') == "iframeNan"): ?>
 		<div class="column artwork interactiveNun">
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
-			<div class="mobile-overlay">
+			<div>
 				<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
 			</div>
 			<div class="mobile-overlay">
