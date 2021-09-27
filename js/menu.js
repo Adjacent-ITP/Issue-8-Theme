@@ -34,7 +34,7 @@ const moveMenu = () => { // Menu button
 
     let menuButton = document.getElementById('menu-arrow')
     if (menuButton) {
-        menuButton.classList.add('hidden')
+        menuButton.classList.toggle('hidden')
     }
 
     let adjacentLogo = document.getElementById('adjLogo')
@@ -45,6 +45,11 @@ const moveMenu = () => { // Menu button
     let imagePreviewEl = document.getElementById('pic-wrapper')
     if (imagePreviewEl) {
         imagePreviewEl.classList.add('hidden')
+    }
+
+    let closeButtonEl = document.getElementById('right-close')
+    if (closeButtonEl) {
+        closeButtonEl.classList.toggle('open')
     }
 }
 

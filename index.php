@@ -33,6 +33,12 @@
 <div id="page" class="site">
 
 	<main id="primary" class="site-main">
+		<div id="article-close" class="menu-close-container article-close-container" onclick="openArticles()">
+			<div class="menu-close"></div>
+		</div>
+		<div id="right-close" class="menu-close-container right-close-container" onclick="moveMenu()">
+			<div class="menu-close"></div>
+		</div>
 
 	<?php
 		include('menu.php');
