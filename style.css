@@ -2276,3 +2276,9 @@ li {
   display: block;
   transform: translateX(0);
 }
+
+.interactive-tag {
+  color: #D2030F;
+    font-size: 14px;
+    font-weight: 700;
+}
