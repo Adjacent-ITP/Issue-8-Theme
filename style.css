@@ -1353,8 +1353,8 @@ main.site-main {
 .entry-title {
   font-family: "RadleyRegular";
   color: #d2030f;
-  font-size: 4vw;
-  line-height: 4vw;
+  font-size: 60px;
+  line-height: 65px;
 }
 
 .entry-meta {
@@ -1363,7 +1363,7 @@ main.site-main {
 
 .author {
   font-family: "RobotoRegular";
-  font-size: 1.875rem;
+  font-size: 30px;
   color: #d2030f;
   font-weight: 400;
 }
@@ -2281,4 +2281,8 @@ li {
   color: #D2030F;
     font-size: 14px;
     font-weight: 700;
+}
+
+.entry-content.interactive-t {
+  margin: 100px 0 0;
 }

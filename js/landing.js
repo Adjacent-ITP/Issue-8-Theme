@@ -3,7 +3,7 @@ let hasChanged = false
 let articleEl = null
 let menuEl = null
 let isMobile = true
-const MOBILE_WIDTH = 550 // For phone
+const MOBILE_WIDTH = 600 // For phone
 
 function resetInterval() {
   hasChanged = false

@@ -12,7 +12,6 @@
 ?>
 
 <div class="menu-wrapper">
-<div id="main-close" class="hamburger-close" data-id="index"></div>
 
 <ul class="hamburger-list" id="menu">
 	<li id="index-item" data-id="index" class="hamburger-item">

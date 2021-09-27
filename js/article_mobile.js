@@ -1,4 +1,4 @@
-const MOBILE_WIDTH = 550 // For phone
+const MOBILE_WIDTH = 600 // For phone
 var isMobile = document.body.clientWidth <= MOBILE_WIDTH
 let hasSwitched = false
 let scrollAnimation
@@ -45,11 +45,28 @@ window.mobileAndTabletCheck = function() {
     return check;
 }
 
+function findAncestor (el, cls) {
+    while ((el = el.parentElement) && !el.classList.contains(cls));
+    return el;
+}
+
+function setInteractiveStyling() {    
+    let titleEl = document.getElementsByClassName('entry-title')
+    let authorEl = document.getElementsByClassName('author')
+    let entryEl = document.getElementsByClassName('entry-content')
+
+    titleEl[0].classList.add('interactive-t')
+    authorEl[0].classList.add('interactive-t')
+    entryEl[0].classList.add('interactive-t')
+}
+
 function tabletAndMobileCheck() {
     let isMobileOrTablet = mobileAndTabletCheck()
-    if (isMobileOrTablet) {
-        let interactivePieceEls = Array.from(document.getElementsByClassName('mobile-overlay'))
-        for (let idx = 0; idx < interactivePieceEls.length; idx++) {
+    let interactivePieceEls = Array.from(document.getElementsByClassName('mobile-overlay'))
+    for (let idx = 0; idx < interactivePieceEls.length; idx++) {
+        setInteractiveStyling(interactivePieceEls[idx])
+        if (isMobileOrTablet) {        
+
             let iframeEls = Array.from(interactivePieceEls[idx].getElementsByTagName('iframe'))
             for (let jidx = 0; jidx < iframeEls.length; jidx++) {
                 iframeEls[jidx].classList.add('interactive-mobile')
