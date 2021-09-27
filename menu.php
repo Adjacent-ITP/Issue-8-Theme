@@ -12,7 +12,9 @@
 ?>
 
 <div class="menu-wrapper">
-	<ul class="hamburger-list" id="menu">
+<div id="main-close" class="hamburger-close" data-id="index"></div>
+
+<ul class="hamburger-list" id="menu">
 	<li id="index-item" data-id="index" class="hamburger-item">
 						<div class="hamburger-text" data-id="index" onclick="expandMenu(event)">Index</div>	
 						<div id="index-close" class="hamburger-close" data-id="index" onclick="expandMenu(event)"></div>
@@ -60,7 +62,7 @@
 						</i></h3>
 							<h4>Editorial Board</h4>
 							<ul>
-								<li>Nanchy Hechinger, Editor-in-Chief</li>
+								<li>Nancy Hechinger, Editor-in-Chief</li>
 								<li>Gabriella M. Garcia, Managing Editor</li>
 							</ul>
 							<h4>Editors</h4>
@@ -97,7 +99,7 @@
 							<ul>
 								<li>Simone Salvo, Director</li>
 								<li>Natalie Fajardo</li>
-								<li>Zack Krampf</li>
+								<li>Zack Kampf</li>
 							</ul>
 							<p>
 								ADJACENT was made possible by a Tisch Faculty Grant. Special thanks to Tisch School of the Arts Dean, 

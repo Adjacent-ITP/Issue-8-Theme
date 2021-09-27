@@ -99,21 +99,22 @@
 			justify-content: center;
 			align-items: center;"
 		> 
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Melanie.png" class="pic-child hidden" id="pic0"></img>
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Tong_Tong.jpg" class="pic-child hidden" id="pic1"></img>
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Dominic.jpg" class="pic-child hidden" id="pic2"></img>
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Nun_Nun.jpg" class="pic-child hidden" id="pic3"></img>
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Owen.jpg" class="pic-child hidden" id="pic4"></img>
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/CyX_CyX.jpg" class="pic-child hidden"></img>
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Ziv.jpg" class="pic-child hidden"></img>
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Becca.png" class="pic-child hidden"></img>
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Cara.png" class="pic-child hidden"></img>
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Brent.jpg" class="pic-child hidden"></img>
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Katherine.png" class="pic-child hidden"></img>
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Erin.png" class="pic-child hidden"></img>
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Livia.jpg" class="pic-child hidden"></img>
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/YG_YG.png" class="pic-child hidden"></img>
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/Mina_Mina.jpg" class="pic-child hidden"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/Cara.png" class="pic-child hidden"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/Erin.png" class="pic-child hidden"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/Katherine.png" class="pic-child hidden"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/CyX_CyX.jpg" class="pic-child hidden"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/Becca.png" class="pic-child hidden"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/Ziv.jpg" class="pic-child hidden"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/Brent.jpg" class="pic-child hidden"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/Livia.jpg" class="pic-child hidden"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/Dominic.jpg" class="pic-child hidden" id="pic2"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/Owen.jpg" class="pic-child hidden" id="pic4"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/Nun_Nun.jpg" class="pic-child hidden" id="pic3"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/Tong_Tong.jpg" class="pic-child hidden" id="pic1"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/Mina_Mina.jpg" class="pic-child hidden"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/YG_YG.png" class="pic-child hidden"></img>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/Melanie.png" class="pic-child hidden" id="pic0"></img>
+
 		</div>
 
 	</main><!-- #main -->
