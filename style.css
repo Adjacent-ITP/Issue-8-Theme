@@ -1540,10 +1540,6 @@ p:first-child {
     border-right: 0px;
   }
 
-  .article__nav {
-    display: none;
-  }
-
   .column {
     width: 100%;
   }
@@ -1556,8 +1552,6 @@ p:first-child {
   
   .entry-meta {
     margin-top: 3rem;
-    display: flex;
-    justify-content: center;
   }
   
   .author {

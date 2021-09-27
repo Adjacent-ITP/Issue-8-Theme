@@ -318,5 +318,10 @@
     img {
         max-width: 100% !important;
         height: auto;
+        margin: 10px 0;
+    }
+
+    .artwork {
+        display: block;
     }
 }
