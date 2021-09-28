@@ -206,8 +206,13 @@
 		</script>
 	<?php elseif(get_field('layout_type') == "iframeNan"): ?>
 		<div class="column artwork interactiveNun">
+			<h4>Feel Your Time, Variable Clock</h4>
 			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src'); ?>"></iframe>
-				<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
+			
+			<h4>A Minute Is A Month, Time In Scale</h4>
+			<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_2'); ?>"></iframe>
+			
+			<h4>Subtle Changes, Light Calendar</h4>
 			<div class="mobile-overlay">
 				<iframe class='iframe' frameBorder='0' scrolling='no' allow="camera; microphone" src="<?php the_field('iframe_src_4'); ?>"></iframe>
 			</div>
