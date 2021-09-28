@@ -20,32 +20,23 @@
 					</li>
                     <div id="index-child" class="list-child">
                         <ul class="prev-issues">
-													<!-- the loop -->
-													<?php 
+						<?php
+							// the query
+							$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
 
-													$args = array(
-														'post_type'=> 'post',
-														'orderby'    => 'ID',
-														'post_status' => 'publish',
-														'order'    => 'DESC',
-														'posts_per_page' => -1 
-														);
-														$result = new WP_Query( $args );
-
-														if ( $result-> have_posts() ) : ?>
-														<?php while ( $result->have_posts() ) : $result->the_post(); ?>
-														<a href="<?php the_permalink() ?>">
-															<li><?php the_title(); ?>
-																<br/>
-																<span class="author__light"><?php echo get_field('author');?></span>
-															</li>
-														</a>
-														   
-														<?php endwhile; ?>
-														<?php endif; wp_reset_postdata(); ?>
-
-										
-													<!-- end of the loop -->
+							<?php if ( $wpb_all_query->have_posts() ) : ?>
+							<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+								<a href="<?php the_permalink() ?>">
+									<li><?php the_title(); ?>
+										<br/>
+										<span class="author__light"><?php echo get_field('author');?></span>
+									</li>
+								</a>
+							<?php endwhile; ?>
+							<?php wp_reset_postdata(); ?>
+							<?php else : ?>
+						<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+					<?php endif; ?>
                         </ul>
                     </div>
 			<li id="about-item" data-id="about" class="hamburger-item">

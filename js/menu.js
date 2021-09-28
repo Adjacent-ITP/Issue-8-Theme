@@ -13,11 +13,11 @@ const moveMenu = () => { // Menu button
             document.getElementById(`${openId}-close`).classList.remove('open')
             document.getElementById(`${openId}-child`).classList.remove('open')
         }
-    } 
+    }
 
-    if (navEl) {
-            navEl[0].classList.toggle('hidden')
-
+    if (navEl[0]) {
+        console.log(navEl[0])
+        navEl[0].classList.toggle('hidden')
     }
 
     if (articlesEl) {
