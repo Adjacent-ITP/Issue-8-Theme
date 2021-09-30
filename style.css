@@ -2401,3 +2401,18 @@ li {
 .entry-content.interactive-t {
     margin: 100px 0 0;
 }
+
+.letter {
+    text-align: left;
+    font-family: "RobotoLight";
+    padding: 60px;
+    color: #D2030F;
+}
+
+.letter>div {
+    margin: 10px 0;
+}
+
+.letter>div:first-child {
+    font-family: 'RobotoBold', sans-serif;
+}

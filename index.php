@@ -56,7 +56,36 @@
 					<?php if ( $wpb_all_query->have_posts() ) : ?>
 
 					<ul class="article-list" id="articles">
-
+					<div class="letter">
+					<div>
+        				Hello and welcome to ADJACENT Issue 8: DISEMBODIMENT.
+    				</div>
+					<div>
+    					There is much I can say about the past year and all the ways we have been forced, as a species, to recognize the precarity of our existence. We continue to dance between evident fragility and extraordinary resilience—in the ways we can/not move through the world, to the reduction of connectable pathways, to the fricative explosions that occur when we finally do come together. A whole new vocabulary peppers conversation. Everyone is a researcher.
+					</div>
+    				<div>
+						Issue 8 commenced in the midst of all this, challenged not only by a totally-remote production, but also by the formation of an almost entirely new team of students as the majority of the previous masthead moved on to life after ITP. Some of us have yet to meet in the flesh (will we ever?), even as we floated through screens into each other’s most intimate quarters. ADJACENT has always been a demanding extracurricular project, and I am humbled by the fact that, in defiance of disruption, we present the journal’s most ambitious issue to date. This is DISEMBODIMENT.
+					</div>
+					<div>
+						In Virtually Immortal, Cara Peralta-Neel reflects on digital life after death, asking, “should I design my posthumous avatar now, to leave some comfort for my friends and family?” Erin (Nire) Cuana uses the lens of chaotic eroticism to heal our relationship with Artificial Intelligence in Machine Kink. Katherine Dillon places information designers on the front lines of communicating the impact of crisis in One, Two, Many, as we struggle to understand the unseeable. And in Gaze Makes the Glitch, Cy X documents a process toward fixing the anti-blackness, transphobia, and ableism that is embedded in all systems, including ourselves. 
+					</div>
+					<div>
+    					Issue 8 also includes ADJACENT’s first-ever collection of interactive articles, in pursuit of broadening the boundaries of how research can be presented and accessed. Nuntinee Tansrisakul, Tong Wu, Mina Zarfsaz, and Yuguang Zhang consider interpretations of time, collective selves, routine, and sociocultural metaphors in experiential media artwork curated by the journal’s design and dev teams. A group of ITP students who spent seven weeks exploring the Cybernetics of Sex with Melanie Hoff document their research with the creation of a collaborative webzine. 
+					</div>
+					<div>
+    					It was difficult to pick featured articles for this letter, which is a great problem to have. I hope that you dive in and explore the issue in full—best experienced on desktop, as the issue itself is recursively interactive. 
+					</div>
+					<div>
+    					Thank you to the authors, artists, editors, developers, designers, communicators, and faculty who stuck it through to make this happen. Hopefully we can celebrate in person one day. 
+					</div>
+					<div>
+						Until then,
+					</div>
+					<div>
+						Gabriella M. Garcia
+						Managing Editor, ADJACENT
+					</div>
+				</div>
 						<!-- the loop -->
 						<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
 							<li class="article-item">
