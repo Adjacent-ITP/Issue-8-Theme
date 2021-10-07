@@ -47,6 +47,7 @@
 		<meta name="data" content="<?php echo get_template_directory_uri(); ?>" />
 		<script src="<?php echo get_template_directory_uri(); ?>/js/landing.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/articleList.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/letter.js"></script>
 
 			<div class="article-wrapper" >
 				<?php
@@ -57,9 +58,12 @@
 
 					<ul class="article-list" id="articles">
 					<div class="letter">
+					<div class="title-text-menu">Letter from the Editor</div>
 					<div>
         				Hello and welcome to ADJACENT Issue 8: DISEMBODIMENT.
     				</div>
+					<button onclick="openLetter()" id="read-more">Read More</button>
+					<div id="letter-hidden">
 					<div>
     					There is much I can say about the past year and all the ways we have been forced, as a species, to recognize the precarity of our existence. We continue to dance between evident fragility and extraordinary resilience—in the ways we can/not move through the world, to the reduction of connectable pathways, to the fricative explosions that occur when we finally do come together. A whole new vocabulary peppers conversation. Everyone is a researcher.
 					</div>
@@ -85,8 +89,9 @@
 						Gabriella M. Garcia
 						Managing Editor, ADJACENT
 					</div>
+					</div>
 				</div>
-						<!-- the loop -->
+				<!-- the loop -->
 						<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
 							<li class="article-item">
 								<a class="title-text-menu" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>

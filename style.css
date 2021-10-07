@@ -2407,6 +2407,20 @@ li {
     font-family: "RobotoLight";
     padding: 60px;
     color: #D2030F;
+    background-color: #dfdfdf;
+    display: flex;
+    flex-direction: column;
+}
+
+.letter.expanded {
+    max-height: 40%;
+    overflow: scroll;
+    border-bottom: 4px solid;
+    overflow-x: hidden;
+}
+
+.letter::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
 }
 
 .letter>div {
@@ -2414,5 +2428,47 @@ li {
 }
 
 .letter>div:first-child {
-    font-family: 'RobotoBold', sans-serif;
+    /* font-family: 'RobotoBold', sans-serif;
+    color: #D2030F;
+    font-family: 'RadleyRegular', serif;
+    font-size: 25px;
+    line-height: 30px;
+    transition: 0.3s ease-in-out color;
+    -webkit-transition: 0.3s ease-in-out color;
+    text-align: center; */
+}
+
+#read-more {
+    background-color: #dfdfdf;
+    padding: 15px;
+    border-radius: 0px;
+    border: 4px solid #d3030e;
+    font-family: 'RobotoRegular';
+    color: #d3030e;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+#read-more:hover {
+    color: #dfdfdf;
+    background-color: #d3030e;
+    border: 4px solid #d3030e;
+}
+
+#read-more.hidden {
+    display: none;
+}
+
+#letter-hidden {
+    display: none;
+}
+
+#letter-hidden.visible {
+    display: block;
+}
+
+#letter-hidden>div {
+    margin: 10px 0;
 }
