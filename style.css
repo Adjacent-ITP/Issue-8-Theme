@@ -2405,7 +2405,7 @@ li {
 .letter {
     text-align: left;
     font-family: "RobotoLight";
-    padding: 60px;
+    padding: 60px 20%;
     color: #D2030F;
     background-color: #dfdfdf;
     display: flex;
@@ -2427,15 +2427,12 @@ li {
     margin: 10px 0;
 }
 
-.letter>div:first-child {
-    /* font-family: 'RobotoBold', sans-serif;
-    color: #D2030F;
-    font-family: 'RadleyRegular', serif;
-    font-size: 25px;
-    line-height: 30px;
-    transition: 0.3s ease-in-out color;
-    -webkit-transition: 0.3s ease-in-out color;
-    text-align: center; */
+.letter > .title-text-menu {
+    text-align: center;
+}
+
+.letter>div:nth-child(2) {
+    text-align: center;
 }
 
 #read-more {
