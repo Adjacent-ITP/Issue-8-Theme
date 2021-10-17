@@ -2409,6 +2409,7 @@ li {
     color: #D2030F;
     display: flex;
     flex-direction: column;
+    transition: 0.5s ease-in-out all;
 }
 
 .letter.expanded {
@@ -2416,6 +2417,7 @@ li {
     overflow: scroll;
     border-bottom: 4px solid;
     overflow-x: hidden;
+    background-color: #dfdfdf;
 }
 
 .letter::-webkit-scrollbar-thumb {
