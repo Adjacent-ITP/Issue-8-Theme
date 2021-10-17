@@ -2407,7 +2407,6 @@ li {
     font-family: "RobotoLight";
     padding: 60px 20%;
     color: #D2030F;
-    background-color: #dfdfdf;
     display: flex;
     flex-direction: column;
 }
@@ -2427,7 +2426,7 @@ li {
     margin: 10px 0;
 }
 
-.letter > .title-text-menu {
+.letter>.title-text-menu {
     text-align: center;
 }
 
